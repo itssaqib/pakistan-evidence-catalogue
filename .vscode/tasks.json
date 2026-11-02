@@ -1,0 +1,66 @@
+{
+  // Run any of these with: Terminal -> Run Task...  (or Ctrl/Cmd+Shift+P -> "Run Task")
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Publish to GitHub",
+      "detail": "Commit everything and push to origin/main. Prompts for a commit message.",
+      "type": "shell",
+      "command": "./publish.sh",
+      "args": ["${input:commitMessage}"],
+      "windows": {
+        "command": "powershell",
+        "args": [
+          "-ExecutionPolicy", "Bypass",
+          "-File", "${workspaceFolder}/publish.ps1",
+          "${input:commitMessage}"
+        ]
+      },
+      "options": { "cwd": "${workspaceFolder}" },
+      "problemMatcher": [],
+      "presentation": { "reveal": "always", "panel": "dedicated", "clear": true },
+      "group": { "kind": "build", "isDefault": true }
+    },
+    {
+      "label": "Preview site locally",
+      "detail": "Serve on http://localhost:8000. Required — opening index.html as a file:// URL leaves every table empty, because browsers block fetch() of local JSON.",
+      "type": "shell",
+      "command": "python3 -m http.server 8000",
+      "windows": { "command": "python -m http.server 8000" },
+      "options": { "cwd": "${workspaceFolder}" },
+      "isBackground": true,
+      "problemMatcher": [],
+      "presentation": { "reveal": "always", "panel": "dedicated" }
+    },
+    {
+      "label": "Rebuild site from data",
+      "detail": "Regenerate every HTML page from _build/catalogue_raw.json. Run after editing the source data.",
+      "type": "shell",
+      "command": "python3 gen_data.py && python3 gen_pages.py && python3 gen_programmes.py && python3 gen_sections.py && python3 gen_guides.py && python3 gen_misc.py && python3 gen_repo.py",
+      "windows": {
+        "command": "python gen_data.py; python gen_pages.py; python gen_programmes.py; python gen_sections.py; python gen_guides.py; python gen_misc.py; python gen_repo.py"
+      },
+      "options": { "cwd": "${workspaceFolder}/_build" },
+      "problemMatcher": [],
+      "presentation": { "reveal": "always", "panel": "dedicated", "clear": true }
+    },
+    {
+      "label": "Check for broken links",
+      "detail": "Verify every internal href and src resolves to a real file.",
+      "type": "shell",
+      "command": "python3 _build/linkcheck.py",
+      "windows": { "command": "python _build\\linkcheck.py" },
+      "options": { "cwd": "${workspaceFolder}" },
+      "problemMatcher": [],
+      "presentation": { "reveal": "always", "panel": "dedicated", "clear": true }
+    }
+  ],
+  "inputs": [
+    {
+      "id": "commitMessage",
+      "type": "promptString",
+      "description": "Commit message (leave blank for an automatic dated one)",
+      "default": ""
+    }
+  ]
+}

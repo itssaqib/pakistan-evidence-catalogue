@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://itssaqib.github.io/pakistan-evidence-catalogue/sitemap.xml

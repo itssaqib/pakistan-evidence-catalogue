@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Programmes &middot; Pakistan Evidence Catalogue</title>
+<meta name="description" content="All 67 staggered district-level programmes and natural experiments in Pakistan, filterable by domain, province, rollout unit and timing-data quality.">
+<meta name="author" content="Saqib Hussain">
+<meta property="og:title" content="Programmes — Pakistan Evidence Catalogue">
+<meta property="og:description" content="All 67 staggered district-level programmes and natural experiments in Pakistan, filterable by domain, province, rollout unit and timing-data quality.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%230B1B2E'/%3E%3Crect x='6' y='18' width='4' height='8' fill='%23fff'/%3E%3Crect x='12' y='13' width='4' height='13' fill='%23fff'/%3E%3Crect x='18' y='9' width='4' height='17' fill='%23B2432F'/%3E%3Crect x='24' y='6' width='2' height='20' fill='%23fff'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Public+Sans:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/main.css">
+</head>
+<body data-base="../">
+<a class="skip" href="#main">Skip to content</a>
+
+<div class="utility">
+  <div class="wrap shell">
+    <span>Staggered district-level programmes for causal impact evaluation</span>
+    <nav aria-label="Utility">
+      <a href="../about/">About</a>
+      <a href="../data/">Data</a>
+      <a href="../contribute/">Contribute</a>
+    </nav>
+  </div>
+</div>
+
+<header class="masthead">
+  <div class="wrap shell">
+    <a class="wordmark" href="../">
+      <span class="mark">PEC</span>
+      <span class="name">Pakistan Evidence Catalogue</span>
+    </a>
+    <button class="navtoggle" type="button" aria-expanded="false" aria-controls="mainnav">Menu</button>
+    <nav class="mainnav" id="mainnav" aria-label="Main"><a href="../programmes/" aria-current="page">Programmes</a><a href="../matrix/">Outcome matrix</a><a href="../datasets/">Datasets</a><a href="../methods/">Methods</a><a href="../data/">Download</a><a href="../contribute/">Contribute</a></nav>
+  </div>
+</header>
+
+<main id="main">
+
+<div class="wrap shell"><nav class="crumb" aria-label="Breadcrumb"><a href="../">Home</a><span>/</span>Programmes</nav></div>
+<div class="wrap shell">
+  <div class="pagehead">
+    <p class="eyebrow">Catalogue</p>
+    <h1>Programmes and natural experiments</h1>
+    <p class="lede">67 entries with district-level or finer rollout variation.
+    Filter on timing-data quality first &mdash; that column tells you whether the treatment date
+    can be pinned down with existing sources or needs a data-collection effort of its own.</p>
+  </div>
+
+  <div class="with-rail">
+    <aside>
+      <label for="search" class="eyebrow" style="display:block">Search</label>
+      <input class="searchbox" id="search" type="search" placeholder="e.g. land records, health insurance, flood"
+             autocomplete="off">
+      <div id="rail" class="rail" style="border:0;padding:0;margin-top:20px;position:static;max-height:none"></div>
+    </aside>
+
+    <div>
+      <div id="chips" class="chips"></div>
+      <div class="resultbar">
+        <span class="n" id="count"></span>
+        <span class="spacer"></span>
+        <button class="copybtn" id="dl-filtered" type="button">Download these rows (CSV)</button>
+      </div>
+      <div class="tablewrap">
+        <table class="data" id="ptable">
+          <caption>Click a column heading to sort. Timing quality indicates how reliably the
+          treatment date can be established from existing sources.</caption>
+          <thead><tr>
+            <th scope="col" class="sortable" data-sort="id">ID <span class="arrow">&#8597;</span></th>
+            <th scope="col" class="sortable" data-sort="programme">Programme <span class="arrow">&#8597;</span></th>
+            <th scope="col" class="sortable hide-sm" data-sort="domain">Domain <span class="arrow">&#8597;</span></th>
+            <th scope="col" class="sortable hide-sm hide-md" data-sort="start_year">Start <span class="arrow">&#8597;</span></th>
+            <th scope="col" class="sortable hide-sm" data-sort="unit_class">Unit <span class="arrow">&#8597;</span></th>
+            <th scope="col" class="sortable" data-sort="quality_rank" data-dir="desc">Timing quality <span class="arrow">&#8597;</span></th>
+            <th scope="col" class="sortable" data-sort="n_outcomes" data-dir="desc" style="text-align:right">Outcomes <span class="arrow">&#8597;</span></th>
+          </tr></thead>
+          <tbody id="pbody"><tr><td colspan="7"><div class="loading">Loading catalogue&hellip;</div></td></tr></tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+
+</main>
+
+<footer class="sitefoot">
+  <div class="wrap shell">
+    <div class="cols">
+      <div>
+        <h4>Catalogue</h4>
+        <ul>
+          <li><a href="../programmes/">All programmes</a></li>
+          <li><a href="../programmes/?quality_label=High">Ready to use</a></li>
+          <li><a href="../matrix/">Outcome matrix</a></li>
+          <li><a href="../outcomes/">Outcome taxonomy</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Data</h4>
+        <ul>
+          <li><a href="../data/">Downloads</a></li>
+          <li><a href="../data/programmes.csv">Programmes (CSV)</a></li>
+          <li><a href="../data/programme_outcome_matrix.csv">Matrix (CSV)</a></li>
+          <li><a href="../data/catalogue.json">Full catalogue (JSON)</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Methods</h4>
+        <ul>
+          <li><a href="../methods/">Identification playbook</a></li>
+          <li><a href="../methods/#estimators">Estimator choice</a></li>
+          <li><a href="../timing/">Finding treatment dates</a></li>
+          <li><a href="../caveats/">Standing caveats</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>About</h4>
+        <ul>
+          <li><a href="../about/">About the catalogue</a></li>
+          <li><a href="../contribute/">Contribute or correct</a></li>
+          <li><a href="mailto:saqibhussain@kdis.ac.kr">Contact</a></li>
+          <li><a href="https://itssaqib.github.io">Saqib Hussain</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="legal">
+      <p>Compiled and maintained by <a href="https://itssaqib.github.io">Saqib Hussain</a>. Released under a
+      Creative Commons Attribution 4.0 licence &mdash; reuse freely with attribution.</p>
+      <p><strong>Suggested citation:</strong> Hussain, S. (2026).
+      <em>Pakistan Evidence Catalogue: staggered district-level programmes for causal impact evaluation</em>. Version 1.0.0.</p>
+      <p>Version 1.0.0 &middot; released 2 November 2026 &middot; every date and claim in this
+      catalogue should be verified against the primary source named on the programme page
+      before use.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="../assets/js/site.js"></script>
+<script>
+PEC.load('programmes.json').then(function (progs) {
+  PEC.facetTable({
+    records: progs,
+    table: '#ptable', body: '#pbody', rail: '#rail', chips: '#chips',
+    count: '#count', search: '#search', colspan: 7, noun: 'programmes',
+    defaultSort: 'id',
+    download: '#dl-filtered',
+    downloadName: 'pec-programmes-filtered.csv',
+    downloadFields: ['id','programme','domain','agency','scope','start_year','rollout_window',
+      'rollout_unit','n_districts','staggering','assignment','timing_source','timing_quality',
+      'identification','threats','evidence','regions','unit_class','era','methods','n_outcomes'],
+    searchFields: ['id','programme','domain','agency','scope','rollout_window','rollout_unit',
+      'staggering','assignment','timing_source','identification','threats','evidence','methods','regions'],
+    facetDefs: [
+      { key: 'quality_label', label: 'Timing data quality', get: function (r) { return r.quality_label; },
+        order: ['High','Medium-High','Medium','Low-Medium'] },
+      { key: 'kind', label: 'Type', get: function (r) { return r.kind; } },
+      { key: 'domain', label: 'Domain', get: function (r) { return r.domain; } },
+      { key: 'regions', label: 'Province / region', get: function (r) { return r.regions; } },
+      { key: 'unit_class', label: 'Rollout unit', get: function (r) { return r.unit_class; } },
+      { key: 'era', label: 'Start period', get: function (r) { return r.era; },
+        order: ['Pre-2005','2005-2009','2010-2014','2015-2019','2020 onwards','Continuous'] },
+      { key: 'methods', label: 'Design suited to', get: function (r) { return r.methods; } }
+    ],
+    row: function (p) {
+      return '<tr>' +
+        '<td class="id">' + PEC.esc(p.id) + '</td>' +
+        '<td class="wide"><a class="rowtitle" href="' + p.slug + '.html">' + PEC.esc(p.programme) + '</a>' +
+          '<span class="rowsub">' + PEC.esc(p.agency) + '</span></td>' +
+        '<td class="hide-sm">' + PEC.esc(p.domain) + '</td>' +
+        '<td class="hide-sm hide-md id">' + PEC.esc(p.start_year) + '</td>' +
+        '<td class="hide-sm">' + PEC.esc(p.unit_class) + '</td>' +
+        '<td style="white-space:nowrap">' + PEC.meter(p.quality_rank, p.quality_label) + '</td>' +
+        '<td class="num">' + p.n_outcomes + '</td>' +
+      '</tr>';
+    }
+  });
+});
+</script>
+</body>
+</html>
