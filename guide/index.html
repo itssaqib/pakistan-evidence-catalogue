@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Guide | Pakistan Evidence Catalogue</title>
+<meta name="description" content="Identification playbook for staggered district-level designs in Pakistan: estimators, comparison groups, boundaries, clustering and reporting.">
+<meta name="author" content="Saqib Hussain">
+<meta name="theme-color" content="#ffffff">
+<link rel="canonical" href="https://itssaqib.github.io/pakistan-evidence-catalogue/guide/index.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Pakistan Evidence Catalogue">
+<meta property="og:title" content="Guide">
+<meta property="og:description" content="Identification playbook for staggered district-level designs in Pakistan: estimators, comparison groups, boundaries, clustering and reporting.">
+<meta property="og:image" content="https://itssaqib.github.io/pakistan-evidence-catalogue/assets/og/home.jpg">
+<meta property="og:url" content="https://itssaqib.github.io/pakistan-evidence-catalogue/guide/index.html">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23212934'/%3E%3Cpath d='M9 23V9h6.5a4.5 4.5 0 0 1 0 9H9' fill='none' stroke='%23c9a16e' stroke-width='2.4'/%3E%3C/svg%3E">
+<link rel="preload" href="../assets/fonts/jost-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../assets/css/site.css">
+
+</head>
+<body data-base="../" data-page="guide" >
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="hdr-top wrap">
+    <div class="hdr-left"><button class="icon-btn" type="button" data-open="menu" aria-label="Open menu" aria-controls="menu"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 7h18M3 12h18M3 17h18"/></svg></button></div>
+    <a class="wordmark" href="../index.html" aria-label="Pakistan Evidence Catalogue, home"><span class="wm-main">Pakistan Evidence</span><span class="wm-sub">Catalogue</span></a>
+    <div class="hdr-right">
+      <button class="icon-btn" type="button" data-open="search" aria-label="Search (press /)" aria-controls="search"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="M15.5 15.5L21 21"/></svg></button>
+      <a class="icon-btn" href="../shortlist/index.html" aria-label="Your shortlist"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.6l2.6 5.3 5.8.8-4.2 4.1 1 5.8L12 16.9l-5.2 2.7 1-5.8-4.2-4.1 5.8-.8z"/></svg><span class="count" data-shortlist-count></span></a>
+      <a class="icon-btn hide-sm" href="../toolkit/index.html#downloads" aria-label="Downloads"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v11M7 10l5 5 5-5M5 20h14"/></svg></a>
+    </div>
+  </div>
+  <nav class="hdr-nav" aria-label="Main"><a href="../programmes/index.html">Programmes</a><a href="../atlas/index.html">Atlas</a><a href="../insights/index.html">Insights</a><a href="../datasets/index.html">Datasets</a><a href="../toolkit/index.html">Toolkit</a><a href="../guide/index.html" aria-current="page">Guide</a><a href="../about/index.html">About</a></nav>
+</header>
+
+<div class="overlay" id="menu" role="dialog" aria-modal="true" aria-label="Menu">
+  <div class="wrap">
+    <div class="overlay-top"><button class="icon-btn" type="button" data-close aria-label="Close menu"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 5l14 14M19 5L5 19"/></svg></button>
+      <span class="wordmark"><span class="wm-main">Pakistan Evidence</span></span><span style="width:40px"></span></div>
+    <div class="menu-grid">
+      <nav class="menu-main" aria-label="Sections">
+        <a href="../index.html">Home</a>
+        <a href="../programmes/index.html">Programmes</a><a href="../atlas/index.html">Atlas</a><a href="../insights/index.html">Insights</a><a href="../datasets/index.html">Datasets</a><a href="../toolkit/index.html">Toolkit</a><a href="../guide/index.html">Guide</a><a href="../about/index.html">About</a>
+        <a href="../contribute/index.html">Contribute</a>
+      </nav>
+      <div class="menu-col">
+        <h4>Start here</h4>
+        <a href="../programmes/index.html?tq=High">Programmes with reliable rollout dates</a>
+        <a href="../programmes/index.html?tq=High&amp;evidence=Unstudied">Reliable dates, no causal study yet</a>
+        <a href="../programmes/index.html?map=Documented%20districts">Programmes with documented districts</a>
+        <a href="../atlas/index.html">District atlas</a>
+        <a href="../guide/index.html">Identification playbook</a>
+        <a href="../guide/caveats.html">Standing caveats</a>
+      </div>
+      <div class="menu-col">
+        <h4>Data and code</h4>
+        <a href="../toolkit/index.html#downloads">Downloads: CSV, JSON, Stata</a>
+        <a href="../toolkit/index.html#crosswalk">District crosswalk</a>
+        <a href="../toolkit/index.html#stata">Stata starter kit</a>
+        <a href="../toolkit/index.html#power">Power calculator</a>
+        <a href="../data/references.bib">References (BibTeX)</a>
+        <a href="https://github.com/itssaqib/pakistan-evidence-catalogue">Repository on GitHub</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="overlay" id="search" role="dialog" aria-modal="true" aria-label="Search">
+  <div class="wrap">
+    <div class="overlay-top"><span class="small muted">Search programmes, outcomes, datasets and pages</span>
+      <button class="icon-btn" type="button" data-close aria-label="Close search"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 5l14 14M19 5L5 19"/></svg></button></div>
+    <div class="search-box">
+      <label class="sr-only" for="search-input">Search the catalogue</label>
+      <input class="search-input" id="search-input" type="search" placeholder="Search the catalogue" autocomplete="off">
+      <p class="search-hint">Try a programme (Sehat), an outcome (stunting), a dataset (ASER) or an ID (P15). Arrow keys move, Enter opens.</p>
+    </div>
+    <ul class="search-results" id="search-results" aria-live="polite"></ul>
+  </div>
+</div>
+
+<main id="main">
+
+<div class="wrap"><div class="page-head"><h1>Guide</h1><p>Twelve things to settle before estimating anything with the variation in this catalogue. None of it is novel; all of it is routinely skipped.</p></div></div>
+<div class="wrap" style="display:flex;justify-content:center;gap:28px;padding-bottom:10px;font-size:13px;text-transform:uppercase;letter-spacing:.08em"><a href="index.html" style="border-bottom:2px solid var(--gold)">Methods</a><a href="timing.html">Treatment dates</a><a href="caveats.html">Caveats</a></div>
+<section class="section" style="padding-top:30px"><div class="wrap"><div class="guide-list"><div class="guide-item"><div><h3>Do not use two-way fixed effects on its own</h3><p>With variation in treatment timing and any heterogeneity in effects across cohorts, the TWFE coefficient is a weighted average of 2&times;2 comparisons in which already-treated units serve as controls for later-treated units, and some of those weights are negative. Report the Goodman-Bacon decomposition to show how much of the estimate comes from that forbidden comparison, then estimate with Callaway&ndash;Sant'Anna, Sun&ndash;Abraham, de&nbsp;Chaisemartin&ndash;D'Haultf&oelig;uille, or Borusyak&ndash;Jaravel&ndash;Spiess. Show that they agree; where they do not, say why.</p></div></div><div class="guide-item"><div><h3>Choose the comparison group deliberately</h3><p>Never-treated and not-yet-treated districts give different estimands. Most large Pakistani programmes eventually reach every district, so the never-treated group is often empty or unusual &mdash; typically Balochistan or ex-FATA, which differ on everything. Prefer not-yet-treated comparisons, and say so explicitly rather than letting the software choose.</p></div></div><div class="guide-item"><div><h3>Pre-trends are necessary but not sufficient</h3><p>Many programmes here were deliberately targeted at districts doing badly: low literacy, high stunting, low enrolment. That guarantees mean reversion, which can look like a treatment effect and can also produce clean-looking pre-trends when the reversion begins exactly at treatment. Plot the full event-study path, run the Rambachan&ndash;Roth honest DiD sensitivity analysis, and consider matching on baseline levels and trends before estimating.</p></div></div><div class="guide-item"><div><h3>Cluster and infer carefully</h3><p>Pakistan has roughly 130&ndash;160 districts depending on the year and definition &mdash; enough for district-clustered standard errors in most cases. But several entries here have fewer than 20 treated districts (Nashonuma phase 1, Safe Cities, Daanish Schools). For those, use wild cluster bootstrap or randomisation inference, and report the treated-cluster count prominently rather than in a footnote.</p></div></div><div class="guide-item"><div><h3>Get the boundaries right before anything else</h3><p>Harmonise every district to a constant-boundary definition, usually the 1998 or 2017 census set, and keep the crosswalk as a separate documented file. Ex-FATA needs its own decision: drop it, or treat the seven tribal districts as entering the panel in 2018. Whichever you choose, do it once and state it. A silent boundary change looks exactly like a treatment effect.</p></div></div><div class="guide-item"><div><h3>Watch for migration sorting</h3><p>District-level estimates assume the population is fixed. Conflict, floods, roads and university openings all move people. If treatment changes who lives in the district, the estimate confounds a treatment effect with a composition effect. Test it directly using the PSLM and census migration modules, and where sorting is present, report it as a finding rather than a caveat.</p></div></div><div class="guide-item"><div><h3>Treatment is often not absorbing</h3><p>Contracting out of basic health units was reversed and re-awarded. Saaf Pani was suspended mid-programme. Local governments were dissolved and restored. Standard staggered estimators assume an absorbing treatment. Where it is not, use the de&nbsp;Chaisemartin&ndash;D'Haultf&oelig;uille estimator, which handles switching in and out, and document every reversal date.</p></div></div><div class="guide-item"><div><h3>Distinguish the policy from its intensity</h3><p>Several entries are better modelled as a continuous dose &mdash; lady health worker coverage share, training slots per capita, broadband coverage share, flood inundation share &mdash; than as a binary switch. A binary indicator on a continuous treatment throws away most of the variation and usually attenuates the estimate.</p></div></div><div class="guide-item"><div><h3>Combine designs where the assignment rule allows it</h3><p>Several programmes have a rule-based eligibility threshold inside the district: the BISP proxy means test cut-off, the Punjab Education Foundation's Quality Assurance Test score, the Female School Stipend's 1998 literacy threshold, the NCOC's positivity thresholds. A within-district regression discontinuity alongside the across-district difference-in-differences tests the same hypothesis under different assumptions. Agreement between the two is far more persuasive than either alone.</p></div></div><div class="guide-item"><div><h3>Prefer sub-district treatment units when they exist</h3><p>Land records digitisation operated at tehsil level across 143 centres; health facility outsourcing and school handovers at facility and school level; filtration plants at plant level; broadband subsidies at project-lot level. Using the finer unit lets you include district &times; year fixed effects, which absorbs the district-level political and budgetary confounds a pure district design cannot. This is usually the single largest available improvement in credibility.</p></div></div><div class="guide-item"><div><h3>Frequency matters more than people expect</h3><p>Monthly facility data, quarterly district microfinance penetration, daily mandi prices, monthly nightlights and continuous citizen-feedback call records give far more power than the biennial household surveys, and let you separate anticipation from response. Where a high-frequency administrative outcome exists, make it the primary outcome and use the survey as corroboration.</p></div></div><div class="guide-item"><div><h3>Adjust for multiple hypotheses</h3><p>This catalogue lists many outcomes per programme by design. If you run all of them, adjust: pre-specify a small set of primary outcomes, group the rest into indices (Anderson sharpened q-values or Romano&ndash;Wolf stepdown), and report both adjusted and unadjusted p-values.</p></div></div></div></div></section>
+<section class="section section--mist"><div class="wrap">
+  <div class="coll-head"><h2>Packages</h2><p>Stata packages for each step. R equivalents: did, didimputation, fixest::sunab, HonestDiD, synthdid.</p><a class="coll-link" href="../toolkit/index.html#stata">Get the starter kit</a></div>
+  <div class="table-wrap"><table class="t"><thead><tr><th>Package</th><th>What it does</th><th>Install</th></tr></thead><tbody><tr><td style="white-space:nowrap">csdid, drdid</td><td>Callaway&ndash;Sant'Anna group-time average treatment effects with doubly robust estimation.</td><td class="small" style="white-space:nowrap">ssc install csdid, replace</td></tr><tr><td style="white-space:nowrap">did_imputation</td><td>Borusyak&ndash;Jaravel&ndash;Spiess imputation estimator &mdash; efficient under homogeneous trends.</td><td class="small" style="white-space:nowrap">ssc install did_imputation, replace</td></tr><tr><td style="white-space:nowrap">did_multiplegt_dyn</td><td>de&nbsp;Chaisemartin&ndash;D'Haultf&oelig;uille &mdash; the one to use when treatment switches off again.</td><td class="small" style="white-space:nowrap">ssc install did_multiplegt_dyn, replace</td></tr><tr><td style="white-space:nowrap">eventstudyinteract</td><td>Sun&ndash;Abraham interaction-weighted event study.</td><td class="small" style="white-space:nowrap">ssc install eventstudyinteract, replace</td></tr><tr><td style="white-space:nowrap">bacondecomp</td><td>Goodman-Bacon decomposition. A diagnostic to report, never your headline estimate.</td><td class="small" style="white-space:nowrap">ssc install bacondecomp, replace</td></tr><tr><td style="white-space:nowrap">honestdid</td><td>Rambachan&ndash;Roth sensitivity analysis for parallel trends.</td><td class="small" style="white-space:nowrap">ssc install honestdid, replace</td></tr><tr><td style="white-space:nowrap">reghdfe, ppmlhdfe</td><td>High-dimensional fixed effects; ppmlhdfe for count outcomes such as attacks or transactions.</td><td class="small" style="white-space:nowrap">ssc install reghdfe ppmlhdfe, replace</td></tr><tr><td style="white-space:nowrap">boottest</td><td>Wild cluster bootstrap &mdash; essential when few clusters are treated.</td><td class="small" style="white-space:nowrap">ssc install boottest, replace</td></tr><tr><td style="white-space:nowrap">sdid, synth_runner</td><td>Synthetic difference-in-differences and synthetic control for the small-N treated cases.</td><td class="small" style="white-space:nowrap">ssc install sdid synth_runner, replace</td></tr><tr><td style="white-space:nowrap">rdrobust</td><td>For the within-district discontinuity designs (PMT score, QAT score, literacy threshold).</td><td class="small" style="white-space:nowrap">ssc install rdrobust, replace</td></tr></tbody></table></div>
+</div></section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="f-wordmark">Pakistan Evidence Catalogue</div>
+    <ul class="f-links">
+      <li><a href="../programmes/index.html">Programmes</a></li><li><a href="../atlas/index.html">Atlas</a></li>
+      <li><a href="../insights/index.html">Insights</a></li><li><a href="../datasets/index.html">Datasets</a></li>
+      <li><a href="../toolkit/index.html">Toolkit</a></li><li><a href="../guide/index.html">Guide</a></li>
+      <li><a href="../contribute/index.html">Contribute</a></li><li><a href="../about/index.html">About</a></li>
+      <li><a href="https://github.com/itssaqib/pakistan-evidence-catalogue">GitHub</a></li>
+    </ul>
+    <p class="f-meta">Compiled by <a href="https://itssaqib.github.io">Saqib Hussain</a>. Released under CC BY 4.0. Version 2.0.0, 4 November 2026.
+    Suggested citation: Hussain, S. (2026). <em>Pakistan Evidence Catalogue: staggered district-level programmes for causal impact evaluation</em>, version 2.0.0.<br>
+    District boundaries from geoBoundaries (2019, public domain). Boundaries shown do not imply any judgment on the legal status of any territory; the status of Jammu and Kashmir is disputed.
+    Verify every date against the primary source named on each programme page before using it.</p>
+  </div>
+</footer>
+<script src="../data/catalogue.js"></script>
+<script src="../assets/js/core.js"></script>
+<script src="../assets/js/pages.js"></script>
+</body>
+</html>

@@ -11,14 +11,17 @@ desktop.ini
 *.code-workspace
 .idea/
 
-# Build / dependency artefacts
+# Build and dependency artefacts
 node_modules/
 __pycache__/
 *.py[cod]
 .venv/
 venv/
+paper/*.aux
+paper/*.log
+paper/*.out
 
-# Local scratch — keep these out of the published site
+# Local scratch
 *.log
 *.tmp
 shot-*.png

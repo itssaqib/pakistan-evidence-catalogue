@@ -3,247 +3,228 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>P55 — Punjab Kisan Card / e-Credit Scheme &middot; Pakistan Evidence Catalogue</title>
-<meta name="description" content="Punjab Kisan Card / e-Credit Scheme (P55): rollout District-wise enrolment of farmers from 2018-19; relaunched 2024-25. 4 outcomes mapped with datasets and sources for causal evaluation.">
+<title>P55 Punjab Kisan Card | Pakistan Evidence Catalogue</title>
+<meta name="description" content="Punjab Kisan Card / e-Credit Scheme: District-wise enrolment of farmers from 2018-19; relaunched 2024-25. Rollout map, identification, 4 outcomes with datasets, power and Stata code.">
 <meta name="author" content="Saqib Hussain">
-<meta property="og:title" content="P55 — Punjab Kisan Card / e-Credit Scheme — Pakistan Evidence Catalogue">
-<meta property="og:description" content="Punjab Kisan Card / e-Credit Scheme (P55): rollout District-wise enrolment of farmers from 2018-19; relaunched 2024-25. 4 outcomes mapped with datasets and sources for causal evaluation.">
+<meta name="theme-color" content="#ffffff">
+<link rel="canonical" href="https://itssaqib.github.io/pakistan-evidence-catalogue/programmes/p55.html">
 <meta property="og:type" content="website">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%230B1B2E'/%3E%3Crect x='6' y='18' width='4' height='8' fill='%23fff'/%3E%3Crect x='12' y='13' width='4' height='13' fill='%23fff'/%3E%3Crect x='18' y='9' width='4' height='17' fill='%23B2432F'/%3E%3Crect x='24' y='6' width='2' height='20' fill='%23fff'/%3E%3C/svg%3E">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Public+Sans:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../assets/css/main.css">
+<meta property="og:site_name" content="Pakistan Evidence Catalogue">
+<meta property="og:title" content="P55 Punjab Kisan Card">
+<meta property="og:description" content="Punjab Kisan Card / e-Credit Scheme: District-wise enrolment of farmers from 2018-19; relaunched 2024-25. Rollout map, identification, 4 outcomes with datasets, power and Stata code.">
+<meta property="og:image" content="https://itssaqib.github.io/pakistan-evidence-catalogue/assets/og/p55.jpg">
+<meta property="og:url" content="https://itssaqib.github.io/pakistan-evidence-catalogue/programmes/p55.html">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23212934'/%3E%3Cpath d='M9 23V9h6.5a4.5 4.5 0 0 1 0 9H9' fill='none' stroke='%23c9a16e' stroke-width='2.4'/%3E%3C/svg%3E">
+<link rel="preload" href="../assets/fonts/jost-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../assets/css/site.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "CreativeWork", "name": "P55 Punjab Kisan Card / e-Credit Scheme", "about": "Punjab Kisan Card / e-Credit Scheme", "isPartOf": {"@type": "Dataset", "name": "Pakistan Evidence Catalogue", "url": "https://itssaqib.github.io/pakistan-evidence-catalogue/"}, "url": "https://itssaqib.github.io/pakistan-evidence-catalogue/programmes/p55.html", "license": "https://creativecommons.org/licenses/by/4.0/", "author": {"@type": "Person", "name": "Saqib Hussain"}}</script>
 </head>
-<body data-base="../">
+<body data-base="../" data-page="programme" data-pid="P55">
 <a class="skip" href="#main">Skip to content</a>
 
-<div class="utility">
-  <div class="wrap shell">
-    <span>Staggered district-level programmes for causal impact evaluation</span>
-    <nav aria-label="Utility">
-      <a href="../about/">About</a>
-      <a href="../data/">Data</a>
-      <a href="../contribute/">Contribute</a>
-    </nav>
+<header class="site-header">
+  <div class="hdr-top wrap">
+    <div class="hdr-left"><button class="icon-btn" type="button" data-open="menu" aria-label="Open menu" aria-controls="menu"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 7h18M3 12h18M3 17h18"/></svg></button></div>
+    <a class="wordmark" href="../index.html" aria-label="Pakistan Evidence Catalogue, home"><span class="wm-main">Pakistan Evidence</span><span class="wm-sub">Catalogue</span></a>
+    <div class="hdr-right">
+      <button class="icon-btn" type="button" data-open="search" aria-label="Search (press /)" aria-controls="search"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="M15.5 15.5L21 21"/></svg></button>
+      <a class="icon-btn" href="../shortlist/index.html" aria-label="Your shortlist"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.6l2.6 5.3 5.8.8-4.2 4.1 1 5.8L12 16.9l-5.2 2.7 1-5.8-4.2-4.1 5.8-.8z"/></svg><span class="count" data-shortlist-count></span></a>
+      <a class="icon-btn hide-sm" href="../toolkit/index.html#downloads" aria-label="Downloads"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v11M7 10l5 5 5-5M5 20h14"/></svg></a>
+    </div>
+  </div>
+  <nav class="hdr-nav" aria-label="Main"><a href="../programmes/index.html" aria-current="page">Programmes</a><a href="../atlas/index.html">Atlas</a><a href="../insights/index.html">Insights</a><a href="../datasets/index.html">Datasets</a><a href="../toolkit/index.html">Toolkit</a><a href="../guide/index.html">Guide</a><a href="../about/index.html">About</a></nav>
+</header>
+
+<div class="overlay" id="menu" role="dialog" aria-modal="true" aria-label="Menu">
+  <div class="wrap">
+    <div class="overlay-top"><button class="icon-btn" type="button" data-close aria-label="Close menu"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 5l14 14M19 5L5 19"/></svg></button>
+      <span class="wordmark"><span class="wm-main">Pakistan Evidence</span></span><span style="width:40px"></span></div>
+    <div class="menu-grid">
+      <nav class="menu-main" aria-label="Sections">
+        <a href="../index.html">Home</a>
+        <a href="../programmes/index.html">Programmes</a><a href="../atlas/index.html">Atlas</a><a href="../insights/index.html">Insights</a><a href="../datasets/index.html">Datasets</a><a href="../toolkit/index.html">Toolkit</a><a href="../guide/index.html">Guide</a><a href="../about/index.html">About</a>
+        <a href="../contribute/index.html">Contribute</a>
+      </nav>
+      <div class="menu-col">
+        <h4>Start here</h4>
+        <a href="../programmes/index.html?tq=High">Programmes with reliable rollout dates</a>
+        <a href="../programmes/index.html?tq=High&amp;evidence=Unstudied">Reliable dates, no causal study yet</a>
+        <a href="../programmes/index.html?map=Documented%20districts">Programmes with documented districts</a>
+        <a href="../atlas/index.html">District atlas</a>
+        <a href="../guide/index.html">Identification playbook</a>
+        <a href="../guide/caveats.html">Standing caveats</a>
+      </div>
+      <div class="menu-col">
+        <h4>Data and code</h4>
+        <a href="../toolkit/index.html#downloads">Downloads: CSV, JSON, Stata</a>
+        <a href="../toolkit/index.html#crosswalk">District crosswalk</a>
+        <a href="../toolkit/index.html#stata">Stata starter kit</a>
+        <a href="../toolkit/index.html#power">Power calculator</a>
+        <a href="../data/references.bib">References (BibTeX)</a>
+        <a href="https://github.com/itssaqib/pakistan-evidence-catalogue">Repository on GitHub</a>
+      </div>
+    </div>
   </div>
 </div>
 
-<header class="masthead">
-  <div class="wrap shell">
-    <a class="wordmark" href="../">
-      <span class="mark">PEC</span>
-      <span class="name">Pakistan Evidence Catalogue</span>
-    </a>
-    <button class="navtoggle" type="button" aria-expanded="false" aria-controls="mainnav">Menu</button>
-    <nav class="mainnav" id="mainnav" aria-label="Main"><a href="../programmes/" aria-current="page">Programmes</a><a href="../matrix/">Outcome matrix</a><a href="../datasets/">Datasets</a><a href="../methods/">Methods</a><a href="../data/">Download</a><a href="../contribute/">Contribute</a></nav>
+<div class="overlay" id="search" role="dialog" aria-modal="true" aria-label="Search">
+  <div class="wrap">
+    <div class="overlay-top"><span class="small muted">Search programmes, outcomes, datasets and pages</span>
+      <button class="icon-btn" type="button" data-close aria-label="Close search"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 5l14 14M19 5L5 19"/></svg></button></div>
+    <div class="search-box">
+      <label class="sr-only" for="search-input">Search the catalogue</label>
+      <input class="search-input" id="search-input" type="search" placeholder="Search the catalogue" autocomplete="off">
+      <p class="search-hint">Try a programme (Sehat), an outcome (stunting), a dataset (ASER) or an ID (P15). Arrow keys move, Enter opens.</p>
+    </div>
+    <ul class="search-results" id="search-results" aria-live="polite"></ul>
   </div>
-</header>
+</div>
 
 <main id="main">
 
-<div class="wrap shell">
-  <nav class="crumb" aria-label="Breadcrumb">
-    <a href="../">Home</a><span>/</span><a href="./">Programmes</a><span>/</span>P55
-  </nav>
-</div>
-
-<div class="wrap shell">
-  <div class="pagehead">
-    <p class="eyebrow"><span class="mono">P55</span> &middot; Agriculture finance
-      &middot; Programme</p>
-    <h1>Punjab Kisan Card / e-Credit Scheme</h1>
-    <p class="lede">Phase-in. Rolled out by district
-      across 36, district-wise enrolment of farmers from 2018-19; relaunched 2024-25.</p>
-    <div style="margin-top:14px">
-      <span class="pill pill--open">Status: Open</span>
-      &nbsp;<span class="meter meter--2" role="img" aria-label="Timing data quality: Medium-High timing data"><i class="on"></i><i class="on"></i><i class=""></i></span><span class="meter-label">Medium-High timing data</span>
+<section class="stage p-stage">
+  <div class="wrap">
+    <div class="p-stage-grid">
+      <div>
+        <nav class="crumbs" aria-label="Breadcrumb"><a href="../index.html">Home</a><span>/</span><a href="index.html">Programmes</a><span>/</span>P55</nav>
+        <div class="p-kicker">P55 &nbsp; Finance &amp; markets</div>
+        <h1 class="p-title">Punjab Kisan Card</h1>
+        <p class="p-lede">Punjab Kisan Card / e-Credit Scheme. District-wise enrolment of farmers from 2018-19; relaunched 2024-25.</p>
+        <p class="claimed" id="claim-status" hidden></p>
+        <div class="p-actions">
+          <button class="btn" type="button" data-star="P55" aria-pressed="false"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.6l2.6 5.3 5.8.8-4.2 4.1 1 5.8L12 16.9l-5.2 2.7 1-5.8-4.2-4.1 5.8-.8z"/></svg><span class="lbl">Save to shortlist</span></button>
+          <a class="btn btn--line" href="#stata">Starter do-file</a>
+          <a class="btn btn--line" href="https://github.com/itssaqib/pakistan-evidence-catalogue/issues/new?template=claim.yml&title=[Claim]%20P55%20Punjab%20Kisan%20Card" rel="noopener">Claim this idea</a>
+        </div>
+      </div>
+      <div class="p-map">
+        <canvas id="p-map" aria-label="Map of Punjab Kisan Card: documented rollout districts and stated scope"></canvas>
+        <div class="map-legend" id="p-legend"></div>
+        <button class="btn btn--sm btn--line" id="p-replay" type="button" hidden style="margin:0 0 26px">Replay rollout</button>
+      </div>
     </div>
   </div>
-
-  <div class="grid grid--sidebar">
+</section>
+<div class="wrap">
+  <div class="facts">
+    <div class="fact"><div class="k">Rollout</div><div class="v">2018–2024<small>Punjab</small></div></div>
+    <div class="fact"><div class="k">Unit</div><div class="v">District<small>36</small></div></div>
+    <div class="fact"><div class="k">Timing data</div><div class="v"><span class="meter" aria-hidden="true"><i class="on"></i><i class="on"></i><i class=""></i></span> <span class="ml">Medium-high</span><small>Source named below</small></div></div>
+    <div class="fact"><div class="k">Evidence</div><div class="v" style="font-size:17px"><span class="ev" data-s="Unstudied" style="font-size:17px;color:#000">Unstudied</span></div></div>
+    <div class="fact"><div class="k">Outcomes</div><div class="v">4<small>mapped to datasets</small></div></div>
+  </div>
+  <div class="p-body">
+    <nav class="toc" aria-label="On this page">
+      <a href="#overview">Overview</a><a href="#rollout">Rollout</a><a href="#identification">Identification</a><a href="#outcomes">Outcomes</a>
+      <a href="#coverage">Data coverage</a><a href="#power">Power</a><a href="#stata">Stata</a><a href="#cite">Cite and contribute</a>
+    </nav>
     <div>
-      <h2>Rollout</h2>
-      <svg class="timeline" id="tl" aria-label="Rollout window"></svg>
-      <p class="small muted" style="margin-top:-6px">District-wise enrolment of farmers from 2018-19; relaunched 2024-25</p>
-
-      <dl class="meta" style="margin-top:20px">
-        <dt>Implementing agency</dt><dd>Agriculture Department, Punjab with Bank of Punjab</dd>
-        <dt>Geographic scope</dt><dd>Punjab<div style="margin-top:6px"><span class="tag">Punjab</span></div></dd>
-        <dt>Start year</dt><dd class="mono">2018</dd>
-        <dt>Rollout window</dt><dd>District-wise enrolment of farmers from 2018-19; relaunched 2024-25</dd>
-        <dt>Unit of rollout</dt><dd>District (enrolment drive dates)</dd>
-        <dt>Treated units</dt><dd>36</dd>
-        <dt>Type of staggering</dt><dd>Phase-in</dd>
-        <dt>Assignment rule</dt><dd>Land records verification through LRMIS - so eligibility is mechanically linked to digitisation</dd>
-        <dt>Designs it suits</dt><dd><span class="tag">IV / first stage</span><span class="tag">Staggered DiD</span></dd>
-      </dl>
-
-      <h2 style="margin-top:36px">Treatment timing</h2>
-      <div class="box">
-        <p class="eyebrow">Where to get district-by-date data</p>
-        <p style="margin-bottom:10px">Punjab Agriculture Department and Bank of Punjab MIS; LRMIS linkage records</p>
-        <p class="small muted" style="margin:0">Assessed quality: <strong>Medium-High</strong>.
-        Verify against the primary document before use — dates in press coverage and programme
-        retrospectives frequently disagree by a year.
-        <a href="../timing/">How to obtain timing data &rarr;</a></p>
-      </div>
-
-      <h2 style="margin-top:36px">Identification</h2>
-      <div class="prose"><p>The eligibility rule (a verified digital land record) makes LRMIS completion a first stage for Kisan Card access. That is an unusually clean two-step design.</p></div>
-
-      <div class="callout">
-        <p class="eyebrow">Main threats to identification</p>
-        <p style="margin:0">Only landowners are eligible, so tenants are mechanically excluded - a distributional outcome in itself</p>
-      </div>
-
-      <h2 style="margin-top:36px">Existing evidence</h2>
-      <div class="prose"><p>None known</p></div>
-
-      <h2 style="margin-top:36px">Outcomes and data (4)</h2>
-      <p class="small muted" style="max-width:52em">Each row pairs an outcome with the mechanism
-      that would produce it, the expected direction, and a dataset that measures it at a
-      compatible resolution. Expected signs are hypotheses, not findings.</p>
-      <div class="tablewrap" style="margin-top:16px">
-        <table class="data">
-          <caption>4 outcomes mapped for P55</caption>
-          <thead><tr>
-            <th scope="col">ID</th><th scope="col">Outcome</th>
-            <th scope="col">Mechanism / hypothesis</th>
-            <th scope="col">Expected</th>
-            <th scope="col">Dataset</th>
-            <th scope="col">Feasibility note</th>
-          </tr></thead>
-          <tbody><tr>
-          <td class="id">O-FIN-04</td>
-          <td class="wide"><strong>Credit disbursed to smallholders</strong>
-            <span class="rowsub">Financial inclusion</span></td>
-          <td class="wide">Digitised land records enable verification</td>
-          <td style="white-space:nowrap"><span class="pill pill--open">+</span></td>
-          <td class="wide"><a href="../datasets/#SBP_CRED">Banking Statistics of Pakistan / district-wise credit &amp; deposits</a>; Bank of Punjab MIS</td>
-          <td class="wide">LRMIS completion is the natural first stage - a two-step design</td>
-        </tr><tr>
-          <td class="id">O-AGR-04</td>
-          <td class="wide"><strong>Subsidised input purchase</strong>
-            <span class="rowsub">Agriculture</span></td>
-          <td class="wide">The card is redeemable for inputs</td>
-          <td style="white-space:nowrap"><span class="pill pill--open">+</span></td>
-          <td class="wide"><a href="../datasets/#PSLM">PSLM / HIES (Pakistan Social &amp; Living Standards Measurement Survey)</a>; <a href="../datasets/#AGCEN">Agricultural Census &amp; Mouza Census</a>; Punjab Agriculture MIS</td>
-          <td class="wide">Direct effect</td>
-        </tr><tr>
-          <td class="id">O-AGR-01</td>
-          <td class="wide"><strong>Yields</strong>
-            <span class="rowsub">Agriculture</span></td>
-          <td class="wide">Input use</td>
-          <td style="white-space:nowrap"><span class="pill pill--open">+</span></td>
-          <td class="wide"><a href="../datasets/#CROPREP">Crop Reporting Service district crop area &amp; yield</a>; <a href="../datasets/#MODIS">MODIS / Sentinel-2 vegetation, land cover and cropland products</a></td>
-          <td class="wide">Second stage</td>
-        </tr><tr>
-          <td class="id">O-AGR-05</td>
-          <td class="wide"><strong>Tenant exclusion from credit</strong>
-            <span class="rowsub">Agriculture</span></td>
-          <td class="wide">Only verified owners qualify</td>
-          <td style="white-space:nowrap"><span class="pill pill--active">- for tenants</span></td>
-          <td class="wide"><a href="../datasets/#AGCEN">Agricultural Census &amp; Mouza Census</a>; <a href="../datasets/#PSLM">PSLM / HIES (Pakistan Social &amp; Living Standards Measurement Survey)</a>; <a href="../datasets/#PLRA">Punjab Land Records Authority MIS (fard, mutations, ARC transactions)</a></td>
-          <td class="wide">A distributional consequence of formalisation worth documenting</td>
-        </tr></tbody>
-        </table>
-      </div>
-
-      <div class="pager"><a href="p54.html"><span class="dir">Previous</span>P54 — SBP Credit Guarantee Scheme and agricultural credit targets</a><a href="p56.html" style="text-align:right"><span class="dir">Next</span>P56 — Prime Minister's Kamyab Jawan Youth Entrepreneurship Scheme</a></div>
+      <section class="p-sec" id="overview">
+        <h2>Overview</h2>
+        <p class="lead">The eligibility rule (a verified digital land record) makes LRMIS completion a first stage for Kisan Card access. That is an unusually clean two-step design.</p>
+        <dl class="dl">
+          <dt>Implementing agency</dt><dd>Agriculture Department, Punjab with Bank of Punjab</dd>
+          <dt>Scope</dt><dd>Punjab</dd>
+          <dt>Rollout window</dt><dd>District-wise enrolment of farmers from 2018-19; relaunched 2024-25</dd>
+          <dt>Unit of rollout</dt><dd>District (enrolment drive dates)</dd>
+          <dt>Type of staggering</dt><dd>Phase-in</dd>
+          <dt>Assignment rule</dt><dd>Land records verification through LRMIS - so eligibility is mechanically linked to digitisation</dd>
+          <dt>Designs it suits</dt><dd>Staggered DiD, Instrumental variables</dd>
+        </dl>
+        
+      </section>
+      <section class="p-sec" id="rollout">
+        <h2>Rollout</h2>
+        <p class="lead" style="font-size:18px">No district-by-date list has been documented for this entry yet. The map shows its stated scope only.</p>
+        <div class="note"><div class="k">Where to get district-by-date data</div><p>Punjab Agriculture Department and Bank of Punjab MIS; LRMIS linkage records</p>
+        <p class="small muted">Assessed quality: Medium-High. <a class="link" href="../guide/timing.html">How to obtain timing data</a></p></div>
+        <p class="small" style="margin-top:18px"><a class="link" href="../atlas/index.html?p=P55">Open this programme in the atlas</a></p>
+      </section>
+      <section class="p-sec" id="identification">
+        <h2>Identification</h2>
+        <h3>Main threats</h3><p style="max-width:44rem">Only landowners are eligible, so tenants are mechanically excluded - a distributional outcome in itself</p>
+        <h3 style="margin-top:30px">Existing evidence</h3><p style="max-width:44rem">None known</p>
+        
+      </section>
+      <section class="p-sec" id="outcomes">
+        <h2>Outcomes and data</h2>
+        <p class="muted" style="max-width:44rem">Each row pairs an outcome with the mechanism that would move it, the direction expected, and a dataset at a compatible resolution. Directions are hypotheses, not findings.</p>
+        <div class="table-wrap" style="margin-top:20px"><table class="t otable"><thead><tr><th>ID</th><th>Outcome</th><th>Mechanism</th><th>Expected</th><th>Dataset and feasibility</th></tr></thead><tbody><tr><td class="id">O-FIN-04</td><td class="wide"><span class="ttl">Credit disbursed to smallholders</span><span class="sub">Financial inclusion</span></td><td>Digitised land records enable verification</td><td><span class="sign" data-g="Increase">+</span></td><td class="wide"><a class="link" href="../datasets/index.html#ds-SBP_CRED">Banking Statistics of Pakistan / district-wise credit &amp; deposits</a><span class="feas">LRMIS completion is the natural first stage - a two-step design</span></td></tr><tr><td class="id">O-AGR-04</td><td class="wide"><span class="ttl">Subsidised input purchase</span><span class="sub">Agriculture</span></td><td>The card is redeemable for inputs</td><td><span class="sign" data-g="Increase">+</span></td><td class="wide"><a class="link" href="../datasets/index.html#ds-PSLM">PSLM / HIES</a>; <a class="link" href="../datasets/index.html#ds-AGCEN">Agricultural Census &amp; Mouza Census</a><span class="feas">Direct effect</span></td></tr><tr><td class="id">O-AGR-01</td><td class="wide"><span class="ttl">Yields</span><span class="sub">Agriculture</span></td><td>Input use</td><td><span class="sign" data-g="Increase">+</span></td><td class="wide"><a class="link" href="../datasets/index.html#ds-CROPREP">Crop Reporting Service district crop area &amp; yield</a>; <a class="link" href="../datasets/index.html#ds-MODIS">MODIS / Sentinel-2 vegetation, land cover and cropland products</a><span class="feas">Second stage</span></td></tr><tr><td class="id">O-AGR-05</td><td class="wide"><span class="ttl">Tenant exclusion from credit</span><span class="sub">Agriculture</span></td><td>Only verified owners qualify</td><td><span class="sign" data-g="Decrease">- for tenants</span></td><td class="wide"><a class="link" href="../datasets/index.html#ds-AGCEN">Agricultural Census &amp; Mouza Census</a>; <a class="link" href="../datasets/index.html#ds-PSLM">PSLM / HIES</a>; <a class="link" href="../datasets/index.html#ds-PLRA">Punjab Land Records Authority MIS</a><span class="feas">A distributional consequence of formalisation worth documenting</span></td></tr></tbody></table></div>
+      </section>
+      <section class="p-sec" id="coverage">
+        <h2>Data coverage</h2>
+        <p class="muted" style="max-width:44rem">Survey waves before, during and after the rollout window (2018–2024, shaded). Waves before the first phase identify pre-trends; waves inside the window carry the staggered comparison.</p>
+        <div class="chart-block"><div class="chart" id="p-cal"></div>
+          <div class="chart-legend"><span><i class="sw" style="background:var(--slate);border-radius:50%"></i>Survey wave</span><span><i class="sw" style="background:var(--slate);opacity:.22"></i>Continuous series</span><span><i class="sw" style="background:var(--gold);opacity:.4"></i>Rollout window</span></div>
+          <p style="margin-top:12px"><button class="textbtn" type="button" data-table-toggle>Show as table</button></p><div class="chart-table"></div></div>
+      </section>
+      <section class="p-sec" id="power">
+        <h2>Power</h2>
+        <div class="calc">
+          <form class="calc-form" id="mde" onsubmit="return false">
+            <div class="field"><label for="mJ">Districts</label><input id="mJ" name="J" type="number" min="3" value="34"><small>Constant 2019 boundaries in scope</small></div>
+            <div class="field"><label for="mP">Share treated</label><input id="mP" name="P" type="number" min="0.02" max="0.98" step="0.01" value="0.5"><small>0.5 suits a not-yet-treated comparison</small></div>
+            <div class="field"><label for="mm">Pre periods</label><input id="mm" name="m" type="number" min="1" value="3"></div>
+            <div class="field"><label for="mr">Post periods</label><input id="mr" name="r" type="number" min="1" value="3"></div>
+            <div class="field"><label for="mphi">Serial correlation</label><input id="mphi" name="phi" type="number" min="0" max="0.95" step="0.05" value="0.4"><small>AR(1) residual correlation</small></div>
+            <div class="field"><label for="ma">Significance</label><select id="ma" name="alpha"><option value="0.05">5%</option><option value="0.1">10%</option><option value="0.01">1%</option></select></div>
+            <div class="field"><label for="mpw">Power</label><select id="mpw" name="power"><option value="0.8">80%</option><option value="0.9">90%</option></select></div>
+          </form>
+          <div class="calc-out" id="mde-out" aria-live="polite"><div class="big">—</div><div class="unit">minimum detectable effect, in residual standard deviations</div><p class="expl"></p><p class="formula"></p></div>
+        </div>
+        <p class="small muted" style="margin-top:16px;max-width:44rem">Difference-in-differences variance with serially correlated errors (Burlig, Preonas and Woerman 2020), AR(1) residuals, two-group equivalent. Heterogeneity-robust staggered estimators usually need somewhat more.</p>
+      </section>
+      <section class="p-sec" id="stata">
+        <h2>Stata</h2>
+        <p class="muted" style="max-width:44rem">A starter do-file for this entry: the harmonisation step, the robust estimators its design calls for, the sensitivity check and the power calculation.</p>
+        <div class="code"><div class="code-bar"><span>p55_starter.do</span><span class="actions"><button class="btn btn--sm btn--line" type="button" data-copy="#dofile">Copy</button><button class="btn btn--sm" type="button" id="dl-do">Download</button></span></div><pre id="dofile"></pre></div>
+      </section>
+      <section class="p-sec" id="cite">
+        <h2>Cite and contribute</h2>
+        <div class="two-col">
+          <div><h3>Cite this entry</h3><div class="code" style="margin-top:8px"><pre id="cite-txt" style="white-space:pre-wrap;font-family:inherit;font-size:14px">Hussain, S. (2026). Punjab Kisan Card / e-Credit Scheme (P55). Pakistan Evidence Catalogue, version 2.0.0. https://itssaqib.github.io/pakistan-evidence-catalogue/programmes/p55.html</pre></div>
+            <p style="margin-top:12px"><button class="textbtn" type="button" data-copy="#cite-txt">Copy citation</button></p></div>
+          <div><h3>Working on it, or found an error?</h3><p>Claiming marks the entry on this page so others do not duplicate the work. Corrections with a primary source are the most useful contribution.</p>
+            <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:16px"><a class="btn" href="https://github.com/itssaqib/pakistan-evidence-catalogue/issues/new?template=claim.yml&title=[Claim]%20P55%20Punjab%20Kisan%20Card" rel="noopener">Claim P55</a><a class="btn btn--line" href="https://github.com/itssaqib/pakistan-evidence-catalogue/issues/new?template=correction.yml&title=[Correction]%20P55%20Punjab%20Kisan%20Card" rel="noopener">Suggest a correction</a></div>
+            <p class="small muted" style="margin-top:12px">Both open a GitHub form. No account? Email <a class="link" href="mailto:saqibhussain@kdis.ac.kr?subject=P55%20Punjab%20Kisan%20Card">saqibhussain@kdis.ac.kr</a>.</p></div>
+        </div>
+      </section>
     </div>
-
-    <aside class="sidebar">
-      <div class="box box--paper">
-        <h3>At a glance</h3>
-        <ul class="plain small">
-          <li><strong>Timing quality</strong><br><span class="meter meter--2" role="img" aria-label="Timing data quality: Medium-High"><i class="on"></i><i class="on"></i><i class=""></i></span><span class="meter-label">Medium-High</span></li>
-          <li><strong>Outcomes mapped</strong><br><span class="mono">4</span></li>
-          <li><strong>Datasets involved</strong><br><span class="mono">6</span></li>
-          <li><strong>Rollout unit</strong><br>District</li>
-        </ul>
-      </div>
-
-      <div class="box">
-        <h3>Claim this idea</h3>
-        <p class="small">If you are working on this, say so and it will be marked here, so others
-        do not duplicate the effort. Open a repository issue or send an email.</p>
-        <p><a class="btn btn--accent btn--sm"
-          href="mailto:saqibhussain@kdis.ac.kr?subject=Claiming%20P55%20—%20Punjab Kisan Card / e-Credit Scheme&amp;body=Name%3A%0AAffiliation%3A%0AExpected%20timeline%3A%0ANotes%3A">Claim P55</a></p>
-        <p class="small" style="margin-top:10px"><a href="../contribute/">Suggest a correction</a></p>
-      </div>
-
-      <div class="box">
-        <h3>Datasets used here</h3>
-        <ul class="plain small"><li><a href="../datasets/#AGCEN">Agricultural Census &amp; Mouza Census</a><span class="rowsub">PBS &middot; Yes</span></li><li><a href="../datasets/#SBP_CRED">Banking Statistics of Pakistan / district-wise credit &amp; deposits</a><span class="rowsub">State Bank of Pakistan &middot; Yes</span></li><li><a href="../datasets/#CROPREP">Crop Reporting Service district crop area &amp; yield</a><span class="rowsub">Agriculture Department, Punjab / Sindh CRS &middot; Yes</span></li><li><a href="../datasets/#MODIS">MODIS / Sentinel-2 vegetation, land cover and cropland products</a><span class="rowsub">NASA / ESA (via Google Earth Engine) &middot; Aggregate to district</span></li><li><a href="../datasets/#PSLM">PSLM / HIES (Pakistan Social &amp; Living Standards Measurement Survey)</a><span class="rowsub">Pakistan Bureau of Statistics (PBS) &middot; Yes (district code in microdata)</span></li><li><a href="../datasets/#PLRA">Punjab Land Records Authority MIS (fard, mutations, ARC transactions)</a><span class="rowsub">PLRA / Board of Revenue Punjab &middot; Yes</span></li></ul>
-      </div>
-
-      <div class="box">
-        <h3>Cite this entry</h3>
-        <div class="cite" id="cite">Hussain, S. (2026). &quot;Punjab Kisan Card / e-Credit Scheme&quot; (P55), Pakistan Evidence Catalogue, version 1.0.0.</div>
-        <button class="copybtn" type="button" data-copy="#cite">Copy citation</button>
-      </div>
-    </aside>
   </div>
 </div>
+<section class="section section--line"><div class="wrap">
+  <div class="coll-head"><h2>Related entries</h2></div>
+  <div class="rail-wrap"><button class="rail-arrow" data-dir="-1" type="button" aria-label="Scroll Related entries left"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg></button><div class="rail" role="list" aria-label="Related entries"><a class="tile " href="../programmes/p35.html" data-pid="P35" data-macro="Governance &amp; state capacity"><div class="tile-media"><canvas aria-hidden="true"></canvas><span class="tile-id">P35</span><span class="tile-badge">2011–16</span><button class="tile-star" type="button" data-star="P35" aria-pressed="false" aria-label="Save P35 to shortlist"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.6l2.6 5.3 5.8.8-4.2 4.1 1 5.8L12 16.9l-5.2 2.7 1-5.8-4.2-4.1 5.8-.8z"/></svg></button></div><div class="tile-title">Punjab land records (LRMIS)</div></a><a class="tile " href="../programmes/p36.html" data-pid="P36" data-macro="Governance &amp; state capacity"><div class="tile-media"><canvas aria-hidden="true"></canvas><span class="tile-id">P36</span><span class="tile-badge">2016</span><button class="tile-star" type="button" data-star="P36" aria-pressed="false" aria-label="Save P36 to shortlist"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.6l2.6 5.3 5.8.8-4.2 4.1 1 5.8L12 16.9l-5.2 2.7 1-5.8-4.2-4.1 5.8-.8z"/></svg></button></div><div class="tile-title">Punjab e-Stamping</div></a><a class="tile " href="../programmes/p54.html" data-pid="P54" data-macro="Finance &amp; markets"><div class="tile-media"><canvas aria-hidden="true"></canvas><span class="tile-id">P54</span><span class="tile-badge">2010</span><button class="tile-star" type="button" data-star="P54" aria-pressed="false" aria-label="Save P54 to shortlist"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.6l2.6 5.3 5.8.8-4.2 4.1 1 5.8L12 16.9l-5.2 2.7 1-5.8-4.2-4.1 5.8-.8z"/></svg></button></div><div class="tile-title">Agricultural credit targets</div></a><a class="tile " href="../programmes/p53.html" data-pid="P53" data-macro="Finance &amp; markets"><div class="tile-media"><canvas aria-hidden="true"></canvas><span class="tile-id">P53</span><span class="tile-badge">2007</span><button class="tile-star" type="button" data-star="P53" aria-pressed="false" aria-label="Save P53 to shortlist"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.6l2.6 5.3 5.8.8-4.2 4.1 1 5.8L12 16.9l-5.2 2.7 1-5.8-4.2-4.1 5.8-.8z"/></svg></button></div><div class="tile-title">Microfinance expansion</div></a><a class="tile " href="../programmes/p56.html" data-pid="P56" data-macro="Finance &amp; markets"><div class="tile-media"><canvas aria-hidden="true"></canvas><span class="tile-id">P56</span><span class="tile-badge">2019</span><button class="tile-star" type="button" data-star="P56" aria-pressed="false" aria-label="Save P56 to shortlist"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.6l2.6 5.3 5.8.8-4.2 4.1 1 5.8L12 16.9l-5.2 2.7 1-5.8-4.2-4.1 5.8-.8z"/></svg></button></div><div class="tile-title">Kamyab Jawan loans</div></a><a class="tile " href="../programmes/p10.html" data-pid="P10" data-macro="Social protection"><div class="tile-media"><canvas aria-hidden="true"></canvas><span class="tile-id">P10</span><span class="tile-badge">2019–22</span><button class="tile-star" type="button" data-star="P10" aria-pressed="false" aria-label="Save P10 to shortlist"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.6l2.6 5.3 5.8.8-4.2 4.1 1 5.8L12 16.9l-5.2 2.7 1-5.8-4.2-4.1 5.8-.8z"/></svg></button></div><div class="tile-title">Ehsaas interest-free loans</div></a></div><button class="rail-arrow" data-dir="1" type="button" aria-label="Scroll Related entries right"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg></button></div>
+  <div style="display:flex;justify-content:space-between;gap:20px;margin-top:56px;font-size:14px">
+    <a href="p54.html"><span class="muted small" style="display:block">Previous</span>P54 Agricultural credit targets</a>
+    <a href="p56.html" style="text-align:right"><span class="muted small" style="display:block">Next</span>P56 Kamyab Jawan loans</a>
+  </div>
+</div></section>
 
 </main>
 
-<footer class="sitefoot">
-  <div class="wrap shell">
-    <div class="cols">
-      <div>
-        <h4>Catalogue</h4>
-        <ul>
-          <li><a href="../programmes/">All programmes</a></li>
-          <li><a href="../programmes/?quality_label=High">Ready to use</a></li>
-          <li><a href="../matrix/">Outcome matrix</a></li>
-          <li><a href="../outcomes/">Outcome taxonomy</a></li>
-        </ul>
-      </div>
-      <div>
-        <h4>Data</h4>
-        <ul>
-          <li><a href="../data/">Downloads</a></li>
-          <li><a href="../data/programmes.csv">Programmes (CSV)</a></li>
-          <li><a href="../data/programme_outcome_matrix.csv">Matrix (CSV)</a></li>
-          <li><a href="../data/catalogue.json">Full catalogue (JSON)</a></li>
-        </ul>
-      </div>
-      <div>
-        <h4>Methods</h4>
-        <ul>
-          <li><a href="../methods/">Identification playbook</a></li>
-          <li><a href="../methods/#estimators">Estimator choice</a></li>
-          <li><a href="../timing/">Finding treatment dates</a></li>
-          <li><a href="../caveats/">Standing caveats</a></li>
-        </ul>
-      </div>
-      <div>
-        <h4>About</h4>
-        <ul>
-          <li><a href="../about/">About the catalogue</a></li>
-          <li><a href="../contribute/">Contribute or correct</a></li>
-          <li><a href="mailto:saqibhussain@kdis.ac.kr">Contact</a></li>
-          <li><a href="https://itssaqib.github.io">Saqib Hussain</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="legal">
-      <p>Compiled and maintained by <a href="https://itssaqib.github.io">Saqib Hussain</a>. Released under a
-      Creative Commons Attribution 4.0 licence &mdash; reuse freely with attribution.</p>
-      <p><strong>Suggested citation:</strong> Hussain, S. (2026).
-      <em>Pakistan Evidence Catalogue: staggered district-level programmes for causal impact evaluation</em>. Version 1.0.0.</p>
-      <p>Version 1.0.0 &middot; released 2 November 2026 &middot; every date and claim in this
-      catalogue should be verified against the primary source named on the programme page
-      before use.</p>
-    </div>
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="f-wordmark">Pakistan Evidence Catalogue</div>
+    <ul class="f-links">
+      <li><a href="../programmes/index.html">Programmes</a></li><li><a href="../atlas/index.html">Atlas</a></li>
+      <li><a href="../insights/index.html">Insights</a></li><li><a href="../datasets/index.html">Datasets</a></li>
+      <li><a href="../toolkit/index.html">Toolkit</a></li><li><a href="../guide/index.html">Guide</a></li>
+      <li><a href="../contribute/index.html">Contribute</a></li><li><a href="../about/index.html">About</a></li>
+      <li><a href="https://github.com/itssaqib/pakistan-evidence-catalogue">GitHub</a></li>
+    </ul>
+    <p class="f-meta">Compiled by <a href="https://itssaqib.github.io">Saqib Hussain</a>. Released under CC BY 4.0. Version 2.0.0, 4 November 2026.
+    Suggested citation: Hussain, S. (2026). <em>Pakistan Evidence Catalogue: staggered district-level programmes for causal impact evaluation</em>, version 2.0.0.<br>
+    District boundaries from geoBoundaries (2019, public domain). Boundaries shown do not imply any judgment on the legal status of any territory; the status of Jammu and Kashmir is disputed.
+    Verify every date against the primary source named on each programme page before using it.</p>
   </div>
 </footer>
-
-<script src="../assets/js/site.js"></script>
-<script>
-PEC.timeline(document.getElementById('tl'), {"rollout_window": "District-wise enrolment of farmers from 2018-19; relaunched 2024-25", "start_year": "2018"});
-</script>
+<script src="../data/catalogue.js"></script>
+<script src="../data/geo.js"></script>
+<script src="../assets/js/core.js"></script>
+<script src="../assets/js/map.js"></script>
+<script src="../assets/js/charts.js"></script>
+<script src="../assets/js/pages.js"></script>
 </body>
 </html>

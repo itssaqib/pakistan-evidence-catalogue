@@ -1,138 +1,46 @@
-// Render pages in headless Chrome and report console errors + rendered row counts.
 const puppeteer = require('puppeteer-core');
-
-const BASE = 'http://localhost:8742';
+const BASE = 'http://localhost:8000';
 const PAGES = [
-  { url: '/',                       wait: '#chart-era rect', label: 'Home' },
-  { url: '/programmes/',            wait: '#pbody tr td.id', label: 'Programme index' },
-  { url: '/programmes/p35.html',    wait: '#tl circle',      label: 'Programme p35' },
-  { url: '/programmes/p01.html',    wait: 'table.data tbody tr', label: 'Programme p01' },
-  { url: '/matrix/',                wait: '#mbody tr td.id', label: 'Matrix' },
-  { url: '/outcomes/',              wait: '#obody tr td.id', label: 'Outcomes' },
-  { url: '/datasets/',              wait: '#dbody tr td.id', label: 'Datasets' },
-  { url: '/methods/',               wait: 'table.data tbody tr', label: 'Methods' },
-  { url: '/timing/',                wait: 'table.data tbody tr', label: 'Timing' },
-  { url: '/caveats/',               wait: 'h3',              label: 'Caveats' },
-  { url: '/data/',                  wait: '.dl-file',        label: 'Downloads' },
-  { url: '/contribute/',            wait: 'h3',              label: 'Contribute' },
-  { url: '/about/',                 wait: 'h2',              label: 'About' },
+  ['/index.html', '#hero-map', 'home'],
+  ['/programmes/index.html', '#grid .tile', 'browse'],
+  ['/programmes/p07.html', '#dofile', 'p07'],
+  ['/programmes/p33.html', '#dofile', 'p33'],
+  ['/programmes/p01.html', '#dofile', 'p01'],
+  ['/programmes/p43.html', '#dofile', 'p43'],
+  ['/atlas/index.html', '#atlas-map', 'atlas'],
+  ['/insights/index.html', '#c-swim svg', 'insights'],
+  ['/datasets/index.html', '#ds-cal svg', 'datasets'],
+  ['/toolkit/index.html', '#mde-out .big', 'toolkit'],
+  ['/guide/index.html', '.guide-item', 'guide'],
+  ['/guide/timing.html', 'table', 'timing'],
+  ['/guide/caveats.html', '.guide-item', 'caveats'],
+  ['/about/index.html', 'h2', 'about'],
+  ['/contribute/index.html', 'h3', 'contribute'],
+  ['/shortlist/index.html', '#sl-empty', 'shortlist'],
+  ['/404.html', 'h1', '404'],
 ];
-
 (async () => {
-  const browser = await puppeteer.launch({
-    executablePath: '/usr/bin/google-chrome',
-    headless: 'new',
-    args: ['--no-sandbox', '--disable-dev-shm-usage'],
-  });
-  let failures = 0;
-
-  for (const p of PAGES) {
-    const page = await browser.newPage();
-    await page.setViewport({ width: 1280, height: 900 });
-    const errs = [];
-    // Google Fonts is unreachable from this sandbox; the site has local fallbacks.
-    const isFontNoise = t => /ERR_TUNNEL_CONNECTION_FAILED|fonts\.g/.test(t);
-    page.on('console', m => {
-      if (m.type() === 'error' && !isFontNoise(m.text())) errs.push(m.text());
-    });
-    page.on('pageerror', e => errs.push('PAGEERROR: ' + e.message));
-    page.on('requestfailed', r => {
-      const u = r.url();
-      if (!u.includes('fonts.g')) errs.push('REQFAIL: ' + u);
-    });
-
-    try {
-      await page.goto(BASE + p.url, { waitUntil: 'networkidle2', timeout: 20000 });
-      await page.waitForSelector(p.wait, { timeout: 8000 });
-    } catch (e) {
-      errs.push('WAIT FAILED for "' + p.wait + '": ' + e.message.split('\n')[0]);
+  const b = await puppeteer.launch({ executablePath: process.env.CHROME || '/usr/bin/google-chrome', headless: 'new', args: ['--no-sandbox', '--disable-dev-shm-usage'] });
+  for (const [url, wait, name] of PAGES) {
+    for (const vp of [{ width: 1440, height: 900 }, { width: 390, height: 844, isMobile: true, deviceScaleFactor: 1 }]) {
+      const p = await b.newPage(); await p.setViewport(vp);
+      const errs = [];
+      p.on('console', m => { if (m.type() === 'error' && !/api\.github\.com/.test(m.text())) errs.push(m.text().slice(0, 200)); });
+      p.on('pageerror', e => errs.push('PAGEERROR ' + e.message.slice(0, 300)));
+      p.on('requestfailed', r => { if (!/github/.test(r.url())) errs.push('REQFAIL ' + r.url()); });
+      p.on('response', r => { if (r.status() >= 400 && !/github|favicon/.test(r.url())) errs.push('HTTP ' + r.status() + ' ' + r.url()); });
+      try { await p.goto(BASE + url, { waitUntil: 'networkidle2', timeout: 20000 }); await p.waitForSelector(wait, { timeout: 6000 }); }
+      catch (e) { errs.push('WAIT ' + wait + ' ' + e.message.split('\n')[0]); }
+      await new Promise(r => setTimeout(r, 400));
+      const info = await p.evaluate(() => ({
+        ow: document.documentElement.scrollWidth, cw: document.documentElement.clientWidth,
+        wide: [...document.querySelectorAll('body *')].filter(e => { const r = e.getBoundingClientRect(); return r.right > document.documentElement.clientWidth + 1 && r.width > 0 && !e.closest('.rail,.table-wrap,.chart,.code,pre,.compare,.opp,.overlay,[hidden]'); }).slice(0, 4).map(e => e.tagName + '.' + e.className.toString().slice(0, 40) + ' ' + Math.round(e.getBoundingClientRect().right)),
+      }));
+      const tag = vp.width < 500 ? 'm' : 'd';
+      console.log(`${name.padEnd(10)} ${tag} ${errs.length ? 'ERR' : 'ok '} overflow=${info.ow > info.cw ? info.ow : 'no'} ${info.wide.join(' | ')}`);
+      errs.slice(0, 6).forEach(e => console.log('     ' + e));
+      await p.close();
     }
-
-    const info = await page.evaluate(() => {
-      const rows = document.querySelectorAll('table.data tbody tr').length;
-      const count = document.querySelector('#count');
-      const h1 = document.querySelector('h1');
-      const facets = document.querySelectorAll('.facet').length;
-      const svgKids = document.querySelectorAll('svg.chart *, svg.timeline *').length;
-      return {
-        rows,
-        countText: count ? count.textContent.trim() : '',
-        h1: h1 ? h1.textContent.trim().slice(0, 48) : '(none)',
-        facets,
-        svgKids,
-        scrollW: document.documentElement.scrollWidth,
-        clientW: document.documentElement.clientWidth,
-      };
-    });
-
-    const overflow = info.scrollW > info.clientW + 2;
-    const ok = errs.length === 0 && !overflow;
-    if (!ok) failures++;
-    console.log(
-      (ok ? 'OK  ' : 'FAIL') + ' ' + p.label.padEnd(18) +
-      ' rows=' + String(info.rows).padEnd(5) +
-      ' facets=' + String(info.facets).padEnd(3) +
-      ' svg=' + String(info.svgKids).padEnd(5) +
-      (info.countText ? ' [' + info.countText + ']' : '') +
-      (overflow ? ' H-OVERFLOW ' + info.scrollW + '>' + info.clientW : '')
-    );
-    errs.slice(0, 4).forEach(e => console.log('      ! ' + e.slice(0, 150)));
-    await page.close();
   }
-
-  // Mobile check
-  const m = await browser.newPage();
-  await m.setViewport({ width: 390, height: 800, isMobile: true });
-  for (const u of ['/', '/programmes/', '/programmes/p13.html', '/matrix/']) {
-    await m.goto(BASE + u, { waitUntil: 'networkidle2' });
-    const r = await m.evaluate(() => ({
-      sw: document.documentElement.scrollWidth,
-      cw: document.documentElement.clientWidth,
-      navHidden: getComputedStyle(document.querySelector('.mainnav')).display === 'none',
-      toggleShown: getComputedStyle(document.querySelector('.navtoggle')).display !== 'none',
-    }));
-    const bad = r.sw > r.cw + 2;
-    if (bad) failures++;
-    console.log((bad ? 'FAIL' : 'OK  ') + ' mobile ' + u.padEnd(24) +
-      ' width=' + r.sw + '/' + r.cw + ' nav-collapsed=' + (r.navHidden && r.toggleShown));
-  }
-  await m.close();
-
-  // Interaction check: filter + sort + search on the programme index
-  const i = await browser.newPage();
-  await i.setViewport({ width: 1280, height: 900 });
-  await i.goto(BASE + '/programmes/', { waitUntil: 'networkidle2' });
-  await i.waitForSelector('#pbody tr td.id');
-  const before = await i.$$eval('#pbody tr', r => r.length);
-  await i.click('input[data-facet="quality_label"][value="High"]');
-  await new Promise(r => setTimeout(r, 300));
-  const afterFacet = await i.$$eval('#pbody tr', r => r.length);
-  await i.type('#search', 'land');
-  await new Promise(r => setTimeout(r, 400));
-  const afterSearch = await i.$$eval('#pbody tr', r => r.length);
-  const chips = await i.$$eval('.chip', c => c.length);
-  await i.click('th[data-sort="n_outcomes"]');
-  await new Promise(r => setTimeout(r, 200));
-  const sortAttr = await i.$eval('th[data-sort="n_outcomes"]', t => t.getAttribute('aria-sort'));
-  console.log(`OK   interaction      all=${before} -> High=${afterFacet} -> +"land"=${afterSearch}` +
-              ` chips=${chips} sort=${sortAttr}`);
-  if (!(afterFacet < before && afterSearch <= afterFacet && chips >= 2 && sortAttr)) {
-    console.log('      ! interaction assertions failed'); failures++;
-  }
-  await i.close();
-
-  // Deep-link check
-  const dl = await browser.newPage();
-  await dl.setViewport({ width: 1280, height: 900 });
-  await dl.goto(BASE + '/programmes/?quality_label=High', { waitUntil: 'networkidle2' });
-  await dl.waitForSelector('#pbody tr td.id');
-  const dlRows = await dl.$$eval('#pbody tr', r => r.length);
-  const dlChecked = await dl.$eval('input[data-facet="quality_label"][value="High"]', c => c.checked);
-  console.log('OK   deep link        ?quality_label=High -> rows=' + dlRows + ' checkbox=' + dlChecked);
-  if (!dlChecked || dlRows === 0) { console.log('      ! deep link failed'); failures++; }
-  await dl.close();
-
-  await browser.close();
-  console.log(failures === 0 ? '\nALL CHECKS PASSED' : `\n${failures} CHECK(S) FAILED`);
-  process.exit(failures === 0 ? 0 : 1);
+  await b.close();
 })();

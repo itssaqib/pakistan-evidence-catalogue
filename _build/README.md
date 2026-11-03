@@ -1,21 +1,28 @@
 # Build scripts
 
-The site is plain static HTML and needs none of this to run. These scripts regenerate it
-from the catalogue data, so content changes should be made here rather than by editing
-HTML by hand.
+The site is static. Everything under `data/`, `toolkit/`, `programmes/`, the other page folders and `paper/` is generated
+from the files in this folder. The stylesheet and scripts in `assets/` are hand-written and edited directly.
 
-Requires Python 3 only (no packages). Run from this directory's parent:
+Run from this folder, in order (Python 3.10+, `pip install pandas`; `pdflatex` for the note):
 
-    python gen_data.py        # catalogue_raw.json -> ../data/*.json and *.csv
-    python gen_pages.py       # home + programme index
-    python gen_programmes.py  # 67 programme detail pages
-    python gen_sections.py    # matrix, outcomes, datasets
-    python gen_guides.py      # methods, timing
-    python gen_misc.py        # caveats, downloads, contribute, about, 404
-    python gen_repo.py        # README, sitemap, robots, licence, citation
+    python3 geo.py      # pak_adm2_simplified.json -> geo.json, districts.csv, geo_internal.json
+    python3 data.py     # catalogue_raw.json + corrections + footprints -> ../data/*
+    python3 stata.py    # -> ../toolkit/stata/*.do and ../toolkit/pec-stata-kit.zip
+    python3 pages.py    # -> every HTML page
+    python3 paper.py    # -> ../paper/pec-data-note.pdf
+    python3 repo.py     # -> README, sitemap, citation files, issue forms, redirects
 
-`layout.py` holds the shared page chrome (masthead, footer, meta tags).
-`catalogue_raw.json` is the source data extracted from the original workbook by `extract.py`.
-`check.js` renders every page in headless Chrome and asserts there are no console errors,
-no horizontal overflow at 390px, and that filtering, sorting and deep links work
-(needs `npm install puppeteer-core` and a local server on port 8742).
+`data.py` holds the hand-checked parts: `CORRECTIONS`, `FOOTPRINTS` (each phase with its source), `EV_OVERRIDE`,
+`CALENDAR` and `BIB`. Edit those, then rerun from `data.py` down.
+
+## Checks and images (optional, Node 18+ and Chrome)
+
+    npm install puppeteer-core
+    python3 -m http.server 8000 --directory ..     # in another terminal
+    node check.js       # every page, desktop and 390px: console errors and horizontal overflow
+    node interact.js    # atlas, filters, search, shortlist, power calculator, chart tables
+    node og.js          # social cards -> ../assets/og/*.jpg  (uses render/og.html)
+    node fig.js         # figures for the data note -> ../paper/*.png  (uses render/fig.html)
+    python3 linkcheck.py
+
+Set `CHROME=/path/to/chrome` if Chrome is not at /usr/bin/google-chrome.

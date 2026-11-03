@@ -10,11 +10,18 @@ Full licence text: https://creativecommons.org/licenses/by/4.0/legalcode
 
 SUGGESTED ATTRIBUTION
 Hussain, S. (2026). Pakistan Evidence Catalogue: staggered district-level
-programmes for causal impact evaluation. Version 1.0.0.
+programmes for causal impact evaluation. Version 2.0.0.
 
-NOTE ON THIRD-PARTY DATA
-This licence covers the catalogue itself -- the programme inventory, outcome
-taxonomy, dataset descriptions and the mapping between them. It does not cover
-the underlying datasets described in the catalogue, each of which carries its
-own licence and access conditions. See the "Access" field on each dataset
-entry.
+THIRD-PARTY MATERIAL
+- The catalogue licence covers the programme inventory, outcome taxonomy,
+  dataset descriptions, documented footprints, crosswalk and the mapping
+  between them. It does not cover the datasets described, each of which
+  carries its own licence and access conditions.
+- District boundaries: geoBoundaries gbOpen, Pakistan ADM2 (2019), public
+  domain. Runfola et al. (2020), PLoS ONE 15(4): e0231866.
+- Typeface: Jost, by Owen Earl (indestructible type*), SIL Open Font
+  Licence 1.1. See assets/fonts/OFL-Jost.txt.
+- Site code (HTML, CSS, JavaScript, Python, Stata) may also be reused under
+  the MIT licence terms: permission is granted, free of charge, to use, copy,
+  modify and distribute it, provided this notice is kept. It is provided
+  "as is", without warranty of any kind.

@@ -1,0 +1,201 @@
+﻿name_variant,key,pec_unit,pec_unit_id,province,relation,note
+Abbottabad,abbottabad,Abbottabad,kp-abbottabad,Khyber Pakhtunkhwa,boundary unit,
+Astore,astore,Astore,gb-astore,Gilgit-Baltistan,boundary unit,
+Attock,attock,Attock,pb-attock,Punjab,boundary unit,
+Awaran,awaran,Awaran,ba-awaran,Balochistan,boundary unit,
+Azad Kashmir,azadkashmir,Azad Kashmir,ajk-azad-kashmir,Azad Kashmir,boundary unit,
+Badin,badin,Badin,sd-badin,Sindh,boundary unit,
+Bahawalnagar,bahawalnagar,Bahawalnagar,pb-bahawalnagar,Punjab,boundary unit,
+Bahawalpur,bahawalpur,Bahawalpur,pb-bahawalpur,Punjab,boundary unit,
+Bajaur,bajaur,Bajaur,kp-bajaur,Khyber Pakhtunkhwa,boundary unit,
+Bannu,bannu,Bannu,kp-bannu,Khyber Pakhtunkhwa,boundary unit,
+Barkhan,barkhan,Barkhan,ba-barkhan,Balochistan,boundary unit,
+Battagram,battagram,Battagram,kp-battagram,Khyber Pakhtunkhwa,boundary unit,
+Bhakkar,bhakkar,Bhakkar,pb-bhakkar,Punjab,boundary unit,
+Buner,buner,Buner,kp-buner,Khyber Pakhtunkhwa,boundary unit,
+Chagai,chagai,Chagai,ba-chagai,Balochistan,boundary unit,
+Chakwal,chakwal,Chakwal,pb-chakwal,Punjab,boundary unit,
+Charsadda,charsadda,Charsadda,kp-charsadda,Khyber Pakhtunkhwa,boundary unit,
+Chitral,chitral,Chitral,kp-chitral,Khyber Pakhtunkhwa,boundary unit,
+Dadu,dadu,Dadu,sd-dadu,Sindh,boundary unit,
+Dera Bugti,derabugti,Dera Bugti,ba-dera-bugti,Balochistan,boundary unit,
+Dera Ghazi Khan,deraghazikhan,Dera Ghazi Khan,pb-dera-ghazi-khan,Punjab,boundary unit,
+Dera Ismail Khan,deraismailkhan,Dera Ismail Khan,kp-dera-ismail-khan,Khyber Pakhtunkhwa,boundary unit,
+Diamer,diamer,Diamer,gb-diamer,Gilgit-Baltistan,boundary unit,
+Faisalabad,faisalabad,Faisalabad,pb-faisalabad,Punjab,boundary unit,
+Ghanche,ghanche,Ghanche,gb-ghanche,Gilgit-Baltistan,boundary unit,
+Ghizer,ghizer,Ghizer,gb-ghizer,Gilgit-Baltistan,boundary unit,
+Ghotki,ghotki,Ghotki,sd-ghotki,Sindh,boundary unit,
+Gilgit,gilgit,Gilgit,gb-gilgit,Gilgit-Baltistan,boundary unit,
+Gujranwala,gujranwala,Gujranwala,pb-gujranwala,Punjab,boundary unit,
+Gujrat,gujrat,Gujrat,pb-gujrat,Punjab,boundary unit,
+Gwadar,gwadar,Gwadar,ba-gwadar,Balochistan,boundary unit,
+Hafizabad,hafizabad,Hafizabad,pb-hafizabad,Punjab,boundary unit,
+Hangu,hangu,Hangu,kp-hangu,Khyber Pakhtunkhwa,boundary unit,
+Haripur,haripur,Haripur,kp-haripur,Khyber Pakhtunkhwa,boundary unit,
+Hunza,hunza,Hunza,gb-hunza,Gilgit-Baltistan,boundary unit,
+Hyderabad,hyderabad,Hyderabad,sd-hyderabad,Sindh,boundary unit,
+Islamabad Capital Territory,islamabadcapitalterritory,Islamabad Capital Territory,ict-islamabad-capital-territory,Islamabad Capital Territory,boundary unit,
+Jacobabad,jacobabad,Jacobabad,sd-jacobabad,Sindh,boundary unit,
+Jafarabad,jafarabad,Jafarabad,ba-jafarabad,Balochistan,boundary unit,
+Jamshoro,jamshoro,Jamshoro,sd-jamshoro,Sindh,boundary unit,
+Jhal Magsi,jhalmagsi,Jhal Magsi,ba-jhal-magsi,Balochistan,boundary unit,
+Jhang,jhang,Jhang,pb-jhang,Punjab,boundary unit,
+Jhelum,jhelum,Jhelum,pb-jhelum,Punjab,boundary unit,
+Kachhi,kachhi,Kachhi,ba-kachhi,Balochistan,boundary unit,
+Kalat,kalat,Kalat,ba-kalat,Balochistan,boundary unit,
+Karachi,karachi,Karachi,sd-karachi,Sindh,boundary unit,
+Karak,karak,Karak,kp-karak,Khyber Pakhtunkhwa,boundary unit,
+Kashmore,kashmore,Kashmore,sd-kashmore,Sindh,boundary unit,
+Kasur,kasur,Kasur,pb-kasur,Punjab,boundary unit,
+Kech,kech,Kech,ba-kech,Balochistan,boundary unit,
+Khairpur,khairpur,Khairpur,sd-khairpur,Sindh,boundary unit,
+Khanewal,khanewal,Khanewal,pb-khanewal,Punjab,boundary unit,
+Kharan,kharan,Kharan,ba-kharan,Balochistan,boundary unit,
+Kharmang,kharmang,Kharmang,gb-kharmang,Gilgit-Baltistan,boundary unit,
+Khushab,khushab,Khushab,pb-khushab,Punjab,boundary unit,
+Khuzdar,khuzdar,Khuzdar,ba-khuzdar,Balochistan,boundary unit,
+Khyber,khyber,Khyber,kp-khyber,Khyber Pakhtunkhwa,boundary unit,
+Kohat,kohat,Kohat,kp-kohat,Khyber Pakhtunkhwa,boundary unit,
+Kohistan,kohistan,Kohistan,kp-kohistan,Khyber Pakhtunkhwa,boundary unit,
+Kohlu,kohlu,Kohlu,ba-kohlu,Balochistan,boundary unit,
+Kurram,kurram,Kurram,kp-kurram,Khyber Pakhtunkhwa,boundary unit,
+Lahore,lahore,Lahore,pb-lahore,Punjab,boundary unit,
+Lakki Marwat,lakkimarwat,Lakki Marwat,kp-lakki-marwat,Khyber Pakhtunkhwa,boundary unit,
+Lasbela,lasbela,Lasbela,ba-lasbela,Balochistan,boundary unit,
+Layyah,layyah,Layyah,pb-layyah,Punjab,boundary unit,
+Lodhran,lodhran,Lodhran,pb-lodhran,Punjab,boundary unit,
+Loralai,loralai,Loralai,ba-loralai,Balochistan,boundary unit,
+Lower Dir,lowerdir,Lower Dir,kp-lower-dir,Khyber Pakhtunkhwa,boundary unit,
+Malakand,malakand,Malakand,kp-malakand,Khyber Pakhtunkhwa,boundary unit,
+Mandi Bahauddin,mandibahauddin,Mandi Bahauddin,pb-mandi-bahauddin,Punjab,boundary unit,
+Mansehra,mansehra,Mansehra,kp-mansehra,Khyber Pakhtunkhwa,boundary unit,
+Mardan,mardan,Mardan,kp-mardan,Khyber Pakhtunkhwa,boundary unit,
+Mastung,mastung,Mastung,ba-mastung,Balochistan,boundary unit,
+Matiari,matiari,Matiari,sd-matiari,Sindh,boundary unit,
+Mianwali,mianwali,Mianwali,pb-mianwali,Punjab,boundary unit,
+Mirpurkhas,mirpurkhas,Mirpurkhas,sd-mirpurkhas,Sindh,boundary unit,
+Mohmand,mohmand,Mohmand,kp-mohmand,Khyber Pakhtunkhwa,boundary unit,
+Multan,multan,Multan,pb-multan,Punjab,boundary unit,
+Musakhel,musakhel,Musakhel,ba-musakhel,Balochistan,boundary unit,
+Muzaffargarh,muzaffargarh,Muzaffargarh,pb-muzaffargarh,Punjab,boundary unit,
+Nagar,nagar,Nagar,gb-nagar,Gilgit-Baltistan,boundary unit,
+Narowal,narowal,Narowal,pb-narowal,Punjab,boundary unit,
+Nasirabad,nasirabad,Nasirabad,ba-nasirabad,Balochistan,boundary unit,
+Naushehro Feroze,naushehroferoze,Naushehro Feroze,sd-naushehro-feroze,Sindh,boundary unit,
+Nawabshah,nawabshah,Nawabshah,sd-nawabshah,Sindh,boundary unit,
+North Waziristan,northwaziristan,North Waziristan,kp-north-waziristan,Khyber Pakhtunkhwa,boundary unit,
+Nowshera,nowshera,Nowshera,kp-nowshera,Khyber Pakhtunkhwa,boundary unit,
+Nushki,nushki,Nushki,ba-nushki,Balochistan,boundary unit,
+Okara,okara,Okara,pb-okara,Punjab,boundary unit,
+Orakzai,orakzai,Orakzai,kp-orakzai,Khyber Pakhtunkhwa,boundary unit,
+Pakpattan,pakpattan,Pakpattan,pb-pakpattan,Punjab,boundary unit,
+Panjgur,panjgur,Panjgur,ba-panjgur,Balochistan,boundary unit,
+Peshawar,peshawar,Peshawar,kp-peshawar,Khyber Pakhtunkhwa,boundary unit,
+Pishin,pishin,Pishin,ba-pishin,Balochistan,boundary unit,
+Qambar Shahdadkot,qambarshahdadkot,Qambar Shahdadkot,sd-qambar-shahdadkot,Sindh,boundary unit,
+Qilla Abdullah,qillaabdullah,Qilla Abdullah,ba-qilla-abdullah,Balochistan,boundary unit,
+Qilla Saifullah,qillasaifullah,Qilla Saifullah,ba-qilla-saifullah,Balochistan,boundary unit,
+Quetta,quetta,Quetta,ba-quetta,Balochistan,boundary unit,
+Rahim Yar Khan,rahimyarkhan,Rahim Yar Khan,pb-rahim-yar-khan,Punjab,boundary unit,
+Rajanpur,rajanpur,Rajanpur,pb-rajanpur,Punjab,boundary unit,
+Rawalpindi,rawalpindi,Rawalpindi,pb-rawalpindi,Punjab,boundary unit,
+Sahiwal,sahiwal,Sahiwal,pb-sahiwal,Punjab,boundary unit,
+Sanghar,sanghar,Sanghar,sd-sanghar,Sindh,boundary unit,
+Sargodha,sargodha,Sargodha,pb-sargodha,Punjab,boundary unit,
+Shangla,shangla,Shangla,kp-shangla,Khyber Pakhtunkhwa,boundary unit,
+Sheikhpura,sheikhpura,Sheikhpura,pb-sheikhpura,Punjab,boundary unit,
+Shigar,shigar,Shigar,gb-shigar,Gilgit-Baltistan,boundary unit,
+Shikarpur,shikarpur,Shikarpur,sd-shikarpur,Sindh,boundary unit,
+Sialkot,sialkot,Sialkot,pb-sialkot,Punjab,boundary unit,
+Sibi,sibi,Sibi,ba-sibi,Balochistan,boundary unit,
+Skardu,skardu,Skardu,gb-skardu,Gilgit-Baltistan,boundary unit,
+South Waziristan,southwaziristan,South Waziristan,kp-south-waziristan,Khyber Pakhtunkhwa,boundary unit,
+Sukkur,sukkur,Sukkur,sd-sukkur,Sindh,boundary unit,
+Swabi,swabi,Swabi,kp-swabi,Khyber Pakhtunkhwa,boundary unit,
+Swat,swat,Swat,kp-swat,Khyber Pakhtunkhwa,boundary unit,
+Tando Allahyar,tandoallahyar,Tando Allahyar,sd-tando-allahyar,Sindh,boundary unit,
+Tando Muhammad Khan,tandomuhammadkhan,Tando Muhammad Khan,sd-tando-muhammad-khan,Sindh,boundary unit,
+Tank,tank,Tank,kp-tank,Khyber Pakhtunkhwa,boundary unit,
+Tharparkar,tharparkar,Tharparkar,sd-tharparkar,Sindh,boundary unit,
+Thatta,thatta,Thatta,sd-thatta,Sindh,boundary unit,
+Toba Tek Singh,tobateksingh,Toba Tek Singh,pb-toba-tek-singh,Punjab,boundary unit,
+Umerkot,umerkot,Umerkot,sd-umerkot,Sindh,boundary unit,
+Upper Dir,upperdir,Upper Dir,kp-upper-dir,Khyber Pakhtunkhwa,boundary unit,
+Vihari,vihari,Vihari,pb-vihari,Punjab,boundary unit,
+Zhob,zhob,Zhob,ba-zhob,Balochistan,boundary unit,
+Ziarat,ziarat,Ziarat,ba-ziarat,Balochistan,boundary unit,
+Bagh,bagh,Azad Kashmir,ajk-azad-kashmir,Azad Kashmir,part of unit,AJK is a single unit in the 2019 boundary file
+Benazirabad,benazirabad,Nawabshah,sd-nawabshah,Sindh,renamed,
+Bhimber,bhimber,Azad Kashmir,ajk-azad-kashmir,Azad Kashmir,part of unit,AJK is a single unit in the 2019 boundary file
+Bolan,bolan,Kachhi,ba-kachhi,Balochistan,renamed,Bolan renamed Kachhi
+Chaman,chaman,Qilla Abdullah,ba-qilla-abdullah,Balochistan,created after boundary vintage,Created 2021 from Qilla Abdullah
+Chiniot,chiniot,Jhang,pb-jhang,Punjab,created after boundary vintage,Created 2009 from Jhang
+D.G. Khan,dgkhan,Dera Ghazi Khan,pb-dera-ghazi-khan,Punjab,abbreviation,
+D.I. Khan,dikhan,Dera Ismail Khan,kp-dera-ismail-khan,Khyber Pakhtunkhwa,abbreviation,
+Darel,darel,Diamer,gb-diamer,Gilgit-Baltistan,created after boundary vintage,Created 2019 from Diamer
+Duki,duki,Loralai,ba-loralai,Balochistan,created after boundary vintage,Created 2016 from Loralai
+FR Bannu,frbannu,Bannu,kp-bannu,Khyber Pakhtunkhwa,merged into,Frontier Region merged 2018 (verify)
+FR DI Khan,frdikhan,Dera Ismail Khan,kp-dera-ismail-khan,Khyber Pakhtunkhwa,merged into,Frontier Region merged 2018 (verify)
+FR Kohat,frkohat,Kohat,kp-kohat,Khyber Pakhtunkhwa,merged into,Frontier Region merged 2018 (verify)
+FR Lakki Marwat,frlakkimarwat,Lakki Marwat,kp-lakki-marwat,Khyber Pakhtunkhwa,merged into,Frontier Region merged 2018 (verify)
+FR Peshawar,frpeshawar,Peshawar,kp-peshawar,Khyber Pakhtunkhwa,merged into,Frontier Region merged 2018 (verify)
+FR Tank,frtank,Tank,kp-tank,Khyber Pakhtunkhwa,merged into,Frontier Region merged 2018 (verify)
+Gupis-Yasin,gupisyasin,Ghizer,gb-ghizer,Gilgit-Baltistan,created after boundary vintage,Created 2019 from Ghizer
+Harnai,harnai,Sibi,ba-sibi,Balochistan,created after boundary vintage,Created 2007 from Sibi
+Hattian Bala,hattianbala,Azad Kashmir,ajk-azad-kashmir,Azad Kashmir,part of unit,AJK is a single unit in the 2019 boundary file
+Haveli,haveli,Azad Kashmir,ajk-azad-kashmir,Azad Kashmir,part of unit,AJK is a single unit in the 2019 boundary file
+Hub,hub,Lasbela,ba-lasbela,Balochistan,created after boundary vintage,Created 2022 from Lasbela
+ICT,ict,Islamabad Capital Territory,ict-islamabad-capital-territory,Islamabad Capital Territory,abbreviation,
+Islamabad,islamabad,Islamabad Capital Territory,ict-islamabad-capital-territory,Islamabad Capital Territory,abbreviation,
+Jaffarabad,jaffarabad,Jafarabad,ba-jafarabad,Balochistan,spelling,
+Kambar,kambar,Qambar Shahdadkot,sd-qambar-shahdadkot,Sindh,abbreviation,
+Kambar Shahdadkot,kambarshahdadkot,Qambar Shahdadkot,sd-qambar-shahdadkot,Sindh,spelling,
+Karachi Central,karachicentral,Karachi,sd-karachi,Sindh,part of unit,Karachi is a single unit in the 2019 boundary file
+Karachi East,karachieast,Karachi,sd-karachi,Sindh,part of unit,Karachi is a single unit in the 2019 boundary file
+Karachi South,karachisouth,Karachi,sd-karachi,Sindh,part of unit,Karachi is a single unit in the 2019 boundary file
+Karachi West,karachiwest,Karachi,sd-karachi,Sindh,part of unit,Karachi is a single unit in the 2019 boundary file
+Keamari,keamari,Karachi,sd-karachi,Sindh,part of unit,Karachi is a single unit in the 2019 boundary file
+Killa Abdullah,killaabdullah,Qilla Abdullah,ba-qilla-abdullah,Balochistan,spelling,
+Killa Saifullah,killasaifullah,Qilla Saifullah,ba-qilla-saifullah,Balochistan,spelling,
+Kolai Palas,kolaipalas,Kohistan,kp-kohistan,Khyber Pakhtunkhwa,created after boundary vintage,Created 2017 from Kohistan
+Korangi,korangi,Karachi,sd-karachi,Sindh,part of unit,Karachi is a single unit in the 2019 boundary file
+Kot Addu,kotaddu,Muzaffargarh,pb-muzaffargarh,Punjab,created after boundary vintage,Created 2022 from Muzaffargarh
+Kotli,kotli,Azad Kashmir,ajk-azad-kashmir,Azad Kashmir,part of unit,AJK is a single unit in the 2019 boundary file
+Larkana,larkana,Qambar Shahdadkot,sd-qambar-shahdadkot,Sindh,boundary-file artefact,Not a separate polygon in the 2019 boundary file; contained in the Qambar Shahdadkot unit
+Lehri,lehri,Sibi,ba-sibi,Balochistan,created after boundary vintage,Created 2013 from Sibi
+Lower Chitral,lowerchitral,Chitral,kp-chitral,Khyber Pakhtunkhwa,created after boundary vintage,Created 2018 from Chitral
+Lower Kohistan,lowerkohistan,Kohistan,kp-kohistan,Khyber Pakhtunkhwa,created after boundary vintage,Created 2014 from Kohistan
+MB Din,mbdin,Mandi Bahauddin,pb-mandi-bahauddin,Punjab,abbreviation,
+Malir,malir,Karachi,sd-karachi,Sindh,part of unit,Karachi is a single unit in the 2019 boundary file
+Mandi Bahaudin,mandibahaudin,Mandi Bahauddin,pb-mandi-bahauddin,Punjab,spelling,
+Mirpur,mirpur,Azad Kashmir,ajk-azad-kashmir,Azad Kashmir,part of unit,AJK is a single unit in the 2019 boundary file
+Murree,murree,Rawalpindi,pb-rawalpindi,Punjab,created after boundary vintage,Created 2022 from Rawalpindi
+Muzaffarabad,muzaffarabad,Azad Kashmir,ajk-azad-kashmir,Azad Kashmir,part of unit,AJK is a single unit in the 2019 boundary file
+Nankana Sahib,nankanasahib,Sheikhpura,pb-sheikhpura,Punjab,created after boundary vintage,Created 2005 from Sheikhpura
+Naushahro Feroze,naushahroferoze,Naushehro Feroze,sd-naushehro-feroze,Sindh,spelling,
+Naushero Feroze,nausheroferoze,Naushehro Feroze,sd-naushehro-feroze,Sindh,spelling,
+Neelum,neelum,Azad Kashmir,ajk-azad-kashmir,Azad Kashmir,part of unit,AJK is a single unit in the 2019 boundary file
+Poonch,poonch,Azad Kashmir,ajk-azad-kashmir,Azad Kashmir,part of unit,AJK is a single unit in the 2019 boundary file
+RY Khan,rykhan,Rahim Yar Khan,pb-rahim-yar-khan,Punjab,abbreviation,
+Rawalakot,rawalakot,Azad Kashmir,ajk-azad-kashmir,Azad Kashmir,part of unit,AJK is a single unit in the 2019 boundary file
+Roundu,roundu,Skardu,gb-skardu,Gilgit-Baltistan,created after boundary vintage,Created 2019 from Skardu
+Shaheed Benazirabad,shaheedbenazirabad,Nawabshah,sd-nawabshah,Sindh,renamed,Renamed 2008
+Sheikhupura,sheikhupura,Sheikhpura,pb-sheikhpura,Punjab,spelling,
+Sherani,sherani,Zhob,ba-zhob,Balochistan,created after boundary vintage,Created 2006 from Zhob
+Sohbatpur,sohbatpur,Jafarabad,ba-jafarabad,Balochistan,created after boundary vintage,Created 2013 from Jafarabad
+Sudhnoti,sudhnoti,Azad Kashmir,ajk-azad-kashmir,Azad Kashmir,part of unit,AJK is a single unit in the 2019 boundary file
+Sujawal,sujawal,Thatta,sd-thatta,Sindh,created after boundary vintage,Created 2013 from Thatta
+Surab,surab,Kalat,ba-kalat,Balochistan,created after boundary vintage,Created 2017 from Kalat
+TT Singh,ttsingh,Toba Tek Singh,pb-toba-tek-singh,Punjab,abbreviation,
+Talagang,talagang,Chakwal,pb-chakwal,Punjab,created after boundary vintage,Created 2022 from Chakwal
+Tangir,tangir,Diamer,gb-diamer,Gilgit-Baltistan,created after boundary vintage,Created 2019 from Diamer
+Taunsa,taunsa,Dera Ghazi Khan,pb-dera-ghazi-khan,Punjab,created after boundary vintage,Created 2023 from Dera Ghazi Khan
+Tor Ghar,torghar,Mansehra,kp-mansehra,Khyber Pakhtunkhwa,created after boundary vintage,Created 2011 from Mansehra
+Turbat,turbat,Kech,ba-kech,Balochistan,alternate name,
+Upper Chitral,upperchitral,Chitral,kp-chitral,Khyber Pakhtunkhwa,created after boundary vintage,Created 2018 from Chitral
+Upper Kohistan,upperkohistan,Kohistan,kp-kohistan,Khyber Pakhtunkhwa,created after boundary vintage,Created 2014 from Kohistan
+Usta Muhammad,ustamuhammad,Jafarabad,ba-jafarabad,Balochistan,created after boundary vintage,Created 2022 from Jafarabad
+Vehari,vehari,Vihari,pb-vihari,Punjab,spelling,
+Washuk,washuk,Kharan,ba-kharan,Balochistan,created after boundary vintage,Created 2005 from Kharan
+Wazirabad,wazirabad,Gujranwala,pb-gujranwala,Punjab,created after boundary vintage,Created 2022 from Gujranwala

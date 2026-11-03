@@ -58,13 +58,14 @@ if broken:
 
 print("No broken internal links.")
 
-# Warn about data files the pages fetch at runtime, which the regex above misses.
-needed = ["data/programmes.json", "data/matrix.json", "data/outcomes.json",
-          "data/datasets.json", "data/catalogue.json", "data/meta.json"]
+# Files the pages load or link to from JavaScript, which the regex above misses.
+needed = ["data/catalogue.js", "data/geo.js", "data/catalogue.json", "assets/js/core.js", "assets/js/map.js",
+          "assets/js/charts.js", "assets/js/pages.js", "assets/fonts/jost-latin-wght-normal.woff2",
+          "assets/og/home.jpg"] + [f"assets/og/p{i:02d}.jpg" for i in range(1, 68)]
 missing = [f for f in needed if not os.path.exists(f)]
 if missing:
     print("\nWARNING: data files fetched by the pages are missing:")
     for f in missing:
         print(f"  {f}")
     sys.exit(1)
-print(f"All {len(needed)} runtime data files present.")
+print(f"All {len(needed)} runtime files present.")

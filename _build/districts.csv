@@ -1,0 +1,127 @@
+pec_unit_id,district,province,province_code,ex_fata,centroid_lon,centroid_lat
+ajk-azad-kashmir,Azad Kashmir,Azad Kashmir,AJK,0,74.097,34.151
+ba-awaran,Awaran,Balochistan,BA,0,65.44,26.193
+ba-barkhan,Barkhan,Balochistan,BA,0,69.606,29.872
+ba-chagai,Chagai,Balochistan,BA,0,63.325,28.995
+ba-dera-bugti,Dera Bugti,Balochistan,BA,0,69.068,28.88
+ba-gwadar,Gwadar,Balochistan,BA,0,63.152,25.413
+ba-jafarabad,Jafarabad,Balochistan,BA,0,68.199,28.221
+ba-jhal-magsi,Jhal Magsi,Balochistan,BA,0,67.565,28.351
+ba-kachhi,Kachhi,Balochistan,BA,0,67.769,29.166
+ba-kalat,Kalat,Balochistan,BA,0,66.659,28.844
+ba-kech,Kech,Balochistan,BA,0,63.073,26.022
+ba-kharan,Kharan,Balochistan,BA,0,64.668,27.943
+ba-khuzdar,Khuzdar,Balochistan,BA,0,66.696,27.418
+ba-kohlu,Kohlu,Balochistan,BA,0,68.788,29.545
+ba-lasbela,Lasbela,Balochistan,BA,0,66.65,25.743
+ba-loralai,Loralai,Balochistan,BA,0,68.808,30.246
+ba-mastung,Mastung,Balochistan,BA,0,66.902,29.736
+ba-musakhel,Musakhel,Balochistan,BA,0,69.923,30.804
+ba-nasirabad,Nasirabad,Balochistan,BA,0,68.152,28.529
+ba-nushki,Nushki,Balochistan,BA,0,65.854,29.469
+ba-panjgur,Panjgur,Balochistan,BA,0,64.199,26.754
+ba-pishin,Pishin,Balochistan,BA,0,67.34,30.778
+ba-qilla-abdullah,Qilla Abdullah,Balochistan,BA,0,66.745,30.719
+ba-qilla-saifullah,Qilla Saifullah,Balochistan,BA,0,68.383,30.906
+ba-quetta,Quetta,Balochistan,BA,0,66.819,30.111
+ba-sibi,Sibi,Balochistan,BA,0,67.886,29.883
+ba-zhob,Zhob,Balochistan,BA,0,69.121,31.369
+ba-ziarat,Ziarat,Balochistan,BA,0,67.577,30.395
+gb-astore,Astore,Gilgit-Baltistan,GB,0,74.871,35.186
+gb-diamer,Diamer,Gilgit-Baltistan,GB,0,73.956,35.517
+gb-ghanche,Ghanche,Gilgit-Baltistan,GB,0,76.772,35.304
+gb-ghizer,Ghizer,Gilgit-Baltistan,GB,0,73.432,36.269
+gb-gilgit,Gilgit,Gilgit-Baltistan,GB,0,74.421,35.926
+gb-hunza,Hunza,Gilgit-Baltistan,GB,0,75.153,36.561
+gb-kharmang,Kharmang,Gilgit-Baltistan,GB,0,76.133,34.936
+gb-nagar,Nagar,Gilgit-Baltistan,GB,0,74.633,36.284
+gb-shigar,Shigar,Gilgit-Baltistan,GB,0,75.815,35.773
+gb-skardu,Skardu,Gilgit-Baltistan,GB,0,75.449,35.145
+ict-islamabad-capital-territory,Islamabad Capital Territory,Islamabad Capital Territory,ICT,0,73.062,33.668
+kp-abbottabad,Abbottabad,Khyber Pakhtunkhwa,KP,0,73.247,34.156
+kp-bajaur,Bajaur,Khyber Pakhtunkhwa,KP,1,71.473,34.718
+kp-bannu,Bannu,Khyber Pakhtunkhwa,KP,0,70.653,32.831
+kp-battagram,Battagram,Khyber Pakhtunkhwa,KP,0,73.118,34.789
+kp-buner,Buner,Khyber Pakhtunkhwa,KP,0,72.496,34.455
+kp-charsadda,Charsadda,Khyber Pakhtunkhwa,KP,0,71.719,34.195
+kp-chitral,Chitral,Khyber Pakhtunkhwa,KP,0,72.241,36.179
+kp-dera-ismail-khan,Dera Ismail Khan,Khyber Pakhtunkhwa,KP,0,70.668,31.792
+kp-hangu,Hangu,Khyber Pakhtunkhwa,KP,0,70.853,33.355
+kp-haripur,Haripur,Khyber Pakhtunkhwa,KP,0,72.884,34.027
+kp-karak,Karak,Khyber Pakhtunkhwa,KP,0,71.102,33.072
+kp-khyber,Khyber,Khyber Pakhtunkhwa,KP,1,71.013,33.892
+kp-kohat,Kohat,Khyber Pakhtunkhwa,KP,0,71.537,33.404
+kp-kohistan,Kohistan,Khyber Pakhtunkhwa,KP,0,73.209,35.296
+kp-kurram,Kurram,Khyber Pakhtunkhwa,KP,1,70.307,33.675
+kp-lakki-marwat,Lakki Marwat,Khyber Pakhtunkhwa,KP,0,70.83,32.525
+kp-lower-dir,Lower Dir,Khyber Pakhtunkhwa,KP,0,71.868,34.8
+kp-malakand,Malakand,Khyber Pakhtunkhwa,KP,0,71.895,34.499
+kp-mansehra,Mansehra,Khyber Pakhtunkhwa,KP,0,73.384,34.677
+kp-mardan,Mardan,Khyber Pakhtunkhwa,KP,0,72.095,34.281
+kp-mohmand,Mohmand,Khyber Pakhtunkhwa,KP,1,71.328,34.403
+kp-north-waziristan,North Waziristan,Khyber Pakhtunkhwa,KP,1,70.094,32.921
+kp-nowshera,Nowshera,Khyber Pakhtunkhwa,KP,0,71.984,33.89
+kp-orakzai,Orakzai,Khyber Pakhtunkhwa,KP,1,71.233,33.645
+kp-peshawar,Peshawar,Khyber Pakhtunkhwa,KP,0,71.566,33.912
+kp-shangla,Shangla,Khyber Pakhtunkhwa,KP,0,72.703,34.824
+kp-south-waziristan,South Waziristan,Khyber Pakhtunkhwa,KP,1,69.877,32.138
+kp-swabi,Swabi,Khyber Pakhtunkhwa,KP,0,72.445,34.128
+kp-swat,Swat,Khyber Pakhtunkhwa,KP,0,72.477,35.222
+kp-tank,Tank,Khyber Pakhtunkhwa,KP,0,70.384,32.17
+kp-upper-dir,Upper Dir,Khyber Pakhtunkhwa,KP,0,72.03,35.223
+pb-attock,Attock,Punjab,PB,0,72.285,33.46
+pb-bahawalnagar,Bahawalnagar,Punjab,PB,0,73.036,29.682
+pb-bahawalpur,Bahawalpur,Punjab,PB,0,71.727,28.865
+pb-bhakkar,Bhakkar,Punjab,PB,0,71.376,31.625
+pb-chakwal,Chakwal,Punjab,PB,0,72.478,32.845
+pb-dera-ghazi-khan,Dera Ghazi Khan,Punjab,PB,0,70.232,30.047
+pb-faisalabad,Faisalabad,Punjab,PB,0,73.104,31.212
+pb-gujranwala,Gujranwala,Punjab,PB,0,74.082,32.121
+pb-gujrat,Gujrat,Punjab,PB,0,73.969,32.697
+pb-hafizabad,Hafizabad,Punjab,PB,0,73.48,31.977
+pb-jhang,Jhang,Punjab,PB,0,72.309,31.304
+pb-jhelum,Jhelum,Punjab,PB,0,73.265,32.795
+pb-kasur,Kasur,Punjab,PB,0,74.138,31.026
+pb-khanewal,Khanewal,Punjab,PB,0,71.985,30.385
+pb-khushab,Khushab,Punjab,PB,0,72.026,32.143
+pb-lahore,Lahore,Punjab,PB,0,74.337,31.434
+pb-layyah,Layyah,Punjab,PB,0,71.213,30.951
+pb-lodhran,Lodhran,Punjab,PB,0,71.715,29.698
+pb-mandi-bahauddin,Mandi Bahauddin,Punjab,PB,0,73.417,32.377
+pb-mianwali,Mianwali,Punjab,PB,0,71.495,32.624
+pb-multan,Multan,Punjab,PB,0,71.39,29.921
+pb-muzaffargarh,Muzaffargarh,Punjab,PB,0,70.972,29.961
+pb-narowal,Narowal,Punjab,PB,0,74.983,32.23
+pb-okara,Okara,Punjab,PB,0,73.648,30.725
+pb-pakpattan,Pakpattan,Punjab,PB,0,73.229,30.326
+pb-rahim-yar-khan,Rahim Yar Khan,Punjab,PB,0,70.512,28.384
+pb-rajanpur,Rajanpur,Punjab,PB,0,70.177,29.125
+pb-rawalpindi,Rawalpindi,Punjab,PB,0,73.159,33.447
+pb-sahiwal,Sahiwal,Punjab,PB,0,72.88,30.557
+pb-sargodha,Sargodha,Punjab,PB,0,72.685,32.075
+pb-sheikhpura,Sheikhpura,Punjab,PB,0,73.896,31.597
+pb-sialkot,Sialkot,Punjab,PB,0,74.502,32.423
+pb-toba-tek-singh,Toba Tek Singh,Punjab,PB,0,72.49,30.891
+pb-vihari,Vihari,Punjab,PB,0,72.415,30.047
+sd-badin,Badin,Sindh,SD,0,68.856,24.68
+sd-dadu,Dadu,Sindh,SD,0,67.548,26.795
+sd-ghotki,Ghotki,Sindh,SD,0,69.637,27.79
+sd-hyderabad,Hyderabad,Sindh,SD,0,68.511,25.342
+sd-jacobabad,Jacobabad,Sindh,SD,0,68.545,28.15
+sd-jamshoro,Jamshoro,Sindh,SD,0,67.825,25.666
+sd-karachi,Karachi,Sindh,SD,0,67.207,25.031
+sd-kashmore,Kashmore,Sindh,SD,0,69.331,28.235
+sd-khairpur,Khairpur,Sindh,SD,0,69.092,26.781
+sd-matiari,Matiari,Sindh,SD,0,68.412,25.839
+sd-mirpurkhas,Mirpurkhas,Sindh,SD,0,69.177,25.229
+sd-naushehro-feroze,Naushehro Feroze,Sindh,SD,0,68.158,26.809
+sd-nawabshah,Nawabshah,Sindh,SD,0,68.366,26.305
+sd-qambar-shahdadkot,Qambar Shahdadkot,Sindh,SD,0,67.892,27.537
+sd-sanghar,Sanghar,Sindh,SD,0,69.292,25.905
+sd-shikarpur,Shikarpur,Sindh,SD,0,68.649,27.889
+sd-sukkur,Sukkur,Sindh,SD,0,69.171,27.466
+sd-tando-allahyar,Tando Allahyar,Sindh,SD,0,68.797,25.416
+sd-tando-muhammad-khan,Tando Muhammad Khan,Sindh,SD,0,68.475,24.914
+sd-tharparkar,Tharparkar,Sindh,SD,0,70.192,24.761
+sd-thatta,Thatta,Sindh,SD,0,67.938,24.435
+sd-umerkot,Umerkot,Sindh,SD,0,69.782,25.35

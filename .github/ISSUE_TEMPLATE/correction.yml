@@ -1,0 +1,23 @@
+name: Suggest a correction
+description: A date, district, source or claim in an entry is wrong or out of date.
+title: "[Correction] Pxx "
+labels: ["correction"]
+body:
+  - type: input
+    id: pid
+    attributes: {label: Programme ID, placeholder: P33}
+    validations: {required: true}
+  - type: textarea
+    id: wrong
+    attributes: {label: What the catalogue says}
+    validations: {required: true}
+  - type: textarea
+    id: right
+    attributes: {label: What it should say}
+    validations: {required: true}
+  - type: textarea
+    id: source
+    attributes:
+      label: Source
+      description: A primary document is best (notification, annual report, project document, scheme register). Link or full citation.
+    validations: {required: true}

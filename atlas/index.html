@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Atlas | Pakistan Evidence Catalogue</title>
+<meta name="description" content="Interactive district map of Pakistan: programme scope by year, documented rollout districts and boundary changes since 2019.">
+<meta name="author" content="Saqib Hussain">
+<meta name="theme-color" content="#ffffff">
+<link rel="canonical" href="https://itssaqib.github.io/pakistan-evidence-catalogue/atlas/index.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Pakistan Evidence Catalogue">
+<meta property="og:title" content="Atlas">
+<meta property="og:description" content="Interactive district map of Pakistan: programme scope by year, documented rollout districts and boundary changes since 2019.">
+<meta property="og:image" content="https://itssaqib.github.io/pakistan-evidence-catalogue/assets/og/home.jpg">
+<meta property="og:url" content="https://itssaqib.github.io/pakistan-evidence-catalogue/atlas/index.html">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23212934'/%3E%3Cpath d='M9 23V9h6.5a4.5 4.5 0 0 1 0 9H9' fill='none' stroke='%23c9a16e' stroke-width='2.4'/%3E%3C/svg%3E">
+<link rel="preload" href="../assets/fonts/jost-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../assets/css/site.css">
+
+</head>
+<body data-base="../" data-page="atlas" >
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="hdr-top wrap">
+    <div class="hdr-left"><button class="icon-btn" type="button" data-open="menu" aria-label="Open menu" aria-controls="menu"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 7h18M3 12h18M3 17h18"/></svg></button></div>
+    <a class="wordmark" href="../index.html" aria-label="Pakistan Evidence Catalogue, home"><span class="wm-main">Pakistan Evidence</span><span class="wm-sub">Catalogue</span></a>
+    <div class="hdr-right">
+      <button class="icon-btn" type="button" data-open="search" aria-label="Search (press /)" aria-controls="search"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="M15.5 15.5L21 21"/></svg></button>
+      <a class="icon-btn" href="../shortlist/index.html" aria-label="Your shortlist"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.6l2.6 5.3 5.8.8-4.2 4.1 1 5.8L12 16.9l-5.2 2.7 1-5.8-4.2-4.1 5.8-.8z"/></svg><span class="count" data-shortlist-count></span></a>
+      <a class="icon-btn hide-sm" href="../toolkit/index.html#downloads" aria-label="Downloads"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v11M7 10l5 5 5-5M5 20h14"/></svg></a>
+    </div>
+  </div>
+  <nav class="hdr-nav" aria-label="Main"><a href="../programmes/index.html">Programmes</a><a href="../atlas/index.html" aria-current="page">Atlas</a><a href="../insights/index.html">Insights</a><a href="../datasets/index.html">Datasets</a><a href="../toolkit/index.html">Toolkit</a><a href="../guide/index.html">Guide</a><a href="../about/index.html">About</a></nav>
+</header>
+
+<div class="overlay" id="menu" role="dialog" aria-modal="true" aria-label="Menu">
+  <div class="wrap">
+    <div class="overlay-top"><button class="icon-btn" type="button" data-close aria-label="Close menu"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 5l14 14M19 5L5 19"/></svg></button>
+      <span class="wordmark"><span class="wm-main">Pakistan Evidence</span></span><span style="width:40px"></span></div>
+    <div class="menu-grid">
+      <nav class="menu-main" aria-label="Sections">
+        <a href="../index.html">Home</a>
+        <a href="../programmes/index.html">Programmes</a><a href="../atlas/index.html">Atlas</a><a href="../insights/index.html">Insights</a><a href="../datasets/index.html">Datasets</a><a href="../toolkit/index.html">Toolkit</a><a href="../guide/index.html">Guide</a><a href="../about/index.html">About</a>
+        <a href="../contribute/index.html">Contribute</a>
+      </nav>
+      <div class="menu-col">
+        <h4>Start here</h4>
+        <a href="../programmes/index.html?tq=High">Programmes with reliable rollout dates</a>
+        <a href="../programmes/index.html?tq=High&amp;evidence=Unstudied">Reliable dates, no causal study yet</a>
+        <a href="../programmes/index.html?map=Documented%20districts">Programmes with documented districts</a>
+        <a href="../atlas/index.html">District atlas</a>
+        <a href="../guide/index.html">Identification playbook</a>
+        <a href="../guide/caveats.html">Standing caveats</a>
+      </div>
+      <div class="menu-col">
+        <h4>Data and code</h4>
+        <a href="../toolkit/index.html#downloads">Downloads: CSV, JSON, Stata</a>
+        <a href="../toolkit/index.html#crosswalk">District crosswalk</a>
+        <a href="../toolkit/index.html#stata">Stata starter kit</a>
+        <a href="../toolkit/index.html#power">Power calculator</a>
+        <a href="../data/references.bib">References (BibTeX)</a>
+        <a href="https://github.com/itssaqib/pakistan-evidence-catalogue">Repository on GitHub</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="overlay" id="search" role="dialog" aria-modal="true" aria-label="Search">
+  <div class="wrap">
+    <div class="overlay-top"><span class="small muted">Search programmes, outcomes, datasets and pages</span>
+      <button class="icon-btn" type="button" data-close aria-label="Close search"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 5l14 14M19 5L5 19"/></svg></button></div>
+    <div class="search-box">
+      <label class="sr-only" for="search-input">Search the catalogue</label>
+      <input class="search-input" id="search-input" type="search" placeholder="Search the catalogue" autocomplete="off">
+      <p class="search-hint">Try a programme (Sehat), an outcome (stunting), a dataset (ASER) or an ID (P15). Arrow keys move, Enter opens.</p>
+    </div>
+    <ul class="search-results" id="search-results" aria-live="polite"></ul>
+  </div>
+</div>
+
+<main id="main">
+
+<h1 class="sr-only">District atlas</h1>
+<div class="atlas">
+  <section class="stage" aria-label="Interactive district map">
+    <div class="atlas-controls">
+      <div class="seg" role="group" aria-label="Map layer">
+        <button type="button" data-mode="density" aria-pressed="true">Scope by year</button>
+        <button type="button" data-mode="footprint" aria-pressed="false">Documented rollout</button>
+        <button type="button" data-mode="lineage" aria-pressed="false">Boundary notes</button>
+      </div>
+      <div data-show-for="density" style="display:flex;gap:12px;align-items:center">
+        <button class="play-btn" id="atlas-play" type="button" aria-label="Play 2000 to 2024"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 4l13 8-13 8z"/></svg></button>
+        <label class="sr-only" for="atlas-slider">Year</label><input id="atlas-slider" type="range" min="0" max="24" value="24" style="accent-color:var(--gold);width:180px">
+        <span id="atlas-yr" style="font-size:28px;font-weight:200">2024</span>
+      </div>
+      <div data-show-for="footprint" hidden><label class="sr-only" for="atlas-prog">Programme</label><select id="atlas-prog"></select></div>
+    </div>
+    <div class="atlas-controls"><div class="map-legend" id="atlas-legend"></div></div>
+    <div class="atlas-map"><canvas id="atlas-map" aria-label="Pakistan district map; select a district for details"></canvas></div>
+  </section>
+  <aside class="atlas-panel" id="atlas-panel" aria-live="polite">
+    <p class="k" style="margin-top:0">District atlas</p>
+    <h2>Select a district</h2>
+    <p class="muted" style="margin-top:12px">The map shows Pakistan's 126 districts on 2019 boundaries. Three layers:</p>
+    <ul class="small" style="list-style:disc;padding-left:1.1em;margin-top:10px">
+      <li style="border:0;padding:3px 0"><strong>Scope by year</strong>: how many catalogued programmes include each district in their stated scope or documented rollout. Scope is not treatment: national programmes count everywhere from their start year.</li>
+      <li style="border:0;padding:3px 0"><strong>Documented rollout</strong>: districts named in a source for each phase of 13 programmes.</li>
+      <li style="border:0;padding:3px 0"><strong>Boundary notes</strong>: 2019 units that contain districts created later, from the crosswalk.</li>
+    </ul>
+    <p class="small muted" style="margin-top:16px">Punjab looks dense partly because Punjab documents more. The density of entries reflects what is published, not only what happened.</p>
+  </aside>
+</div>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="f-wordmark">Pakistan Evidence Catalogue</div>
+    <ul class="f-links">
+      <li><a href="../programmes/index.html">Programmes</a></li><li><a href="../atlas/index.html">Atlas</a></li>
+      <li><a href="../insights/index.html">Insights</a></li><li><a href="../datasets/index.html">Datasets</a></li>
+      <li><a href="../toolkit/index.html">Toolkit</a></li><li><a href="../guide/index.html">Guide</a></li>
+      <li><a href="../contribute/index.html">Contribute</a></li><li><a href="../about/index.html">About</a></li>
+      <li><a href="https://github.com/itssaqib/pakistan-evidence-catalogue">GitHub</a></li>
+    </ul>
+    <p class="f-meta">Compiled by <a href="https://itssaqib.github.io">Saqib Hussain</a>. Released under CC BY 4.0. Version 2.0.0, 4 November 2026.
+    Suggested citation: Hussain, S. (2026). <em>Pakistan Evidence Catalogue: staggered district-level programmes for causal impact evaluation</em>, version 2.0.0.<br>
+    District boundaries from geoBoundaries (2019, public domain). Boundaries shown do not imply any judgment on the legal status of any territory; the status of Jammu and Kashmir is disputed.
+    Verify every date against the primary source named on each programme page before using it.</p>
+  </div>
+</footer>
+<script src="../data/catalogue.js"></script>
+<script src="../data/geo.js"></script>
+<script src="../assets/js/core.js"></script>
+<script src="../assets/js/map.js"></script>
+<script src="../assets/js/pages.js"></script>
+</body>
+</html>

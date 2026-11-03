@@ -1,0 +1,33 @@
+name: Claim an idea
+description: Say you are working on an entry so others can coordinate. This does not reserve it.
+title: "[Claim] Pxx "
+labels: ["claim"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Claims are shown on the programme page while this issue is open. Close the issue to release the claim.
+        Keep the title format `[Claim] P07 Zewar-e-Taleem` so the site can find it.
+  - type: input
+    id: pid
+    attributes: {label: Programme ID, placeholder: P07}
+    validations: {required: true}
+  - type: input
+    id: who
+    attributes: {label: Name and affiliation, description: Shown publicly.}
+    validations: {required: true}
+  - type: dropdown
+    id: stage
+    attributes:
+      label: Stage
+      options: [Idea and data search, Building the rollout file, Estimating, Draft paper]
+    validations: {required: true}
+  - type: textarea
+    id: plan
+    attributes: {label: Outcome and design, description: One or two lines. Optional.}
+  - type: checkboxes
+    id: share
+    attributes:
+      label: Sharing
+      options:
+        - label: I am willing to share the rollout file here once the paper is out.

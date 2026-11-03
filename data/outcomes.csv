@@ -1,103 +1,103 @@
-﻿id,domain,outcome,definition,unit,frequency,datasets
-O-EDU-01,Education,Net / gross enrolment rate,"Share of children in the relevant age band currently enrolled; build separately for primary, middle, secondary",Child; aggregate to district,Annual or by survey wave,PSLM; ASER; PIE; MICS_PB
-O-EDU-02,Education,Out-of-school children rate,Share of 5-16 year olds never enrolled or dropped out,Child,Annual,ASER; PSLM; PIE
-O-EDU-03,Education,Learning: reading level,ASER ladder - can read a Story (Urdu/Sindhi/Pashto) and an English sentence,Child 5-16,Annual,ASER
-O-EDU-04,Education,Learning: arithmetic level,ASER ladder - can do two-digit division,Child 5-16,Annual,ASER
-O-EDU-05,Education,Grade progression / retention,"Age-for-grade, on-time progression, dropout between waves",Child,Survey wave,PSLM; ASER; SIS_PB
-O-EDU-06,Education,Private vs public school share,Share of enrolled children in private or PPP-partner schools,Child,Annual,ASER; PSLM; PIE
-O-EDU-07,Education,Gender gap in enrolment,Female minus male enrolment rate within district,District,Annual,ASER; PSLM; PIE
-O-EDU-08,Education,Education expenditure per child,"Household spending on fees, books, uniforms, tuition",Household,Survey wave,PSLM; HIES
-O-EDU-09,Education,Teacher presence / absence,Share of sanctioned teachers present on an unannounced visit,School,Monthly (monitoring) / annual,SIS_PB; ASER; PITB
-O-EDU-10,Education,School facilities index,"Functional toilet, boundary wall, drinking water, electricity",School,Annual,PIE; SIS_PB; ASER
-O-EDU-11,Education,Private tuition uptake,Share of enrolled children paying for extra tuition,Child,Annual,ASER; PSLM
-O-EDU-12,Education,Years of schooling completed / literacy rate,Completed years of education; adult literacy for 10+,Individual,Survey wave,PSLM; CENSUS; LFS
-O-HLT-01,Health,Facility utilisation (OPD visits),"Outpatient contacts per 1,000 population per month",Facility -> district,Monthly,DHIS
-O-HLT-02,Health,Institutional delivery rate,Share of live births delivered in a health facility,Woman with recent birth,Survey wave / monthly,MICS_PB; PDHS; DHIS; PSLM
-O-HLT-03,Health,Skilled birth attendance,"Delivery attended by doctor, nurse, midwife or LHV",Woman,Survey wave,MICS_PB; PDHS; PSLM
-O-HLT-04,Health,Antenatal care (4+ visits),Share of pregnancies with at least four ANC contacts,Woman,Survey wave / monthly,MICS_PB; PDHS; DHIS
-O-HLT-05,Health,Full child immunisation,Share of 12-23 month olds fully immunised (card or recall),Child,Survey wave / monthly,MICS_PB; PDHS; PSLM; EPI_NEOC
-O-HLT-06,Health,Infant / under-5 mortality,"Deaths per 1,000 live births, from birth histories",Child,Survey wave,PDHS; MICS_PB; CENSUS
-O-HLT-07,Health,Out-of-pocket health expenditure,"Household health spending, level and share of total consumption",Household,Survey wave,PSLM; HIES
-O-HLT-08,Health,Catastrophic health expenditure,Health spending above 10% or 25% of household consumption,Household,Survey wave,HIES; PSLM
-O-HLT-09,Health,Distress financing / health borrowing,Borrowing or asset sale to pay for treatment,Household,Survey wave,PSLM; HIES
-O-HLT-10,Health,Inpatient admission rate,"Hospitalisations per 1,000 population; also claims per enrolled family",Individual / claim,Monthly,SSP_MIS; DHIS; PSLM
-O-HLT-11,Health,Child stunting / wasting / underweight,"Height-for-age, weight-for-height, weight-for-age z-scores below -2 SD",Child under 5,Survey wave,NNS; MICS_PB; PDHS
-O-HLT-12,Health,Maternal nutrition & anaemia,"BMI, haemoglobin, micronutrient status of women 15-49",Woman,Survey wave,NNS; PDHS
-O-HLT-13,Health,Contraceptive prevalence rate,Share of married women using any / modern method,Woman 15-49,Survey wave,PDHS; MICS_PB; PSLM
-O-HLT-14,Health,Emergency response time / pre-hospital care,Mean minutes from call to arrival; share of trauma cases reaching facility alive,Incident,Monthly,Rescue 1122 MIS; DHIS
-O-HLT-15,Health,Road traffic injury mortality,"Deaths per 100,000 from road crashes",District,Annual,POLICE; DHIS; CENSUS
-O-LAB-01,Labour,Labour force participation rate,"Share of working-age population in the labour force, by sex",Individual 15-64,Annual,LFS; PSLM
-O-LAB-02,Labour,Employment rate / unemployment rate,Employed and unemployed shares of the labour force,Individual,Annual,LFS; PSLM
-O-LAB-03,Labour,Sectoral composition of employment,"Shares in agriculture, manufacturing, construction, services",Individual,Annual,LFS; CENSUS
-O-LAB-04,Labour,Wage and earnings levels,Monthly real earnings of wage employees; daily agricultural wage,Individual,Annual,LFS; PSLM
-O-LAB-05,Labour,Informality / written contract / social security,Share in informal employment; contract and EOBI coverage,Individual,Annual,LFS
-O-LAB-06,Labour,Female labour force participation,Female LFPR and share in paid (non-family) work,Woman 15-64,Annual,LFS; PSLM
-O-LAB-07,Labour,Child labour,Share of 10-17 year olds economically active,Child,Annual,LFS; PSLM; ASER
-O-LAB-08,Labour,Self-employment and enterprise ownership,Share self-employed; household non-farm enterprise ownership,Household,Annual,LFS; PSLM
-O-LAB-09,Labour,Hours worked / underemployment,Usual weekly hours; share working under 35 hours wanting more,Individual,Annual,LFS
-O-LAB-10,Labour,Occupational skill composition,Share in skilled trades vs elementary occupations (ISCO major groups),Individual,Annual,LFS
-O-POV-01,Poverty,Per adult-equivalent consumption,Real monthly consumption expenditure per adult equivalent,Household,Survey wave,HIES; PSLM
-O-POV-02,Poverty,Headcount poverty rate,Share below the official cost-of-basic-needs poverty line,Household,Survey wave,HIES; PSLM
-O-POV-03,Poverty,Multidimensional poverty index,MPI headcount and intensity,Household / district,Survey wave,MPI; PSLM
-O-POV-04,Poverty,Food security & dietary diversity,"Food consumption score, food share of budget, hunger months",Household,Survey wave,PSLM; HIES; NNS
-O-POV-05,Poverty,Asset ownership index,"Durables, livestock, housing quality principal component",Household,Survey wave,PSLM; MICS_PB; CENSUS
-O-POV-06,Poverty,Local economic activity (nightlights),Log of sum of radiance within district boundary,District,Monthly / annual,NTL
-O-POV-07,Poverty,Consumption smoothing / shock coping,Ability to raise emergency funds; distress asset sales,Household,Survey wave,PSLM; HIES
-O-FIN-01,Financial inclusion,Bank account / mobile wallet ownership,Share of adults with a formal account,Individual,Survey wave,PSLM; Findex; SBP_BB
-O-FIN-02,Financial inclusion,Access to credit,Share of households with an outstanding formal loan; loan size,Household,Survey wave / quarterly,PSLM; PMN; SBP_CRED
-O-FIN-03,Financial inclusion,Microfinance penetration,Active borrowers per 100 potential borrowers in the district,District,Quarterly,PMN
-O-FIN-04,Financial inclusion,Agricultural credit disbursed,Rupees disbursed per hectare of cultivated area,District,Annual,SBP_CRED; AGCEN
-O-FIN-05,Financial inclusion,Bank branch and agent density,"Branches and branchless-banking agents per 100,000 adults",District,Quarterly,SBP_CRED; SBP_BB
-O-FIN-06,Financial inclusion,Deposits and savings,Deposit balances per capita; share of households saving,District / household,Quarterly,SBP_CRED; PSLM
-O-AGR-01,Agriculture,Crop yield,"Tonnes per hectare for wheat, rice, cotton, sugarcane, maize",District x crop,Seasonal / annual,CROPREP; AGCEN
-O-AGR-02,Agriculture,Cropped area and cropping intensity,Area sown; number of crops per year on the same plot,District / mouza,Annual,CROPREP; AGCEN; MODIS
-O-AGR-03,Agriculture,Vegetation index (remote-sensed productivity),Growing-season mean NDVI/EVI over cropland pixels,District,8-16 day,MODIS
-O-AGR-04,Agriculture,Input use,"Fertiliser, certified seed, tractor, tubewell and pesticide use",Farm household,Survey wave,PSLM; AGCEN
-O-AGR-05,Agriculture,Land transactions and tenure,Registered sales and mutations; share of area under owner cultivation vs tenancy,Mauza / transaction,Monthly,PLRA; AGCEN
-O-AGR-06,Agriculture,Land prices and rental rates,Reported sale price and rental value per acre,Mauza / household,Annual,PLRA; AGCEN; AMIS
-O-AGR-07,Agriculture,Livestock holdings,"Number and value of cattle, buffalo, goats per household",Household,Survey wave,PSLM; AGCEN
-O-AGR-08,Agriculture,Farm-gate and wholesale prices,Mandi price by commodity; farm-gate to mandi margin,Market,Daily,AMIS; SPI
-O-GOV-01,Governance,Service delivery time,"Minutes or days to complete a transaction (fard, mutation, licence, certificate)",Transaction,Continuous,PLRA; PITB
-O-GOV-02,Governance,Bribe incidence and amount,Share reporting an informal payment; reported amount,Household / transaction,Survey wave,PITB (CFMP); PSLM; Transparency Intl surveys
-O-GOV-03,Governance,Citizen satisfaction with public services,"Reported satisfaction with school, health, police, revenue services",Household / caller,Continuous / survey wave,PITB (CFMP); PSLM
-O-GOV-04,Governance,Transaction / caseload volume,"Number of records issued, cases filed, licences processed",Facility / district,Monthly,PLRA; COURTS; PITB
-O-GOV-05,Governance,Court cases and dispute resolution,"Land and civil cases instituted, pending and disposed",District court,Quarterly,COURTS
-O-GOV-06,Governance,Anti-corruption enforcement,"Inquiries, references and convictions per district",District,Annual,Anti-Corruption Establishment; NAB annual reports
-O-GOV-07,Governance,Local tax and fee collection,"Stamp duty, registration fee, property tax, agricultural income tax",District,Annual,BOR; FBR; provincial finance departments
-O-GOV-08,Governance,Frontline staff absence / effort,Share of monitored visits with staff present; inspection frequency,Facility,Monthly,PITB; SIS_PB; DHIS
-O-GOV-09,Governance,Documentation / civil registration,Birth registration rate; CNIC coverage; female voter registration ratio,Child / adult,Annual / survey wave,MICS_PB; NADRA_ROLL; PSLM
-O-CON-01,Conflict,Terrorist attacks,"Count of attacks per district-year (and per 100,000 population)",District,Monthly / annual,GTD; BFRS; ACLED; PIPS
-O-CON-02,Conflict,Conflict fatalities,"Civilian, security-force and militant deaths",District,Monthly / annual,GTD; BFRS; ACLED
-O-CON-03,Conflict,Attack type composition,Share of attacks on civilians vs security vs infrastructure,District,Annual,GTD; BFRS
-O-CON-04,Conflict,Protest and riot incidence,Count of protest and riot events,District,Monthly,ACLED
-O-CON-05,Conflict,Ordinary crime,"Reported murder, robbery, kidnapping, theft per 100,000",District,Monthly,POLICE
-O-CON-06,Conflict,Displacement and IDP flows,Registered IDP families; return timing,District / agency,Event-based,PDMA; HDX; UNHCR
-O-CON-07,Conflict,Sectarian and communal violence,Attacks coded as sectarian; targets by sect,District,Annual,BFRS; PIPS; ACLED
-O-DEM-01,Demography & migration,Internal migration,Share of households with a member who moved district in the last 5 years; in/out-migration rates,Household / individual,Survey wave / census,PSLM; CENSUS; LFS
-O-DEM-02,Demography & migration,International migration and remittances,Households with an overseas migrant; remittance receipts,Household,Survey wave,PSLM; HIES; Bureau of Emigration
-O-DEM-03,Demography & migration,Fertility and birth spacing,Total fertility rate; birth intervals,Woman,Survey wave,PDHS; MICS_PB; CENSUS
-O-DEM-04,Demography & migration,Age at marriage,Share of women married before 18; median age at first marriage,Woman,Survey wave,PDHS; MICS_PB
-O-DEM-05,Demography & migration,Household composition and sex ratio,"Household size, dependency ratio, child sex ratio",Household,Survey wave / census,CENSUS; PSLM
-O-DEM-06,Demography & migration,Urbanisation and built-up growth,Built-up area growth; share of population urban,District,Annual,CENSUS; MODIS; NTL
-O-GEN-01,Gender,Women's decision-making power,"Say over household purchases, children's health, own mobility",Woman,Survey wave,PDHS; MICS_PB; project surveys
-O-GEN-02,Gender,Women's control over cash,Whether the woman controls the transfer or her own earnings,Woman,Survey wave,PDHS; BISP evaluations
-O-GEN-03,Gender,Intimate partner violence,"Experience of physical, sexual or emotional IPV in the last 12 months",Woman,Survey wave,PDHS 2017-18; project surveys
-O-GEN-04,Gender,Girls' schooling relative to boys,"Female-male ratio in enrolment, attendance and learning",Child,Annual,ASER; PIE; PSLM
-O-GEN-05,Gender,Female mobility and documentation,Owns a CNIC; can travel alone to a market/health facility,Woman,Survey wave / annual,NADRA_ROLL; PDHS; MICS_PB
-O-POL-01,Political economy,Voter turnout,"Votes cast over registered voters, by constituency mapped to district",Constituency,Election year,ECP
-O-POL-02,Political economy,Incumbent vote share and re-election,Share for the incumbent party or candidate; probability of re-election,Constituency,Election year,ECP
-O-POL-03,Political economy,Political competition and candidate entry,Effective number of candidates; margin of victory,Constituency,Election year,ECP
-O-POL-04,Political economy,Alignment premium in allocations,Whether treatment or funds go disproportionately to aligned constituencies,District / constituency,Annual,ECP + programme MIS + ADP releases
-O-POL-05,Political economy,Trust in state institutions,"Reported confidence in government, police, courts",Individual,Survey wave,Pew / World Values Survey / project surveys
-O-INF-01,Infrastructure & digital,Mobile broadband coverage,Share of district population inside 3G/4G polygons,District,Annual,OCID; USF
-O-INF-02,Infrastructure & digital,Internet and smartphone use,Share of households with internet access; individuals using the internet,Household / individual,Survey wave,PSLM; MICS_PB
-O-INF-03,Infrastructure & digital,Electrification and outages,Household grid connection; reported hours of load-shedding,Household,Survey wave,PSLM; MICS_PB
-O-INF-04,Infrastructure & digital,Safe drinking water and sanitation,"Improved water source; improved, non-shared sanitation; open defecation",Household,Survey wave,PSLM; MICS_PB; NNS
-O-INF-05,Infrastructure & digital,Road access and travel time,"Distance and travel time to metalled road, market, hospital, school",Mouza / household,Survey wave,AGCEN (Mouza); OSM; PSLM
-O-INF-06,Infrastructure & digital,Market integration,Price co-movement and dispersion across mandis,Market pair,Daily / monthly,AMIS; SPI
-O-FRM-01,Firms,Firm entry and establishment counts,"New registrations; establishments per 1,000 population",District,Annual,SECP; Economic Census 2023; CMI
-O-FRM-02,Firms,Firm employment and output,Employees per establishment; value added,Establishment,Periodic,CMI; Economic Census
-O-FRM-03,Firms,Formalisation,Registered with a tax authority or the provincial revenue authority,Firm,Annual,FBR; provincial revenue authorities
-O-ENV-01,Environment,Air quality (PM2.5),Annual mean surface PM2.5 from satellite-derived products,District,Annual,Van Donkelaar et al. / ACAG; Sentinel-5P
-O-ENV-02,Environment,Groundwater depth and irrigation stress,Water-table depth; GRACE groundwater anomaly,District,Monthly / annual,Irrigation Dept; GRACE
-O-ENV-03,Environment,Flood and drought exposure,Share of district area inundated; SPEI drought index,District,Event / monthly,FLOOD; CHIRPS
+﻿id,domain,outcome,definition,unit,frequency,datasets,panel
+O-EDU-01,Education,Net / gross enrolment rate,"Share of children in the relevant age band currently enrolled; build separately for primary, middle, secondary",Child; aggregate to district,Annual or by survey wave,PSLM; ASER; PIE; MICS_PB,Panel-ready
+O-EDU-02,Education,Out-of-school children rate,Share of 5-16 year olds never enrolled or dropped out,Child,Annual,ASER; PSLM; PIE,Panel-ready
+O-EDU-03,Education,Learning: reading level,ASER ladder - can read a Story (Urdu/Sindhi/Pashto) and an English sentence,Child 5-16,Annual,ASER,Panel-ready
+O-EDU-04,Education,Learning: arithmetic level,ASER ladder - can do two-digit division,Child 5-16,Annual,ASER,Panel-ready
+O-EDU-05,Education,Grade progression / retention,"Age-for-grade, on-time progression, dropout between waves",Child,Survey wave,PSLM; ASER; SIS_PB,Panel-ready
+O-EDU-06,Education,Private vs public school share,Share of enrolled children in private or PPP-partner schools,Child,Annual,ASER; PSLM; PIE,Panel-ready
+O-EDU-07,Education,Gender gap in enrolment,Female minus male enrolment rate within district,District,Annual,ASER; PSLM; PIE,Panel-ready
+O-EDU-08,Education,Education expenditure per child,"Household spending on fees, books, uniforms, tuition",Household,Survey wave,PSLM; HIES,Panel-ready
+O-EDU-09,Education,Teacher presence / absence,Share of sanctioned teachers present on an unannounced visit,School,Monthly (monitoring) / annual,SIS_PB; ASER; PITB,Panel-ready
+O-EDU-10,Education,School facilities index,"Functional toilet, boundary wall, drinking water, electricity",School,Annual,PIE; SIS_PB; ASER,Panel-ready
+O-EDU-11,Education,Private tuition uptake,Share of enrolled children paying for extra tuition,Child,Annual,ASER; PSLM,Panel-ready
+O-EDU-12,Education,Years of schooling completed / literacy rate,Completed years of education; adult literacy for 10+,Individual,Survey wave,PSLM; CENSUS; LFS,Panel-ready
+O-HLT-01,Health,Facility utilisation (OPD visits),"Outpatient contacts per 1,000 population per month",Facility -> district,Monthly,DHIS,Panel-ready
+O-HLT-02,Health,Institutional delivery rate,Share of live births delivered in a health facility,Woman with recent birth,Survey wave / monthly,MICS_PB; PDHS; DHIS; PSLM,Panel-ready
+O-HLT-03,Health,Skilled birth attendance,"Delivery attended by doctor, nurse, midwife or LHV",Woman,Survey wave,MICS_PB; PDHS; PSLM,Panel-ready
+O-HLT-04,Health,Antenatal care (4+ visits),Share of pregnancies with at least four ANC contacts,Woman,Survey wave / monthly,MICS_PB; PDHS; DHIS,Panel-ready
+O-HLT-05,Health,Full child immunisation,Share of 12-23 month olds fully immunised (card or recall),Child,Survey wave / monthly,MICS_PB; PDHS; PSLM; EPI_NEOC,Panel-ready
+O-HLT-06,Health,Infant / under-5 mortality,"Deaths per 1,000 live births, from birth histories",Child,Survey wave,PDHS; MICS_PB; CENSUS,Panel-ready
+O-HLT-07,Health,Out-of-pocket health expenditure,"Household health spending, level and share of total consumption",Household,Survey wave,PSLM; HIES,Panel-ready
+O-HLT-08,Health,Catastrophic health expenditure,Health spending above 10% or 25% of household consumption,Household,Survey wave,HIES; PSLM,Panel-ready
+O-HLT-09,Health,Distress financing / health borrowing,Borrowing or asset sale to pay for treatment,Household,Survey wave,PSLM; HIES,Panel-ready
+O-HLT-10,Health,Inpatient admission rate,"Hospitalisations per 1,000 population; also claims per enrolled family",Individual / claim,Monthly,SSP_MIS; DHIS; PSLM,Panel-ready
+O-HLT-11,Health,Child stunting / wasting / underweight,"Height-for-age, weight-for-height, weight-for-age z-scores below -2 SD",Child under 5,Survey wave,NNS; MICS_PB; PDHS,Panel-ready
+O-HLT-12,Health,Maternal nutrition & anaemia,"BMI, haemoglobin, micronutrient status of women 15-49",Woman,Survey wave,NNS; PDHS,Few waves
+O-HLT-13,Health,Contraceptive prevalence rate,Share of married women using any / modern method,Woman 15-49,Survey wave,PDHS; MICS_PB; PSLM,Panel-ready
+O-HLT-14,Health,Emergency response time / pre-hospital care,Mean minutes from call to arrival; share of trauma cases reaching facility alive,Incident,Monthly,Rescue 1122 MIS; DHIS,Panel-ready
+O-HLT-15,Health,Road traffic injury mortality,"Deaths per 100,000 from road crashes",District,Annual,POLICE; DHIS; CENSUS,Panel-ready
+O-LAB-01,Labour,Labour force participation rate,"Share of working-age population in the labour force, by sex",Individual 15-64,Annual,LFS; PSLM,Panel-ready
+O-LAB-02,Labour,Employment rate / unemployment rate,Employed and unemployed shares of the labour force,Individual,Annual,LFS; PSLM,Panel-ready
+O-LAB-03,Labour,Sectoral composition of employment,"Shares in agriculture, manufacturing, construction, services",Individual,Annual,LFS; CENSUS,Panel-ready
+O-LAB-04,Labour,Wage and earnings levels,Monthly real earnings of wage employees; daily agricultural wage,Individual,Annual,LFS; PSLM,Panel-ready
+O-LAB-05,Labour,Informality / written contract / social security,Share in informal employment; contract and EOBI coverage,Individual,Annual,LFS,Panel-ready
+O-LAB-06,Labour,Female labour force participation,Female LFPR and share in paid (non-family) work,Woman 15-64,Annual,LFS; PSLM,Panel-ready
+O-LAB-07,Labour,Child labour,Share of 10-17 year olds economically active,Child,Annual,LFS; PSLM; ASER,Panel-ready
+O-LAB-08,Labour,Self-employment and enterprise ownership,Share self-employed; household non-farm enterprise ownership,Household,Annual,LFS; PSLM,Panel-ready
+O-LAB-09,Labour,Hours worked / underemployment,Usual weekly hours; share working under 35 hours wanting more,Individual,Annual,LFS,Panel-ready
+O-LAB-10,Labour,Occupational skill composition,Share in skilled trades vs elementary occupations (ISCO major groups),Individual,Annual,LFS,Panel-ready
+O-POV-01,Poverty,Per adult-equivalent consumption,Real monthly consumption expenditure per adult equivalent,Household,Survey wave,HIES; PSLM,Panel-ready
+O-POV-02,Poverty,Headcount poverty rate,Share below the official cost-of-basic-needs poverty line,Household,Survey wave,HIES; PSLM,Panel-ready
+O-POV-03,Poverty,Multidimensional poverty index,MPI headcount and intensity,Household / district,Survey wave,MPI; PSLM,Panel-ready
+O-POV-04,Poverty,Food security & dietary diversity,"Food consumption score, food share of budget, hunger months",Household,Survey wave,PSLM; HIES; NNS,Panel-ready
+O-POV-05,Poverty,Asset ownership index,"Durables, livestock, housing quality principal component",Household,Survey wave,PSLM; MICS_PB; CENSUS,Panel-ready
+O-POV-06,Poverty,Local economic activity (nightlights),Log of sum of radiance within district boundary,District,Monthly / annual,NTL,Panel-ready
+O-POV-07,Poverty,Consumption smoothing / shock coping,Ability to raise emergency funds; distress asset sales,Household,Survey wave,PSLM; HIES,Panel-ready
+O-FIN-01,Financial inclusion,Bank account / mobile wallet ownership,Share of adults with a formal account,Individual,Survey wave,PSLM; Findex; SBP_BB,Panel-ready
+O-FIN-02,Financial inclusion,Access to credit,Share of households with an outstanding formal loan; loan size,Household,Survey wave / quarterly,PSLM; PMN; SBP_CRED,Panel-ready
+O-FIN-03,Financial inclusion,Microfinance penetration,Active borrowers per 100 potential borrowers in the district,District,Quarterly,PMN,Panel-ready
+O-FIN-04,Financial inclusion,Agricultural credit disbursed,Rupees disbursed per hectare of cultivated area,District,Annual,SBP_CRED; AGCEN,Panel-ready
+O-FIN-05,Financial inclusion,Bank branch and agent density,"Branches and branchless-banking agents per 100,000 adults",District,Quarterly,SBP_CRED; SBP_BB,Panel-ready
+O-FIN-06,Financial inclusion,Deposits and savings,Deposit balances per capita; share of households saving,District / household,Quarterly,SBP_CRED; PSLM,Panel-ready
+O-AGR-01,Agriculture,Crop yield,"Tonnes per hectare for wheat, rice, cotton, sugarcane, maize",District x crop,Seasonal / annual,CROPREP; AGCEN,Panel-ready
+O-AGR-02,Agriculture,Cropped area and cropping intensity,Area sown; number of crops per year on the same plot,District / mouza,Annual,CROPREP; AGCEN; MODIS,Panel-ready
+O-AGR-03,Agriculture,Vegetation index (remote-sensed productivity),Growing-season mean NDVI/EVI over cropland pixels,District,8-16 day,MODIS,Panel-ready
+O-AGR-04,Agriculture,Input use,"Fertiliser, certified seed, tractor, tubewell and pesticide use",Farm household,Survey wave,PSLM; AGCEN,Panel-ready
+O-AGR-05,Agriculture,Land transactions and tenure,Registered sales and mutations; share of area under owner cultivation vs tenancy,Mauza / transaction,Monthly,PLRA; AGCEN,Panel-ready
+O-AGR-06,Agriculture,Land prices and rental rates,Reported sale price and rental value per acre,Mauza / household,Annual,PLRA; AGCEN; AMIS,Panel-ready
+O-AGR-07,Agriculture,Livestock holdings,"Number and value of cattle, buffalo, goats per household",Household,Survey wave,PSLM; AGCEN,Panel-ready
+O-AGR-08,Agriculture,Farm-gate and wholesale prices,Mandi price by commodity; farm-gate to mandi margin,Market,Daily,AMIS; SPI,Panel-ready
+O-GOV-01,Governance,Service delivery time,"Minutes or days to complete a transaction (fard, mutation, licence, certificate)",Transaction,Continuous,PLRA; PITB,Panel-ready
+O-GOV-02,Governance,Bribe incidence and amount,Share reporting an informal payment; reported amount,Household / transaction,Survey wave,PITB (CFMP); PSLM; Transparency Intl surveys,Panel-ready
+O-GOV-03,Governance,Citizen satisfaction with public services,"Reported satisfaction with school, health, police, revenue services",Household / caller,Continuous / survey wave,PITB (CFMP); PSLM,Panel-ready
+O-GOV-04,Governance,Transaction / caseload volume,"Number of records issued, cases filed, licences processed",Facility / district,Monthly,PLRA; COURTS; PITB,Panel-ready
+O-GOV-05,Governance,Court cases and dispute resolution,"Land and civil cases instituted, pending and disposed",District court,Quarterly,COURTS,Panel-ready
+O-GOV-06,Governance,Anti-corruption enforcement,"Inquiries, references and convictions per district",District,Annual,Anti-Corruption Establishment; NAB annual reports,Needs primary data
+O-GOV-07,Governance,Local tax and fee collection,"Stamp duty, registration fee, property tax, agricultural income tax",District,Annual,BOR; FBR; provincial finance departments,Panel-ready
+O-GOV-08,Governance,Frontline staff absence / effort,Share of monitored visits with staff present; inspection frequency,Facility,Monthly,PITB; SIS_PB; DHIS,Panel-ready
+O-GOV-09,Governance,Documentation / civil registration,Birth registration rate; CNIC coverage; female voter registration ratio,Child / adult,Annual / survey wave,MICS_PB; NADRA_ROLL; PSLM,Panel-ready
+O-CON-01,Conflict,Terrorist attacks,"Count of attacks per district-year (and per 100,000 population)",District,Monthly / annual,GTD; BFRS; ACLED; PIPS,Panel-ready
+O-CON-02,Conflict,Conflict fatalities,"Civilian, security-force and militant deaths",District,Monthly / annual,GTD; BFRS; ACLED,Panel-ready
+O-CON-03,Conflict,Attack type composition,Share of attacks on civilians vs security vs infrastructure,District,Annual,GTD; BFRS,Panel-ready
+O-CON-04,Conflict,Protest and riot incidence,Count of protest and riot events,District,Monthly,ACLED,Panel-ready
+O-CON-05,Conflict,Ordinary crime,"Reported murder, robbery, kidnapping, theft per 100,000",District,Monthly,POLICE,Panel-ready
+O-CON-06,Conflict,Displacement and IDP flows,Registered IDP families; return timing,District / agency,Event-based,PDMA; HDX; UNHCR,Few waves
+O-CON-07,Conflict,Sectarian and communal violence,Attacks coded as sectarian; targets by sect,District,Annual,BFRS; PIPS; ACLED,Panel-ready
+O-DEM-01,Demography & migration,Internal migration,Share of households with a member who moved district in the last 5 years; in/out-migration rates,Household / individual,Survey wave / census,PSLM; CENSUS; LFS,Panel-ready
+O-DEM-02,Demography & migration,International migration and remittances,Households with an overseas migrant; remittance receipts,Household,Survey wave,PSLM; HIES; Bureau of Emigration,Panel-ready
+O-DEM-03,Demography & migration,Fertility and birth spacing,Total fertility rate; birth intervals,Woman,Survey wave,PDHS; MICS_PB; CENSUS,Panel-ready
+O-DEM-04,Demography & migration,Age at marriage,Share of women married before 18; median age at first marriage,Woman,Survey wave,PDHS; MICS_PB,Panel-ready
+O-DEM-05,Demography & migration,Household composition and sex ratio,"Household size, dependency ratio, child sex ratio",Household,Survey wave / census,CENSUS; PSLM,Panel-ready
+O-DEM-06,Demography & migration,Urbanisation and built-up growth,Built-up area growth; share of population urban,District,Annual,CENSUS; MODIS; NTL,Panel-ready
+O-GEN-01,Gender,Women's decision-making power,"Say over household purchases, children's health, own mobility",Woman,Survey wave,PDHS; MICS_PB; project surveys,Panel-ready
+O-GEN-02,Gender,Women's control over cash,Whether the woman controls the transfer or her own earnings,Woman,Survey wave,PDHS; BISP evaluations,Few waves
+O-GEN-03,Gender,Intimate partner violence,"Experience of physical, sexual or emotional IPV in the last 12 months",Woman,Survey wave,PDHS 2017-18; project surveys,Few waves
+O-GEN-04,Gender,Girls' schooling relative to boys,"Female-male ratio in enrolment, attendance and learning",Child,Annual,ASER; PIE; PSLM,Panel-ready
+O-GEN-05,Gender,Female mobility and documentation,Owns a CNIC; can travel alone to a market/health facility,Woman,Survey wave / annual,NADRA_ROLL; PDHS; MICS_PB,Panel-ready
+O-POL-01,Political economy,Voter turnout,"Votes cast over registered voters, by constituency mapped to district",Constituency,Election year,ECP,Panel-ready
+O-POL-02,Political economy,Incumbent vote share and re-election,Share for the incumbent party or candidate; probability of re-election,Constituency,Election year,ECP,Panel-ready
+O-POL-03,Political economy,Political competition and candidate entry,Effective number of candidates; margin of victory,Constituency,Election year,ECP,Panel-ready
+O-POL-04,Political economy,Alignment premium in allocations,Whether treatment or funds go disproportionately to aligned constituencies,District / constituency,Annual,ECP + programme MIS + ADP releases,Panel-ready
+O-POL-05,Political economy,Trust in state institutions,"Reported confidence in government, police, courts",Individual,Survey wave,Pew / World Values Survey / project surveys,Needs primary data
+O-INF-01,Infrastructure & digital,Mobile broadband coverage,Share of district population inside 3G/4G polygons,District,Annual,OCID; USF,Panel-ready
+O-INF-02,Infrastructure & digital,Internet and smartphone use,Share of households with internet access; individuals using the internet,Household / individual,Survey wave,PSLM; MICS_PB,Panel-ready
+O-INF-03,Infrastructure & digital,Electrification and outages,Household grid connection; reported hours of load-shedding,Household,Survey wave,PSLM; MICS_PB,Panel-ready
+O-INF-04,Infrastructure & digital,Safe drinking water and sanitation,"Improved water source; improved, non-shared sanitation; open defecation",Household,Survey wave,PSLM; MICS_PB; NNS,Panel-ready
+O-INF-05,Infrastructure & digital,Road access and travel time,"Distance and travel time to metalled road, market, hospital, school",Mouza / household,Survey wave,AGCEN (Mouza); OSM; PSLM,Panel-ready
+O-INF-06,Infrastructure & digital,Market integration,Price co-movement and dispersion across mandis,Market pair,Daily / monthly,AMIS; SPI,Panel-ready
+O-FRM-01,Firms,Firm entry and establishment counts,"New registrations; establishments per 1,000 population",District,Annual,SECP; Economic Census 2023; CMI,Few waves
+O-FRM-02,Firms,Firm employment and output,Employees per establishment; value added,Establishment,Periodic,CMI; Economic Census,Few waves
+O-FRM-03,Firms,Formalisation,Registered with a tax authority or the provincial revenue authority,Firm,Annual,FBR; provincial revenue authorities,Few waves
+O-ENV-01,Environment,Air quality (PM2.5),Annual mean surface PM2.5 from satellite-derived products,District,Annual,Van Donkelaar et al. / ACAG; Sentinel-5P,Needs primary data
+O-ENV-02,Environment,Groundwater depth and irrigation stress,Water-table depth; GRACE groundwater anomaly,District,Monthly / annual,Irrigation Dept; GRACE,Needs primary data
+O-ENV-03,Environment,Flood and drought exposure,Share of district area inundated; SPEI drought index,District,Event / monthly,FLOOD; CHIRPS,Panel-ready

@@ -1,0 +1,30 @@
+﻿district,province,created,parent_named,contained_in_unit,pec_unit_id,hq_lon,hq_lat,check,confidence
+Nankana Sahib,Punjab,2005,Sheikhpura,Sheikhpura,pb-sheikhpura,73.7,31.45,consistent,high
+Chiniot,Punjab,2009,Jhang,Jhang,pb-jhang,72.98,31.72,consistent,high
+Kot Addu,Punjab,2022,Muzaffargarh,Muzaffargarh,pb-muzaffargarh,70.97,30.47,consistent,medium
+Talagang,Punjab,2022,Chakwal,Chakwal,pb-chakwal,72.42,32.93,consistent,medium
+Murree,Punjab,2022,Rawalpindi,Rawalpindi,pb-rawalpindi,73.39,33.91,consistent,medium
+Wazirabad,Punjab,2022,Gujranwala,Gujranwala,pb-gujranwala,74.12,32.44,consistent,medium
+Taunsa,Punjab,2023,Dera Ghazi Khan,Dera Ghazi Khan,pb-dera-ghazi-khan,70.65,30.7,consistent,medium
+Larkana,Sindh,,Qambar Shahdadkot,Qambar Shahdadkot,sd-qambar-shahdadkot,68.21,27.56,consistent,boundary-file artefact
+Sujawal,Sindh,2013,Thatta,Thatta,sd-thatta,68.08,24.61,consistent,medium
+Tor Ghar,Khyber Pakhtunkhwa,2011,Mansehra,Mansehra,kp-mansehra,72.82,34.62,consistent,low
+Upper Chitral,Khyber Pakhtunkhwa,2018,Chitral,Chitral,kp-chitral,72.25,36.27,consistent,medium
+Lower Chitral,Khyber Pakhtunkhwa,2018,Chitral,Chitral,kp-chitral,71.79,35.85,consistent,medium
+Upper Kohistan,Khyber Pakhtunkhwa,2014,Kohistan,Kohistan,kp-kohistan,73.3,35.29,consistent,low
+Lower Kohistan,Khyber Pakhtunkhwa,2014,Kohistan,Kohistan,kp-kohistan,73.03,35.03,consistent,low
+Kolai Palas,Khyber Pakhtunkhwa,2017,Kohistan,Kohistan,kp-kohistan,73.05,34.95,consistent,low
+Washuk,Balochistan,2005,Kharan,Kharan,ba-kharan,64.79,27.72,consistent,medium
+Sherani,Balochistan,2006,Zhob,Zhob,ba-zhob,69.85,31.3,consistent,low
+Harnai,Balochistan,2007,Sibi,Sibi,ba-sibi,67.94,30.1,consistent,medium
+Lehri,Balochistan,2013,Sibi,Kachhi,ba-kachhi,68.0,29.25,check,low
+Sohbatpur,Balochistan,2013,Jafarabad,Jafarabad,ba-jafarabad,68.55,28.52,consistent,low
+Duki,Balochistan,2016,Loralai,Loralai,ba-loralai,68.56,30.15,consistent,medium
+Surab,Balochistan,2017,Kalat,Kalat,ba-kalat,66.26,28.49,consistent,medium
+Chaman,Balochistan,2021,Qilla Abdullah,Qilla Abdullah,ba-qilla-abdullah,66.45,30.92,consistent,high
+Hub,Balochistan,2022,Lasbela,Lasbela,ba-lasbela,66.88,25.05,consistent,medium
+Usta Muhammad,Balochistan,2022,Jafarabad,Jafarabad,ba-jafarabad,68.04,28.18,consistent,medium
+Roundu,Gilgit-Baltistan,2019,Skardu,Shigar,gb-shigar,75.2,35.7,check,low
+Darel,Gilgit-Baltistan,2019,Diamer,Diamer,gb-diamer,73.5,35.6,consistent,low
+Tangir,Gilgit-Baltistan,2019,Diamer,Diamer,gb-diamer,73.3,35.65,consistent,low
+Gupis-Yasin,Gilgit-Baltistan,2019,Ghizer,Ghizer,gb-ghizer,73.4,36.2,consistent,low

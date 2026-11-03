@@ -1,0 +1,343 @@
+{
+ "NOTES": [
+  [
+   "Do not use two-way fixed effects on its own",
+   "With variation in treatment timing and any heterogeneity in effects across cohorts, the TWFE coefficient is a weighted average of 2&times;2 comparisons in which already-treated units serve as controls for later-treated units, and some of those weights are negative. Report the Goodman-Bacon decomposition to show how much of the estimate comes from that forbidden comparison, then estimate with Callaway&ndash;Sant'Anna, Sun&ndash;Abraham, de&nbsp;Chaisemartin&ndash;D'Haultf&oelig;uille, or Borusyak&ndash;Jaravel&ndash;Spiess. Show that they agree; where they do not, say why."
+  ],
+  [
+   "Choose the comparison group deliberately",
+   "Never-treated and not-yet-treated districts give different estimands. Most large Pakistani programmes eventually reach every district, so the never-treated group is often empty or unusual &mdash; typically Balochistan or ex-FATA, which differ on everything. Prefer not-yet-treated comparisons, and say so explicitly rather than letting the software choose."
+  ],
+  [
+   "Pre-trends are necessary but not sufficient",
+   "Many programmes here were deliberately targeted at districts doing badly: low literacy, high stunting, low enrolment. That guarantees mean reversion, which can look like a treatment effect and can also produce clean-looking pre-trends when the reversion begins exactly at treatment. Plot the full event-study path, run the Rambachan&ndash;Roth honest DiD sensitivity analysis, and consider matching on baseline levels and trends before estimating."
+  ],
+  [
+   "Cluster and infer carefully",
+   "Pakistan has roughly 130&ndash;160 districts depending on the year and definition &mdash; enough for district-clustered standard errors in most cases. But several entries here have fewer than 20 treated districts (Nashonuma phase 1, Safe Cities, Daanish Schools). For those, use wild cluster bootstrap or randomisation inference, and report the treated-cluster count prominently rather than in a footnote."
+  ],
+  [
+   "Get the boundaries right before anything else",
+   "Harmonise every district to a constant-boundary definition, usually the 1998 or 2017 census set, and keep the crosswalk as a separate documented file. Ex-FATA needs its own decision: drop it, or treat the seven tribal districts as entering the panel in 2018. Whichever you choose, do it once and state it. A silent boundary change looks exactly like a treatment effect."
+  ],
+  [
+   "Watch for migration sorting",
+   "District-level estimates assume the population is fixed. Conflict, floods, roads and university openings all move people. If treatment changes who lives in the district, the estimate confounds a treatment effect with a composition effect. Test it directly using the PSLM and census migration modules, and where sorting is present, report it as a finding rather than a caveat."
+  ],
+  [
+   "Treatment is often not absorbing",
+   "Contracting out of basic health units was reversed and re-awarded. Saaf Pani was suspended mid-programme. Local governments were dissolved and restored. Standard staggered estimators assume an absorbing treatment. Where it is not, use the de&nbsp;Chaisemartin&ndash;D'Haultf&oelig;uille estimator, which handles switching in and out, and document every reversal date."
+  ],
+  [
+   "Distinguish the policy from its intensity",
+   "Several entries are better modelled as a continuous dose &mdash; lady health worker coverage share, training slots per capita, broadband coverage share, flood inundation share &mdash; than as a binary switch. A binary indicator on a continuous treatment throws away most of the variation and usually attenuates the estimate."
+  ],
+  [
+   "Combine designs where the assignment rule allows it",
+   "Several programmes have a rule-based eligibility threshold inside the district: the BISP proxy means test cut-off, the Punjab Education Foundation's Quality Assurance Test score, the Female School Stipend's 1998 literacy threshold, the NCOC's positivity thresholds. A within-district regression discontinuity alongside the across-district difference-in-differences tests the same hypothesis under different assumptions. Agreement between the two is far more persuasive than either alone."
+  ],
+  [
+   "Prefer sub-district treatment units when they exist",
+   "Land records digitisation operated at tehsil level across 143 centres; health facility outsourcing and school handovers at facility and school level; filtration plants at plant level; broadband subsidies at project-lot level. Using the finer unit lets you include district &times; year fixed effects, which absorbs the district-level political and budgetary confounds a pure district design cannot. This is usually the single largest available improvement in credibility."
+  ],
+  [
+   "Frequency matters more than people expect",
+   "Monthly facility data, quarterly district microfinance penetration, daily mandi prices, monthly nightlights and continuous citizen-feedback call records give far more power than the biennial household surveys, and let you separate anticipation from response. Where a high-frequency administrative outcome exists, make it the primary outcome and use the survey as corroboration."
+  ],
+  [
+   "Adjust for multiple hypotheses",
+   "This catalogue lists many outcomes per programme by design. If you run all of them, adjust: pre-specify a small set of primary outcomes, group the rest into indices (Anderson sharpened q-values or Romano&ndash;Wolf stepdown), and report both adjusted and unadjusted p-values."
+  ]
+ ],
+ "PKGS": [
+  [
+   "csdid",
+   "drdid",
+   "Callaway&ndash;Sant'Anna group-time average treatment effects with doubly robust estimation.",
+   "ssc install csdid, replace"
+  ],
+  [
+   "did_imputation",
+   "",
+   "Borusyak&ndash;Jaravel&ndash;Spiess imputation estimator &mdash; efficient under homogeneous trends.",
+   "ssc install did_imputation, replace"
+  ],
+  [
+   "did_multiplegt_dyn",
+   "",
+   "de&nbsp;Chaisemartin&ndash;D'Haultf&oelig;uille &mdash; the one to use when treatment switches off again.",
+   "ssc install did_multiplegt_dyn, replace"
+  ],
+  [
+   "eventstudyinteract",
+   "",
+   "Sun&ndash;Abraham interaction-weighted event study.",
+   "ssc install eventstudyinteract, replace"
+  ],
+  [
+   "bacondecomp",
+   "",
+   "Goodman-Bacon decomposition. A diagnostic to report, never your headline estimate.",
+   "ssc install bacondecomp, replace"
+  ],
+  [
+   "honestdid",
+   "",
+   "Rambachan&ndash;Roth sensitivity analysis for parallel trends.",
+   "ssc install honestdid, replace"
+  ],
+  [
+   "reghdfe",
+   "ppmlhdfe",
+   "High-dimensional fixed effects; ppmlhdfe for count outcomes such as attacks or transactions.",
+   "ssc install reghdfe ppmlhdfe, replace"
+  ],
+  [
+   "boottest",
+   "",
+   "Wild cluster bootstrap &mdash; essential when few clusters are treated.",
+   "ssc install boottest, replace"
+  ],
+  [
+   "sdid",
+   "synth_runner",
+   "Synthetic difference-in-differences and synthetic control for the small-N treated cases.",
+   "ssc install sdid synth_runner, replace"
+  ],
+  [
+   "rdrobust",
+   "",
+   "For the within-district discontinuity designs (PMT score, QAT score, literacy threshold).",
+   "ssc install rdrobust, replace"
+  ]
+ ],
+ "TIMING": [
+  [
+   "Provincial gazette notifications",
+   "The legally authoritative record of when a district was created, when a law was extended, when a facility was notified. Punjab, Sindh, KP and Balochistan each publish a gazette; back issues are held by provincial law departments and the Punjab series is partly digitised.",
+   "punjablaws.gov.pk",
+   "https://punjablaws.gov.pk",
+   "Slow but definitive. Use it to settle disagreements between secondary sources, not as your first stop."
+  ],
+  [
+   "Annual Development Programme scheme registers",
+   "Every publicly funded scheme &mdash; a rescue station, a road package, a filtration plant, a hospital upgrade &mdash; appears as a line item with a district, an approval date and a completion status. This is the most under-used treatment-timing source in Pakistan.",
+   "pnd.punjab.gov.pk",
+   "https://pnd.punjab.gov.pk",
+   "Published annually as PDFs. Scraping ten years of ADP books yields a district–scheme–date panel for dozens of programmes at once."
+  ],
+  [
+   "PC-1 approval and PC-4 completion documents",
+   "The PC-1 states the intended district phasing; the PC-4 records what was actually completed and when. Held by the Planning Commission and provincial P&amp;D departments.",
+   "pc.gov.pk",
+   "https://www.pc.gov.pk",
+   "Request through the department. The PC-4 is the one that matters, because plans slip."
+  ],
+  [
+   "Right to Information requests",
+   "KP (2013), Punjab (2013), Sindh (2016) and Balochistan (2021) all have RTI statutes with statutory response deadlines. A request naming the exact register you want &mdash; for example, the date of operationalisation of each Arazi Record Centre &mdash; is often the fastest route to a clean treatment-timing file.",
+   "infocom.punjab.gov.pk",
+   "https://infocom.punjab.gov.pk",
+   "Ask for a specific existing record, not for analysis. Requests that ask an official to compile something new are usually refused."
+  ],
+  [
+   "Programme management information systems",
+   "BISP/NSER, Sehat Sahulat, the Punjab Land Records Authority, PITB, the Punjab Education Foundation, PSDF, and the provincial EMIS and DHIS systems all hold unit-level records with dates. Access runs through a research agreement or data-sharing MoU, not a public download.",
+   "See the dataset catalogue",
+   "../datasets/",
+   "A World Bank, J-PAL or university affiliation materially improves the odds. Budget three to six months."
+  ],
+  [
+   "World Bank and ADB project documents",
+   "Project Appraisal Documents, numbered Implementation Status Reports and Implementation Completion Reports record the actual district phasing of donor-financed programmes, often in an annex.",
+   "documents.worldbank.org",
+   "https://documents.worldbank.org",
+   "The ISR sequence is especially useful: successive reports show the rollout progressing, which effectively date-stamps it."
+  ],
+  [
+   "Third-party and process evaluations",
+   "Evaluation series and published papers frequently contain the district rollout table as an appendix. Malik, van de Poel &amp; van Doorslaer (2017) is the clearest example: they assembled the health-unit contracting rollout dates across 75 districts.",
+   "opml.co.uk",
+   "https://www.opml.co.uk",
+   "Always check the replication package before assembling a rollout file from scratch."
+  ],
+  [
+   "Press archives",
+   "Dawn, The News, Express Tribune and Business Recorder report launch ceremonies with dates and district lists. Some programme phases are documented almost exclusively this way.",
+   "dawn.com/archive",
+   "https://www.dawn.com/archive",
+   "Useful for triangulation, unreliable alone &mdash; a launch ceremony is not an operational start."
+  ],
+  [
+   "Satellite and crowd-sourced verification",
+   "Where administrative dates are unavailable or untrustworthy, nightlights, OpenStreetMap edit history and mobile coverage polygons can date the arrival of infrastructure independently.",
+   "eogdata.mines.edu",
+   "https://eogdata.mines.edu",
+   "Best used to validate an administrative date rather than to replace it."
+  ]
+ ],
+ "CAV": [
+  [
+   "District boundaries move, and the change is invisible in the data",
+   "Pakistan created new districts throughout the period this catalogue covers: Nankana Sahib in 2005, Chiniot in 2009, the seven ex-FATA tribal districts in 2018, and five more in Punjab alone in 2022&ndash;23 (Kot Addu, Talagang, Murree, Wazirabad, Taunsa). The Bureau of Statistics reissues district codes when this happens.",
+   "Harmonise to a constant boundary set before building the panel: collapse post-split children into their pre-split parent, and keep the crosswalk as a separate documented file. A silent boundary change looks exactly like a treatment effect, and reviewers will not catch it either."
+  ],
+  [
+   "Most of these programmes were targeted at districts that were already deteriorating",
+   "Zewar-e-Taleem selected on low female literacy. Nashonuma selected on high stunting. The Public School Support Programme selected on low enrolment. Health facility outsourcing selected on poor performance. This is sensible policy and terrible for identification: it guarantees mean reversion, and the reversion often begins exactly at the treatment date, producing clean pre-trends.",
+   "Plot the full event-study path, use honest DiD sensitivity analysis, match on baseline levels and trends, and where the targeting rule is a threshold on a measurable variable, exploit it as a discontinuity instead of assuming parallel trends."
+  ],
+  [
+   "Treatment is frequently not absorbing",
+   "Contracting out of basic health units was reversed and re-awarded. The Saaf Pani programme was suspended during a corruption inquiry and relaunched. Local governments were dissolved and restored more than once. Standard staggered estimators assume once-treated-always-treated.",
+   "Use an estimator that handles switching in and out, and document every reversal date explicitly rather than coding the programme as a single absorbing event."
+  ],
+  [
+   "Population composition is endogenous to several of these treatments",
+   "Conflict, floods, new roads and new university campuses all move people between districts. If treatment changes who lives in the district, a district-level estimate confounds the treatment effect with a composition effect, and the bias can go either way.",
+   "Test for sorting directly using the migration modules in PSLM and the census. Where sorting is present, report it as a result in its own right; where the treatment is large enough to move people, consider the receiving districts as the better-identified side of the question."
+  ],
+  [
+   "Administrative outcomes often improve because measurement improved",
+   "Reported crime rises when the cost of registering a complaint falls. Teacher presence rises when monitoring digitises. Land transactions rise when the registry becomes usable. In each case part of the measured change is real and part is the measurement system changing at the same moment as the treatment.",
+   "Pair every administrative outcome with an independent household-survey measure of the same construct where one exists, and treat the gap between them as informative rather than as noise."
+  ],
+  [
+   "Coverage of this catalogue is uneven by province",
+   "Punjab publishes far more than the other provinces, so Punjab entries are better documented here. Balochistan is the thinnest, both in the catalogue and in the underlying survey infrastructure &mdash; several national household surveys have district-representative samples everywhere except there.",
+   "Do not read the density of entries as the density of policy. Where a Balochistan entry is graded Low-Medium, that usually reflects what is published rather than what happened."
+  ],
+  [
+   "Dates reported in secondary sources disagree, routinely",
+   "Programme retrospectives, agency websites and press coverage frequently differ by a year on when a phase began, and launch ceremonies are often held well before or after operational start.",
+   "Every date in this catalogue carries a named source. Verify against the primary document before it enters a regression, and when sources conflict, say in the paper which one you used and why."
+  ],
+  [
+   "Expected signs here are hypotheses, not findings",
+   "The direction given for each programme&ndash;outcome pair is derived from the stated mechanism. Several are deliberately marked ambiguous because theory points both ways. None of them is evidence.",
+   "Treat the sign column as a prior to be tested, and pre-register it if you are going to. Where the catalogue says ambiguous, resist the temptation to pick the direction your result happens to take."
+  ]
+ ],
+ "SCHEMA": [
+  [
+   "id",
+   "string",
+   "Stable programme identifier, P01&ndash;P67. Cite this, not the row number."
+  ],
+  [
+   "programme",
+   "string",
+   "Programme or shock name as commonly used."
+  ],
+  [
+   "domain",
+   "string",
+   "Policy domain."
+  ],
+  [
+   "agency",
+   "string",
+   "Implementing agency or agencies."
+  ],
+  [
+   "scope",
+   "string",
+   "Geographic scope as stated by the programme."
+  ],
+  [
+   "start_year",
+   "string",
+   "First year of operation, including pilots."
+  ],
+  [
+   "rollout_window",
+   "string",
+   "Narrative description of the phasing, with dates where known."
+  ],
+  [
+   "rollout_unit",
+   "string",
+   "The unit that switches on &mdash; district, tehsil, facility, lot."
+  ],
+  [
+   "n_districts",
+   "string",
+   "Number of treated units, as narrative because it changes over phases."
+  ],
+  [
+   "staggering",
+   "string",
+   "The form the staggering takes."
+  ],
+  [
+   "assignment",
+   "string",
+   "How units were selected into each phase."
+  ],
+  [
+   "timing_source",
+   "string",
+   "Where district-by-date treatment data can be obtained."
+  ],
+  [
+   "timing_quality",
+   "string",
+   "Assessed reliability of the above, with reasoning."
+  ],
+  [
+   "quality_label",
+   "string",
+   "High / Medium-High / Medium / Low-Medium."
+  ],
+  [
+   "quality_rank",
+   "integer",
+   "3 / 2 / 1 / 0, for sorting."
+  ],
+  [
+   "identification",
+   "string",
+   "Candidate design and why it works here."
+  ],
+  [
+   "threats",
+   "string",
+   "Main threats to identification for this entry."
+  ],
+  [
+   "evidence",
+   "string",
+   "Published evaluations, where any exist."
+  ],
+  [
+   "regions",
+   "list",
+   "Normalised province and region tags."
+  ],
+  [
+   "unit_class",
+   "string",
+   "Normalised rollout unit."
+  ],
+  [
+   "era",
+   "string",
+   "Normalised start period."
+  ],
+  [
+   "methods",
+   "list",
+   "Designs the entry suits, derived from the identification note."
+  ],
+  [
+   "ready",
+   "boolean",
+   "True where quality_rank is 2 or 3."
+  ],
+  [
+   "n_outcomes",
+   "integer",
+   "Number of mapped outcomes in the matrix."
+  ]
+ ]
+}

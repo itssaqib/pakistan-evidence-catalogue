@@ -5,11 +5,15 @@
   "search.exclude": {
     "**/node_modules": true,
     "**/__pycache__": true,
-    "data/catalogue.json": true
+    "data/catalogue.json": true,
+    "data/catalogue.js": true,
+    "data/geo.js": true
   },
   "liveServer.settings.root": "/",
   "liveServer.settings.port": 8000,
-  "[html]": { "editor.formatOnSave": false },
+  "[html]": {
+    "editor.formatOnSave": false
+  },
   "git.enableSmartCommit": true,
   "git.autofetch": true
 }

@@ -3,25 +3,24 @@ message: "If you use this catalogue, please cite it as below."
 title: "Pakistan Evidence Catalogue: staggered district-level programmes for causal impact evaluation"
 abstract: >-
   An open catalogue of 67 public programmes and natural experiments in Pakistan
-  that were rolled out unit by unit over time at or below the district level, with
-  322 programme-outcome pairs, 102 outcome definitions and
-  55 datasets mapped against them. Each entry records its rollout window,
-  assignment rule, the source for its district-by-date treatment timing, and an
-  assessment of how reliable that source is.
+  rolled out unit by unit over time at or below the district level, with 322
+  programme-outcome pairs, 102 outcome definitions and 55 datasets mapped
+  against them, documented rollout districts for 13 entries, and a district
+  crosswalk on constant 2019 boundaries.
 type: dataset
-version: "1.0.0"
-date-released: "2026-11-02"
+version: "2.0.0"
+date-released: "2026-11-04"
 license: CC-BY-4.0
 repository-code: "https://github.com/itssaqib/pakistan-evidence-catalogue"
-url: "https://itssaqib.github.io/pakistan-evidence-catalogue"
+url: "https://itssaqib.github.io/pakistan-evidence-catalogue/"
 keywords:
   - Pakistan
   - difference-in-differences
   - staggered adoption
   - impact evaluation
   - causal inference
+  - district panel
   - development economics
-  - public policy
 authors:
   - family-names: Hussain
     given-names: Saqib

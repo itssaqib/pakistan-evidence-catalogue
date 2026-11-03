@@ -1,4 +1,5 @@
 User-agent: *
 Allow: /
+Disallow: /_build/
 
 Sitemap: https://itssaqib.github.io/pakistan-evidence-catalogue/sitemap.xml

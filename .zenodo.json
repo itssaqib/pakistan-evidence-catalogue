@@ -1,0 +1,28 @@
+{
+  "title": "Pakistan Evidence Catalogue: staggered district-level programmes for causal impact evaluation",
+  "upload_type": "dataset",
+  "version": "2.0.0",
+  "license": "cc-by-4.0",
+  "access_right": "open",
+  "description": "An open catalogue of 67 public programmes and natural experiments in Pakistan that reached districts at different times, with rollout windows, assignment rules, sources for treatment timing graded by reliability, 322 programme-outcome pairs mapped to 55 datasets, documented rollout districts for 13 entries, a district crosswalk on constant 2019 boundaries, and a Stata starter kit.",
+  "creators": [
+    {
+      "name": "Hussain, Saqib",
+      "affiliation": "KDI School of Public Policy and Management"
+    }
+  ],
+  "keywords": [
+    "Pakistan",
+    "difference-in-differences",
+    "staggered adoption",
+    "impact evaluation",
+    "district panel"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "https://itssaqib.github.io/pakistan-evidence-catalogue/",
+      "relation": "isDocumentedBy",
+      "resource_type": "other"
+    }
+  ]
+}

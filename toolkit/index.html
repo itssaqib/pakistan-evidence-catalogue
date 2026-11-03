@@ -1,0 +1,389 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Toolkit | Pakistan Evidence Catalogue</title>
+<meta name="description" content="Downloads (CSV, JSON, Stata), a Pakistan district crosswalk on constant 2019 boundaries, a Stata starter kit for staggered DiD and a power calculator.">
+<meta name="author" content="Saqib Hussain">
+<meta name="theme-color" content="#ffffff">
+<link rel="canonical" href="https://itssaqib.github.io/pakistan-evidence-catalogue/toolkit/index.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Pakistan Evidence Catalogue">
+<meta property="og:title" content="Toolkit">
+<meta property="og:description" content="Downloads (CSV, JSON, Stata), a Pakistan district crosswalk on constant 2019 boundaries, a Stata starter kit for staggered DiD and a power calculator.">
+<meta property="og:image" content="https://itssaqib.github.io/pakistan-evidence-catalogue/assets/og/home.jpg">
+<meta property="og:url" content="https://itssaqib.github.io/pakistan-evidence-catalogue/toolkit/index.html">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23212934'/%3E%3Cpath d='M9 23V9h6.5a4.5 4.5 0 0 1 0 9H9' fill='none' stroke='%23c9a16e' stroke-width='2.4'/%3E%3C/svg%3E">
+<link rel="preload" href="../assets/fonts/jost-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../assets/css/site.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Dataset", "name": "Pakistan Evidence Catalogue", "description": "A catalogue of 67 public programmes and natural experiments in Pakistan rolled out district by district, with rollout windows, assignment rules, sources for treatment timing, 322 programme-outcome pairs and 55 datasets, plus a district crosswalk on constant 2019 boundaries.", "url": "https://itssaqib.github.io/pakistan-evidence-catalogue/", "version": "2.0.0", "datePublished": "2026-11-04", "license": "https://creativecommons.org/licenses/by/4.0/", "creator": {"@type": "Person", "name": "Saqib Hussain", "url": "https://itssaqib.github.io"}, "keywords": ["Pakistan", "difference-in-differences", "staggered adoption", "impact evaluation", "district panel", "development economics"], "spatialCoverage": {"@type": "Place", "name": "Pakistan"}, "temporalCoverage": "1994/2024", "distribution": [{"@type": "DataDownload", "encodingFormat": "text/csv", "contentUrl": "https://itssaqib.github.io/pakistan-evidence-catalogue/data/programmes.csv"}, {"@type": "DataDownload", "encodingFormat": "text/csv", "contentUrl": "https://itssaqib.github.io/pakistan-evidence-catalogue/data/programme_outcome_matrix.csv"}, {"@type": "DataDownload", "encodingFormat": "application/json", "contentUrl": "https://itssaqib.github.io/pakistan-evidence-catalogue/data/catalogue.json"}, {"@type": "DataDownload", "encodingFormat": "application/x-stata-dta", "contentUrl": "https://itssaqib.github.io/pakistan-evidence-catalogue/data/programmes.dta"}, {"@type": "DataDownload", "encodingFormat": "text/csv", "contentUrl": "https://itssaqib.github.io/pakistan-evidence-catalogue/data/districts/district_crosswalk.csv"}]}</script>
+</head>
+<body data-base="../" data-page="toolkit" >
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="hdr-top wrap">
+    <div class="hdr-left"><button class="icon-btn" type="button" data-open="menu" aria-label="Open menu" aria-controls="menu"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 7h18M3 12h18M3 17h18"/></svg></button></div>
+    <a class="wordmark" href="../index.html" aria-label="Pakistan Evidence Catalogue, home"><span class="wm-main">Pakistan Evidence</span><span class="wm-sub">Catalogue</span></a>
+    <div class="hdr-right">
+      <button class="icon-btn" type="button" data-open="search" aria-label="Search (press /)" aria-controls="search"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="M15.5 15.5L21 21"/></svg></button>
+      <a class="icon-btn" href="../shortlist/index.html" aria-label="Your shortlist"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.6l2.6 5.3 5.8.8-4.2 4.1 1 5.8L12 16.9l-5.2 2.7 1-5.8-4.2-4.1 5.8-.8z"/></svg><span class="count" data-shortlist-count></span></a>
+      <a class="icon-btn hide-sm" href="../toolkit/index.html#downloads" aria-label="Downloads"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v11M7 10l5 5 5-5M5 20h14"/></svg></a>
+    </div>
+  </div>
+  <nav class="hdr-nav" aria-label="Main"><a href="../programmes/index.html">Programmes</a><a href="../atlas/index.html">Atlas</a><a href="../insights/index.html">Insights</a><a href="../datasets/index.html">Datasets</a><a href="../toolkit/index.html" aria-current="page">Toolkit</a><a href="../guide/index.html">Guide</a><a href="../about/index.html">About</a></nav>
+</header>
+
+<div class="overlay" id="menu" role="dialog" aria-modal="true" aria-label="Menu">
+  <div class="wrap">
+    <div class="overlay-top"><button class="icon-btn" type="button" data-close aria-label="Close menu"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 5l14 14M19 5L5 19"/></svg></button>
+      <span class="wordmark"><span class="wm-main">Pakistan Evidence</span></span><span style="width:40px"></span></div>
+    <div class="menu-grid">
+      <nav class="menu-main" aria-label="Sections">
+        <a href="../index.html">Home</a>
+        <a href="../programmes/index.html">Programmes</a><a href="../atlas/index.html">Atlas</a><a href="../insights/index.html">Insights</a><a href="../datasets/index.html">Datasets</a><a href="../toolkit/index.html">Toolkit</a><a href="../guide/index.html">Guide</a><a href="../about/index.html">About</a>
+        <a href="../contribute/index.html">Contribute</a>
+      </nav>
+      <div class="menu-col">
+        <h4>Start here</h4>
+        <a href="../programmes/index.html?tq=High">Programmes with reliable rollout dates</a>
+        <a href="../programmes/index.html?tq=High&amp;evidence=Unstudied">Reliable dates, no causal study yet</a>
+        <a href="../programmes/index.html?map=Documented%20districts">Programmes with documented districts</a>
+        <a href="../atlas/index.html">District atlas</a>
+        <a href="../guide/index.html">Identification playbook</a>
+        <a href="../guide/caveats.html">Standing caveats</a>
+      </div>
+      <div class="menu-col">
+        <h4>Data and code</h4>
+        <a href="../toolkit/index.html#downloads">Downloads: CSV, JSON, Stata</a>
+        <a href="../toolkit/index.html#crosswalk">District crosswalk</a>
+        <a href="../toolkit/index.html#stata">Stata starter kit</a>
+        <a href="../toolkit/index.html#power">Power calculator</a>
+        <a href="../data/references.bib">References (BibTeX)</a>
+        <a href="https://github.com/itssaqib/pakistan-evidence-catalogue">Repository on GitHub</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="overlay" id="search" role="dialog" aria-modal="true" aria-label="Search">
+  <div class="wrap">
+    <div class="overlay-top"><span class="small muted">Search programmes, outcomes, datasets and pages</span>
+      <button class="icon-btn" type="button" data-close aria-label="Close search"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 5l14 14M19 5L5 19"/></svg></button></div>
+    <div class="search-box">
+      <label class="sr-only" for="search-input">Search the catalogue</label>
+      <input class="search-input" id="search-input" type="search" placeholder="Search the catalogue" autocomplete="off">
+      <p class="search-hint">Try a programme (Sehat), an outcome (stunting), a dataset (ASER) or an ID (P15). Arrow keys move, Enter opens.</p>
+    </div>
+    <ul class="search-results" id="search-results" aria-live="polite"></ul>
+  </div>
+</div>
+
+<main id="main">
+
+<div class="wrap"><div class="page-head"><h1>Toolkit</h1><p>Data downloads, a district crosswalk on constant boundaries, a Stata starter kit and a power calculator.</p></div></div>
+<section class="section" id="downloads" style="padding-top:20px"><div class="wrap">
+  <div class="coll-head"><h2>Downloads</h2><p>Version 2.0.0, 4 November 2026. CC BY 4.0. The site is generated from these files.</p></div>
+  <div class="downloads"><div class="dlrow"><span class="fmt">CSV</span><span class="nm">Programmes<small>67 rows with every field</small></span><span class="sz">63 KB</span><a class="btn btn--sm btn--line" href="../data/programmes.csv" download>Download</a></div><div class="dlrow"><span class="fmt">CSV</span><span class="nm">Programme × outcome matrix<small>322 rows</small></span><span class="sz">100 KB</span><a class="btn btn--sm btn--line" href="../data/programme_outcome_matrix.csv" download>Download</a></div><div class="dlrow"><span class="fmt">CSV</span><span class="nm">Outcome taxonomy<small>102 outcomes</small></span><span class="sz">16 KB</span><a class="btn btn--sm btn--line" href="../data/outcomes.csv" download>Download</a></div><div class="dlrow"><span class="fmt">CSV</span><span class="nm">Dataset catalogue<small>55 datasets</small></span><span class="sz">20 KB</span><a class="btn btn--sm btn--line" href="../data/datasets.csv" download>Download</a></div><div class="dlrow"><span class="fmt">CSV</span><span class="nm">Documented rollout districts<small>One row per programme, phase and district, with sources</small></span><span class="sz">17 KB</span><a class="btn btn--sm btn--line" href="../data/documented_footprints.csv" download>Download</a></div><div class="dlrow"><span class="fmt">DTA</span><span class="nm">Programmes for Stata<small>Stata 14+ format, labelled</small></span><span class="sz">120 KB</span><a class="btn btn--sm btn--line" href="../data/programmes.dta" download>Download</a></div><div class="dlrow"><span class="fmt">DTA</span><span class="nm">Matrix for Stata<small></small></span><span class="sz">217 KB</span><a class="btn btn--sm btn--line" href="../data/programme_outcome_matrix.dta" download>Download</a></div><div class="dlrow"><span class="fmt">DTA</span><span class="nm">Footprints for Stata<small></small></span><span class="sz">31 KB</span><a class="btn btn--sm btn--line" href="../data/documented_footprints.dta" download>Download</a></div><div class="dlrow"><span class="fmt">JSON</span><span class="nm">Everything, nested<small>As the site uses it</small></span><span class="sz">368 KB</span><a class="btn btn--sm btn--line" href="../data/catalogue.json" download>Download</a></div><div class="dlrow"><span class="fmt">BIB</span><span class="nm">References<small>BibTeX for the catalogue and cited studies</small></span><span class="sz">6 KB</span><a class="btn btn--sm btn--line" href="../data/references.bib" download>Download</a></div><div class="dlrow"><span class="fmt">ZIP</span><span class="nm">Stata starter kit<small>Do-files and the crosswalk .dta</small></span><span class="sz">11 KB</span><a class="btn btn--sm btn--line" href="../toolkit/pec-stata-kit.zip" download>Download</a></div></div>
+</div></section>
+<section class="section section--mist" id="crosswalk"><div class="wrap">
+  <div class="coll-head"><h2>District crosswalk</h2><p>Pakistan's district list changes almost every year. The crosswalk maps 200 spellings, former names and post-2019 districts onto 126 constant boundary units, so panels built on it do not break when a district splits.</p></div>
+  <div class="two-col">
+    <div class="prose">
+      <h3>How it works</h3>
+      <p>The map boundaries are geoBoundaries' 2019 district polygons. Every district created since then is folded into the 2019 unit that contains its headquarters. Each assignment was tested by point-in-polygon on the headquarters coordinates; the <em>check</em> column says whether the test agrees with the parent district on record.</p>
+      <p>Two artefacts of the boundary file are documented rather than hidden: Larkana is not a separate polygon (its headquarters falls inside the Qambar Shahdadkot unit), and Azad Kashmir and Karachi are single units.</p>
+      <p>Merge on <code>key</code>: lower case, ampersand to "and", the words district, agency, tribal and frontier region removed, letters and digits only. <code>01_harmonise_districts.do</code> does this for you.</p>
+      <p class="small muted">Status: version 0.1. Rows marked low confidence or "check" need verifying against provincial gazette notifications. Corrections are very welcome.</p>
+    </div>
+    <div><div class="downloads"><div class="dlrow"><span class="fmt">CSV</span><span class="nm">District crosswalk<small>200 name variants mapped to 126 boundary units</small></span><span class="sz">16 KB</span><a class="btn btn--sm btn--line" href="../data/districts/district_crosswalk.csv" download>Download</a></div><div class="dlrow"><span class="fmt">DTA</span><span class="nm">District crosswalk for Stata<small>Merge on key</small></span><span class="sz">55 KB</span><a class="btn btn--sm btn--line" href="../data/districts/district_crosswalk.dta" download>Download</a></div><div class="dlrow"><span class="fmt">CSV</span><span class="nm">Boundary units<small>126 districts with province and centroid</small></span><span class="sz">7 KB</span><a class="btn btn--sm btn--line" href="../data/districts/boundary_units.csv" download>Download</a></div><div class="dlrow"><span class="fmt">CSV</span><span class="nm">District lineage<small>Districts created after the boundary vintage, with containment checks</small></span><span class="sz">3 KB</span><a class="btn btn--sm btn--line" href="../data/districts/district_lineage.csv" download>Download</a></div></div></div>
+  </div>
+  <div class="table-wrap" style="margin-top:36px"><table class="t"><caption>Districts created after the boundary vintage, and the 2019 unit containing each.</caption><thead><tr><th>District</th><th>Province</th><th>Created</th><th>Parent on record</th><th>Contained in unit</th><th>Check</th><th>Confidence</th></tr></thead><tbody><tr><td>Nankana Sahib</td><td>Punjab</td><td>2005</td><td>Sheikhpura</td><td>Sheikhpura</td><td>consistent</td><td>high</td></tr><tr><td>Chiniot</td><td>Punjab</td><td>2009</td><td>Jhang</td><td>Jhang</td><td>consistent</td><td>high</td></tr><tr><td>Kot Addu</td><td>Punjab</td><td>2022</td><td>Muzaffargarh</td><td>Muzaffargarh</td><td>consistent</td><td>medium</td></tr><tr><td>Talagang</td><td>Punjab</td><td>2022</td><td>Chakwal</td><td>Chakwal</td><td>consistent</td><td>medium</td></tr><tr><td>Murree</td><td>Punjab</td><td>2022</td><td>Rawalpindi</td><td>Rawalpindi</td><td>consistent</td><td>medium</td></tr><tr><td>Wazirabad</td><td>Punjab</td><td>2022</td><td>Gujranwala</td><td>Gujranwala</td><td>consistent</td><td>medium</td></tr><tr><td>Taunsa</td><td>Punjab</td><td>2023</td><td>Dera Ghazi Khan</td><td>Dera Ghazi Khan</td><td>consistent</td><td>medium</td></tr><tr><td>Larkana</td><td>Sindh</td><td>—</td><td>Qambar Shahdadkot</td><td>Qambar Shahdadkot</td><td>consistent</td><td>boundary-file artefact</td></tr><tr><td>Sujawal</td><td>Sindh</td><td>2013</td><td>Thatta</td><td>Thatta</td><td>consistent</td><td>medium</td></tr><tr><td>Tor Ghar</td><td>Khyber Pakhtunkhwa</td><td>2011</td><td>Mansehra</td><td>Mansehra</td><td>consistent</td><td>low</td></tr><tr><td>Upper Chitral</td><td>Khyber Pakhtunkhwa</td><td>2018</td><td>Chitral</td><td>Chitral</td><td>consistent</td><td>medium</td></tr><tr><td>Lower Chitral</td><td>Khyber Pakhtunkhwa</td><td>2018</td><td>Chitral</td><td>Chitral</td><td>consistent</td><td>medium</td></tr><tr><td>Upper Kohistan</td><td>Khyber Pakhtunkhwa</td><td>2014</td><td>Kohistan</td><td>Kohistan</td><td>consistent</td><td>low</td></tr><tr><td>Lower Kohistan</td><td>Khyber Pakhtunkhwa</td><td>2014</td><td>Kohistan</td><td>Kohistan</td><td>consistent</td><td>low</td></tr><tr><td>Kolai Palas</td><td>Khyber Pakhtunkhwa</td><td>2017</td><td>Kohistan</td><td>Kohistan</td><td>consistent</td><td>low</td></tr><tr><td>Washuk</td><td>Balochistan</td><td>2005</td><td>Kharan</td><td>Kharan</td><td>consistent</td><td>medium</td></tr><tr><td>Sherani</td><td>Balochistan</td><td>2006</td><td>Zhob</td><td>Zhob</td><td>consistent</td><td>low</td></tr><tr><td>Harnai</td><td>Balochistan</td><td>2007</td><td>Sibi</td><td>Sibi</td><td>consistent</td><td>medium</td></tr><tr><td>Lehri</td><td>Balochistan</td><td>2013</td><td>Sibi</td><td>Kachhi</td><td>check</td><td>low</td></tr><tr><td>Sohbatpur</td><td>Balochistan</td><td>2013</td><td>Jafarabad</td><td>Jafarabad</td><td>consistent</td><td>low</td></tr><tr><td>Duki</td><td>Balochistan</td><td>2016</td><td>Loralai</td><td>Loralai</td><td>consistent</td><td>medium</td></tr><tr><td>Surab</td><td>Balochistan</td><td>2017</td><td>Kalat</td><td>Kalat</td><td>consistent</td><td>medium</td></tr><tr><td>Chaman</td><td>Balochistan</td><td>2021</td><td>Qilla Abdullah</td><td>Qilla Abdullah</td><td>consistent</td><td>high</td></tr><tr><td>Hub</td><td>Balochistan</td><td>2022</td><td>Lasbela</td><td>Lasbela</td><td>consistent</td><td>medium</td></tr><tr><td>Usta Muhammad</td><td>Balochistan</td><td>2022</td><td>Jafarabad</td><td>Jafarabad</td><td>consistent</td><td>medium</td></tr><tr><td>Roundu</td><td>Gilgit-Baltistan</td><td>2019</td><td>Skardu</td><td>Shigar</td><td>check</td><td>low</td></tr><tr><td>Darel</td><td>Gilgit-Baltistan</td><td>2019</td><td>Diamer</td><td>Diamer</td><td>consistent</td><td>low</td></tr><tr><td>Tangir</td><td>Gilgit-Baltistan</td><td>2019</td><td>Diamer</td><td>Diamer</td><td>consistent</td><td>low</td></tr><tr><td>Gupis-Yasin</td><td>Gilgit-Baltistan</td><td>2019</td><td>Ghizer</td><td>Ghizer</td><td>consistent</td><td>low</td></tr></tbody></table></div>
+</div></section>
+<section class="section" id="stata"><div class="wrap">
+  <div class="coll-head"><h2>Stata starter kit</h2><p>Explicit, line-by-line do-files. Every programme page also generates a do-file pre-filled with that entry's documented districts and design.</p><a class="coll-link" href="pec-stata-kit.zip">Download the kit</a></div>
+  <details class="code" style="margin-top:12px" open><summary class="code-bar" style="cursor:pointer;list-style:none"><span><strong style="color:#000;font-weight:400">00_master.do</strong></span><span class="actions"><button class="btn btn--sm btn--line" type="button" data-copy="#sk0">Copy</button><a class="btn btn--sm" href="stata/00_master.do" download>Download</a></span></summary><pre id="sk0">* =============================================================================
+* Pakistan Evidence Catalogue - Stata starter kit, v2.0.0
+* 00 Master: paths and one-time package installs
+* =============================================================================
+
+version 16
+clear all
+set more off
+
+* --- Edit these two paths -----------------------------------------------------
+global PEC   &quot;C:/path/to/pakistan-evidence-catalogue&quot;   // the folder you downloaded
+global WORK  &quot;C:/path/to/your/project&quot;
+global DATA  &quot;$PEC/data&quot;
+global KIT   &quot;$PEC/toolkit/stata&quot;
+
+* --- One-time installs (comment out once done) -------------------------------
+ssc install csdid, replace
+ssc install drdid, replace
+ssc install did_imputation, replace
+ssc install event_plot, replace
+ssc install did_multiplegt_dyn, replace
+ssc install eventstudyinteract, replace
+ssc install avar, replace
+ssc install bacondecomp, replace
+ssc install reghdfe, replace
+ssc install ftools, replace
+ssc install boottest, replace
+ssc install sdid, replace
+ssc install rdrobust, replace
+ssc install rddensity, replace
+ssc install lpdensity, replace
+net install honestdid, from(&quot;https://raw.githubusercontent.com/mcaceresb/stata-honestdid/main&quot;) replace
+
+* --- Run the pipeline --------------------------------------------------------
+* do &quot;$KIT/01_harmonise_districts.do&quot;
+* do &quot;$KIT/02_build_treatment.do&quot;
+* do &quot;$KIT/10_staggered_did.do&quot;
+</pre></details><details class="code" style="margin-top:12px"><summary class="code-bar" style="cursor:pointer;list-style:none"><span><strong style="color:#000;font-weight:400">01_harmonise_districts.do</strong></span><span class="actions"><button class="btn btn--sm btn--line" type="button" data-copy="#sk1">Copy</button><a class="btn btn--sm" href="stata/01_harmonise_districts.do" download>Download</a></span></summary><pre id="sk1">* =============================================================================
+* Pakistan Evidence Catalogue - Stata starter kit, v2.0.0
+* 01 Map any district name onto the 126 constant-boundary units
+* =============================================================================
+
+* The catalogue&#x27;s maps use geoBoundaries 2019 district polygons (126 units).
+* Districts created later are folded into the 2019 unit that contains them,
+* so a panel built on pec_unit_id has constant boundaries over time.
+*
+* Input : the dataset in memory, with a string district-name variable
+* Output: pec_unit, pec_unit_id, province, relation; unmatched names listed
+*
+* Set the name of your district variable here:
+local namevar &quot;district&quot;
+
+* Build the merge key exactly as the catalogue does: lower case, &quot;&amp;&quot; to &quot;and&quot;,
+* drop the words district / agency / tribal / frontier region, keep a-z and 0-9.
+generate key = lower(`namevar&#x27;)
+replace key = subinstr(key, &quot;&amp;&quot;, &quot;and&quot;, .)
+replace key = ustrregexra(key, &quot;\b(district|agency|tribal|frontier region)\b&quot;, &quot;&quot;)
+replace key = ustrregexra(key, &quot;[^a-z0-9]&quot;, &quot;&quot;)
+
+merge m:1 key using &quot;$DATA/districts/district_crosswalk.dta&quot;, ///
+    keepusing(pec_unit pec_unit_id province relation) keep(master match)
+
+* Anything left unmatched needs a row in district_crosswalk.csv (and a pull request!)
+count if _merge == 1
+display as text r(N) &quot; observations have a district name not in the crosswalk&quot;
+tab `namevar&#x27; if _merge == 1, missing sort
+
+drop _merge key
+
+* Typical next step: collapse to constant boundaries, e.g.
+* collapse (mean) y [aw = popweight], by(pec_unit_id year)
+</pre></details><details class="code" style="margin-top:12px"><summary class="code-bar" style="cursor:pointer;list-style:none"><span><strong style="color:#000;font-weight:400">02_build_treatment.do</strong></span><span class="actions"><button class="btn btn--sm btn--line" type="button" data-copy="#sk2">Copy</button><a class="btn btn--sm" href="stata/02_build_treatment.do" download>Download</a></span></summary><pre id="sk2">* =============================================================================
+* Pakistan Evidence Catalogue - Stata starter kit, v2.0.0
+* 02 From a rollout file to the variables the estimators need
+* =============================================================================
+
+* rollout.csv: one row per district with columns
+*     pec_unit_id, first_treated_year     (blank = never treated)
+* panel.dta  : district-year panel with pec_unit_id, year and outcome y
+
+import delimited using &quot;$WORK/rollout.csv&quot;, varnames(1) clear stringcols(1)
+tempfile roll
+save `roll&#x27;
+
+use &quot;$WORK/panel.dta&quot;, clear
+merge m:1 pec_unit_id using `roll&#x27;, keep(master match) nogenerate
+
+generate gvar = first_treated_year
+replace  gvar = 0 if missing(gvar)                // csdid: 0 means never treated
+generate Ei   = first_treated_year                // did_imputation: missing means never
+generate rel_time = year - first_treated_year
+generate D = (year &gt;= first_treated_year) &amp; !missing(first_treated_year)
+generate never_treated = missing(first_treated_year)
+
+egen id = group(pec_unit_id)
+xtset id year
+
+* Balance check: estimators below assume a balanced district-year panel
+xtdescribe
+
+save &quot;$WORK/analysis.dta&quot;, replace
+</pre></details><details class="code" style="margin-top:12px"><summary class="code-bar" style="cursor:pointer;list-style:none"><span><strong style="color:#000;font-weight:400">10_staggered_did.do</strong></span><span class="actions"><button class="btn btn--sm btn--line" type="button" data-copy="#sk3">Copy</button><a class="btn btn--sm" href="stata/10_staggered_did.do" download>Download</a></span></summary><pre id="sk3">* =============================================================================
+* Pakistan Evidence Catalogue - Stata starter kit, v2.0.0
+* 10 Staggered adoption: diagnostics, three robust estimators, sensitivity
+* =============================================================================
+
+use &quot;$WORK/analysis.dta&quot;, clear
+xtset id year
+
+* --- 1. Diagnostic: weights on already-treated controls in two-way FE -------
+bacondecomp y D, ddetail
+
+* --- 2. Callaway-Sant&#x27;Anna (not-yet-treated comparison, doubly robust) -------
+csdid y, ivar(id) time(year) gvar(gvar) notyet method(dripw)
+estat simple
+estat group
+estat event, window(-5 5) estore(cs_event)
+csdid_plot, title(&quot;Callaway-Sant&#x27;Anna&quot;)
+
+* --- 3. Borusyak-Jaravel-Spiess imputation ------------------------------------
+did_imputation y id year Ei, horizons(0/5) pretrends(5) autosample cluster(id)
+event_plot, default_look graph_opt(title(&quot;Imputation estimator&quot;))
+
+* --- 4. Sun-Abraham interaction-weighted event study (lead 1 omitted) ---------
+generate lead5 = rel_time == -5
+generate lead4 = rel_time == -4
+generate lead3 = rel_time == -3
+generate lead2 = rel_time == -2
+generate lag0  = rel_time == 0
+generate lag1  = rel_time == 1
+generate lag2  = rel_time == 2
+generate lag3  = rel_time == 3
+generate lag4  = rel_time == 4
+generate lag5  = rel_time == 5
+eventstudyinteract y lead5 lead4 lead3 lead2 lag0 lag1 lag2 lag3 lag4 lag5, ///
+    cohort(first_treated_year) control_cohort(never_treated) ///
+    absorb(i.id i.year) vce(cluster id)
+
+* --- 5. Rambachan-Roth sensitivity on the Callaway-Sant&#x27;Anna event study -----
+estimates restore cs_event
+matrix list e(b)
+* With window(-5 5) the coefficient vector is Pre_avg Post_avg Tm5..Tm1 Tp0..Tp5,
+* so the pre-period estimates are positions 3-7 and the post-period ones 8-13.
+honestdid, pre(3/7) post(8/13) mvec(0(0.5)2) coefplot
+
+* --- 6. Fewer than ~20 treated districts: wild cluster bootstrap --------------
+reghdfe y D, absorb(id year) vce(cluster id)
+boottest D, cluster(id) reps(9999) seed(20261104) nograph
+</pre></details><details class="code" style="margin-top:12px"><summary class="code-bar" style="cursor:pointer;list-style:none"><span><strong style="color:#000;font-weight:400">11_rd_threshold.do</strong></span><span class="actions"><button class="btn btn--sm btn--line" type="button" data-copy="#sk4">Copy</button><a class="btn btn--sm" href="stata/11_rd_threshold.do" download>Download</a></span></summary><pre id="sk4">* =============================================================================
+* Pakistan Evidence Catalogue - Stata starter kit, v2.0.0
+* 11 Regression discontinuity at an eligibility threshold
+* =============================================================================
+
+* Use for programmes with a rule on a running variable:
+*   BISP proxy-means score (P02), PEF Quality Assurance Test (P23),
+*   Punjab Female School Stipend 1998 literacy threshold (P08), Zewar-e-Taleem (P07).
+* The data here are unit-level (household, school, district), not the panel.
+
+use &quot;$WORK/rd_sample.dta&quot;, clear
+local cutoff = 16.17        // example: BISP PMT cut-off used in the first poverty census
+
+* Sharp RD (eligibility = treatment)
+rdrobust y score, c(`cutoff&#x27;) kernel(triangular) bwselect(mserd) vce(cluster cluster_id)
+rdplot   y score, c(`cutoff&#x27;) binselect(es) graph_options(title(&quot;Outcome at the threshold&quot;))
+
+* Fuzzy RD (eligibility shifts take-up)
+rdrobust y score, c(`cutoff&#x27;) fuzzy(treated) kernel(triangular) bwselect(mserd) vce(cluster cluster_id)
+
+* Manipulation of the running variable
+rddensity score, c(`cutoff&#x27;)
+
+* With district-level running variables there are few units near the cut-off:
+* prefer local-randomisation inference (rdlocrand package, rdrandinf command).
+</pre></details><details class="code" style="margin-top:12px"><summary class="code-bar" style="cursor:pointer;list-style:none"><span><strong style="color:#000;font-weight:400">12_few_treated_sdid.do</strong></span><span class="actions"><button class="btn btn--sm btn--line" type="button" data-copy="#sk5">Copy</button><a class="btn btn--sm" href="stata/12_few_treated_sdid.do" download>Download</a></span></summary><pre id="sk5">* =============================================================================
+* Pakistan Evidence Catalogue - Stata starter kit, v2.0.0
+* 12 Few treated units: synthetic difference-in-differences
+* =============================================================================
+
+* For programmes with a handful of treated districts (Safe Cities, Daanish Schools,
+* first-phase pilots). Requires a balanced panel.
+use &quot;$WORK/analysis.dta&quot;, clear
+
+sdid y id year D, vce(placebo) reps(500) seed(20261104) method(sdid) graph
+sdid y id year D, vce(placebo) reps(500) seed(20261104) method(sc)
+sdid y id year D, vce(placebo) reps(500) seed(20261104) method(did)
+
+* Report all three; a large gap between sc and did is informative in itself.
+</pre></details><details class="code" style="margin-top:12px"><summary class="code-bar" style="cursor:pointer;list-style:none"><span><strong style="color:#000;font-weight:400">13_switching_treatment.do</strong></span><span class="actions"><button class="btn btn--sm btn--line" type="button" data-copy="#sk6">Copy</button><a class="btn btn--sm" href="stata/13_switching_treatment.do" download>Download</a></span></summary><pre id="sk6">* =============================================================================
+* Pakistan Evidence Catalogue - Stata starter kit, v2.0.0
+* 13 Treatment that switches off again
+* =============================================================================
+
+* Contracting reversed (P16), programme suspended (P20), local governments
+* dissolved and restored (P41). Standard staggered estimators assume treatment
+* is absorbing; this one does not.
+use &quot;$WORK/analysis.dta&quot;, clear
+
+did_multiplegt_dyn y id year D, effects(5) placebo(3) cluster(id)
+
+* Document every switch-off date in the rollout file: one row per district-spell
+* (pec_unit_id, start_year, end_year) and expand to D_it before running.
+</pre></details><details class="code" style="margin-top:12px"><summary class="code-bar" style="cursor:pointer;list-style:none"><span><strong style="color:#000;font-weight:400">20_power_mde.do</strong></span><span class="actions"><button class="btn btn--sm btn--line" type="button" data-copy="#sk7">Copy</button><a class="btn btn--sm" href="stata/20_power_mde.do" download>Download</a></span></summary><pre id="sk7">* =============================================================================
+* Pakistan Evidence Catalogue - Stata starter kit, v2.0.0
+* 20 Minimum detectable effect for a district panel DiD
+* =============================================================================
+
+* Burlig, Preonas &amp; Woerman (2020, JDE) variance for difference-in-differences
+* with serially correlated errors, here with AR(1) residuals in closed form.
+* Result is in residual standard-deviation units of the outcome.
+
+scalar J     = 126      // districts (constant 2019 boundaries; Punjab alone = 34)
+scalar P     = 0.5      // share of districts treated
+scalar m     = 3        // pre-treatment periods (survey waves or years)
+scalar r     = 3        // post-treatment periods
+scalar phi   = 0.4      // AR(1) serial correlation of the residual
+scalar alpha = 0.05
+scalar power = 0.80
+
+scalar S1m  = cond(m &lt; 2, 0, phi*((m-1) - m*phi + phi^m)/(1-phi)^2)
+scalar S1r  = cond(r &lt; 2, 0, phi*((r-1) - r*phi + phi^r)/(1-phi)^2)
+scalar psiB = cond(m &lt; 2, 0, 2*S1m/(m*(m-1)))          // mean covariance within pre
+scalar psiA = cond(r &lt; 2, 0, 2*S1r/(r*(r-1)))          // mean covariance within post
+scalar psiX = ((1-phi^m)/(1-phi)) * (phi*(1-phi^r)/(1-phi)) / (m*r)   // pre-post
+scalar V    = (1/(P*(1-P)*J)) * ((m+r)/(m*r) + (m-1)/m*psiB + (r-1)/r*psiA - 2*psiX)
+scalar MDE  = (invttail(J-2, alpha/2) + invttail(J-2, 1-power)) * sqrt(V)
+
+display as text &quot;Minimum detectable effect: &quot; as result %5.3f MDE &quot; residual SD&quot;
+
+* Check: with phi = 0 and m = r = 1 this reduces to the two-period formula
+* MDE = (t_a + t_b) * sqrt(2 / (P*(1-P)*J)).
+</pre></details>
+</div></section>
+<section class="section section--mist" id="power"><div class="wrap">
+  <div class="coll-head"><h2>Power calculator</h2><p>Minimum detectable effect for a district panel difference-in-differences with serially correlated errors.</p></div>
+  <div class="calc">
+    <form class="calc-form" id="mde" onsubmit="return false">
+      <div class="field"><label for="mJ">Districts</label><input id="mJ" name="J" type="number" min="3" value="126"><small>126 national; 34 Punjab; 31 KP; 22 Sindh; 27 Balochistan</small></div>
+      <div class="field"><label for="mP">Share treated</label><input id="mP" name="P" type="number" min="0.02" max="0.98" step="0.01" value="0.5"></div>
+      <div class="field"><label for="mm">Pre periods</label><input id="mm" name="m" type="number" min="1" value="3"></div>
+      <div class="field"><label for="mr">Post periods</label><input id="mr" name="r" type="number" min="1" value="3"></div>
+      <div class="field"><label for="mphi">Serial correlation</label><input id="mphi" name="phi" type="number" min="0" max="0.95" step="0.05" value="0.4"><small>AR(1) residual correlation</small></div>
+      <div class="field"><label for="ma">Significance</label><select id="ma" name="alpha"><option value="0.05">5%</option><option value="0.1">10%</option><option value="0.01">1%</option></select></div>
+      <div class="field"><label for="mpw">Power</label><select id="mpw" name="power"><option value="0.8">80%</option><option value="0.9">90%</option></select></div>
+    </form>
+    <div class="calc-out" id="mde-out" aria-live="polite"><div class="big">—</div><div class="unit">minimum detectable effect, in residual standard deviations</div><p class="expl"></p><p class="formula"></p></div>
+  </div>
+  <p class="small muted" style="margin-top:16px;max-width:46rem">Burlig, F., Preonas, L. and Woerman, M. (2020). Panel data and experimental design. <em>Journal of Development Economics</em> 144. Closed form for AR(1) errors; the same calculation is in <code>20_power_mde.do</code>.</p>
+</div></section>
+<section class="section" id="cite"><div class="wrap">
+  <div class="coll-head"><h2>Cite the catalogue</h2></div>
+  <div class="code" style="max-width:52rem;margin:0 auto"><pre id="cite-all" style="white-space:pre-wrap">@misc{hussain2026pec,
+  author = {Hussain, Saqib},
+  year   = {2026},
+  title  = {Pakistan Evidence Catalogue: Staggered District-Level Programmes for Causal Impact Evaluation},
+  note   = {Version 2.0.0},
+  url    = {https://itssaqib.github.io/pakistan-evidence-catalogue/}
+}</pre></div>
+  <p style="text-align:center;margin-top:14px"><button class="textbtn" type="button" data-copy="#cite-all">Copy BibTeX</button></p>
+</div></section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="f-wordmark">Pakistan Evidence Catalogue</div>
+    <ul class="f-links">
+      <li><a href="../programmes/index.html">Programmes</a></li><li><a href="../atlas/index.html">Atlas</a></li>
+      <li><a href="../insights/index.html">Insights</a></li><li><a href="../datasets/index.html">Datasets</a></li>
+      <li><a href="../toolkit/index.html">Toolkit</a></li><li><a href="../guide/index.html">Guide</a></li>
+      <li><a href="../contribute/index.html">Contribute</a></li><li><a href="../about/index.html">About</a></li>
+      <li><a href="https://github.com/itssaqib/pakistan-evidence-catalogue">GitHub</a></li>
+    </ul>
+    <p class="f-meta">Compiled by <a href="https://itssaqib.github.io">Saqib Hussain</a>. Released under CC BY 4.0. Version 2.0.0, 4 November 2026.
+    Suggested citation: Hussain, S. (2026). <em>Pakistan Evidence Catalogue: staggered district-level programmes for causal impact evaluation</em>, version 2.0.0.<br>
+    District boundaries from geoBoundaries (2019, public domain). Boundaries shown do not imply any judgment on the legal status of any territory; the status of Jammu and Kashmir is disputed.
+    Verify every date against the primary source named on each programme page before using it.</p>
+  </div>
+</footer>
+<script src="../data/catalogue.js"></script>
+<script src="../assets/js/core.js"></script>
+<script src="../assets/js/pages.js"></script>
+</body>
+</html>

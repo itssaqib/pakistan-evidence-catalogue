@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Treatment dates | Pakistan Evidence Catalogue</title>
+<meta name="description" content="Nine routes to district-by-date treatment data in Pakistan, an RTI template, and how timing data is graded.">
+<meta name="author" content="Saqib Hussain">
+<meta name="theme-color" content="#ffffff">
+<link rel="canonical" href="https://itssaqib.github.io/pakistan-evidence-catalogue/guide/timing.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Pakistan Evidence Catalogue">
+<meta property="og:title" content="Treatment dates">
+<meta property="og:description" content="Nine routes to district-by-date treatment data in Pakistan, an RTI template, and how timing data is graded.">
+<meta property="og:image" content="https://itssaqib.github.io/pakistan-evidence-catalogue/assets/og/home.jpg">
+<meta property="og:url" content="https://itssaqib.github.io/pakistan-evidence-catalogue/guide/timing.html">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23212934'/%3E%3Cpath d='M9 23V9h6.5a4.5 4.5 0 0 1 0 9H9' fill='none' stroke='%23c9a16e' stroke-width='2.4'/%3E%3C/svg%3E">
+<link rel="preload" href="../assets/fonts/jost-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../assets/css/site.css">
+
+</head>
+<body data-base="../" data-page="guide" >
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="hdr-top wrap">
+    <div class="hdr-left"><button class="icon-btn" type="button" data-open="menu" aria-label="Open menu" aria-controls="menu"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 7h18M3 12h18M3 17h18"/></svg></button></div>
+    <a class="wordmark" href="../index.html" aria-label="Pakistan Evidence Catalogue, home"><span class="wm-main">Pakistan Evidence</span><span class="wm-sub">Catalogue</span></a>
+    <div class="hdr-right">
+      <button class="icon-btn" type="button" data-open="search" aria-label="Search (press /)" aria-controls="search"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="M15.5 15.5L21 21"/></svg></button>
+      <a class="icon-btn" href="../shortlist/index.html" aria-label="Your shortlist"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.6l2.6 5.3 5.8.8-4.2 4.1 1 5.8L12 16.9l-5.2 2.7 1-5.8-4.2-4.1 5.8-.8z"/></svg><span class="count" data-shortlist-count></span></a>
+      <a class="icon-btn hide-sm" href="../toolkit/index.html#downloads" aria-label="Downloads"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v11M7 10l5 5 5-5M5 20h14"/></svg></a>
+    </div>
+  </div>
+  <nav class="hdr-nav" aria-label="Main"><a href="../programmes/index.html">Programmes</a><a href="../atlas/index.html">Atlas</a><a href="../insights/index.html">Insights</a><a href="../datasets/index.html">Datasets</a><a href="../toolkit/index.html">Toolkit</a><a href="../guide/index.html" aria-current="page">Guide</a><a href="../about/index.html">About</a></nav>
+</header>
+
+<div class="overlay" id="menu" role="dialog" aria-modal="true" aria-label="Menu">
+  <div class="wrap">
+    <div class="overlay-top"><button class="icon-btn" type="button" data-close aria-label="Close menu"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 5l14 14M19 5L5 19"/></svg></button>
+      <span class="wordmark"><span class="wm-main">Pakistan Evidence</span></span><span style="width:40px"></span></div>
+    <div class="menu-grid">
+      <nav class="menu-main" aria-label="Sections">
+        <a href="../index.html">Home</a>
+        <a href="../programmes/index.html">Programmes</a><a href="../atlas/index.html">Atlas</a><a href="../insights/index.html">Insights</a><a href="../datasets/index.html">Datasets</a><a href="../toolkit/index.html">Toolkit</a><a href="../guide/index.html">Guide</a><a href="../about/index.html">About</a>
+        <a href="../contribute/index.html">Contribute</a>
+      </nav>
+      <div class="menu-col">
+        <h4>Start here</h4>
+        <a href="../programmes/index.html?tq=High">Programmes with reliable rollout dates</a>
+        <a href="../programmes/index.html?tq=High&amp;evidence=Unstudied">Reliable dates, no causal study yet</a>
+        <a href="../programmes/index.html?map=Documented%20districts">Programmes with documented districts</a>
+        <a href="../atlas/index.html">District atlas</a>
+        <a href="../guide/index.html">Identification playbook</a>
+        <a href="../guide/caveats.html">Standing caveats</a>
+      </div>
+      <div class="menu-col">
+        <h4>Data and code</h4>
+        <a href="../toolkit/index.html#downloads">Downloads: CSV, JSON, Stata</a>
+        <a href="../toolkit/index.html#crosswalk">District crosswalk</a>
+        <a href="../toolkit/index.html#stata">Stata starter kit</a>
+        <a href="../toolkit/index.html#power">Power calculator</a>
+        <a href="../data/references.bib">References (BibTeX)</a>
+        <a href="https://github.com/itssaqib/pakistan-evidence-catalogue">Repository on GitHub</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="overlay" id="search" role="dialog" aria-modal="true" aria-label="Search">
+  <div class="wrap">
+    <div class="overlay-top"><span class="small muted">Search programmes, outcomes, datasets and pages</span>
+      <button class="icon-btn" type="button" data-close aria-label="Close search"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 5l14 14M19 5L5 19"/></svg></button></div>
+    <div class="search-box">
+      <label class="sr-only" for="search-input">Search the catalogue</label>
+      <input class="search-input" id="search-input" type="search" placeholder="Search the catalogue" autocomplete="off">
+      <p class="search-hint">Try a programme (Sehat), an outcome (stunting), a dataset (ASER) or an ID (P15). Arrow keys move, Enter opens.</p>
+    </div>
+    <ul class="search-results" id="search-results" aria-live="polite"></ul>
+  </div>
+</div>
+
+<main id="main">
+
+<div class="wrap"><div class="page-head"><h1>Treatment dates</h1><p>The binding constraint on most of these ideas is knowing which district was treated when. Nine routes, roughly in order of reliability.</p></div></div>
+<div class="wrap" style="display:flex;justify-content:center;gap:28px;padding-bottom:10px;font-size:13px;text-transform:uppercase;letter-spacing:.08em"><a href="index.html">Methods</a><a href="timing.html" style="border-bottom:2px solid var(--gold)">Treatment dates</a><a href="caveats.html">Caveats</a></div>
+<section class="section" style="padding-top:30px"><div class="wrap">
+  <div class="note" style="margin:0 0 30px"><div class="k">The practical order</div><p>Start with published evaluations and World Bank implementation reports: someone may already have built the file. Then Annual Development Programme scheme registers, which are public and under-used. Then a Right to Information request naming a specific register. Treat press reports as triangulation only.</p></div>
+  <div class="table-wrap"><table class="t"><thead><tr><th>Source</th><th>What it gives you</th><th>Where</th><th>Practical note</th></tr></thead><tbody><tr><td class="wide"><span class="ttl">Provincial gazette notifications</span></td><td class="wide">The legally authoritative record of when a district was created, when a law was extended, when a facility was notified. Punjab, Sindh, KP and Balochistan each publish a gazette; back issues are held by provincial law departments and the Punjab series is partly digitised.</td><td style="white-space:nowrap"><a class="link" href="https://punjablaws.gov.pk" rel="noopener">punjablaws.gov.pk</a></td><td class="wide small">Slow but definitive. Use it to settle disagreements between secondary sources, not as your first stop.</td></tr><tr><td class="wide"><span class="ttl">Annual Development Programme scheme registers</span></td><td class="wide">Every publicly funded scheme &mdash; a rescue station, a road package, a filtration plant, a hospital upgrade &mdash; appears as a line item with a district, an approval date and a completion status. This is the most under-used treatment-timing source in Pakistan.</td><td style="white-space:nowrap"><a class="link" href="https://pnd.punjab.gov.pk" rel="noopener">pnd.punjab.gov.pk</a></td><td class="wide small">Published annually as PDFs. Scraping ten years of ADP books yields a district–scheme–date panel for dozens of programmes at once.</td></tr><tr><td class="wide"><span class="ttl">PC-1 approval and PC-4 completion documents</span></td><td class="wide">The PC-1 states the intended district phasing; the PC-4 records what was actually completed and when. Held by the Planning Commission and provincial P&amp;D departments.</td><td style="white-space:nowrap"><a class="link" href="https://www.pc.gov.pk" rel="noopener">pc.gov.pk</a></td><td class="wide small">Request through the department. The PC-4 is the one that matters, because plans slip.</td></tr><tr><td class="wide"><span class="ttl">Right to Information requests</span></td><td class="wide">KP (2013), Punjab (2013), Sindh (2016) and Balochistan (2021) all have RTI statutes with statutory response deadlines. A request naming the exact register you want &mdash; for example, the date of operationalisation of each Arazi Record Centre &mdash; is often the fastest route to a clean treatment-timing file.</td><td style="white-space:nowrap"><a class="link" href="https://infocom.punjab.gov.pk" rel="noopener">infocom.punjab.gov.pk</a></td><td class="wide small">Ask for a specific existing record, not for analysis. Requests that ask an official to compile something new are usually refused.</td></tr><tr><td class="wide"><span class="ttl">Programme management information systems</span></td><td class="wide">BISP/NSER, Sehat Sahulat, the Punjab Land Records Authority, PITB, the Punjab Education Foundation, PSDF, and the provincial EMIS and DHIS systems all hold unit-level records with dates. Access runs through a research agreement or data-sharing MoU, not a public download.</td><td style="white-space:nowrap"><a class="link" href="../datasets/index.html" rel="noopener">See the dataset catalogue</a></td><td class="wide small">A World Bank, J-PAL or university affiliation materially improves the odds. Budget three to six months.</td></tr><tr><td class="wide"><span class="ttl">World Bank and ADB project documents</span></td><td class="wide">Project Appraisal Documents, numbered Implementation Status Reports and Implementation Completion Reports record the actual district phasing of donor-financed programmes, often in an annex.</td><td style="white-space:nowrap"><a class="link" href="https://documents.worldbank.org" rel="noopener">documents.worldbank.org</a></td><td class="wide small">The ISR sequence is especially useful: successive reports show the rollout progressing, which effectively date-stamps it.</td></tr><tr><td class="wide"><span class="ttl">Third-party and process evaluations</span></td><td class="wide">Evaluation series and published papers frequently contain the district rollout table as an appendix. Malik, van de Poel &amp; van Doorslaer (2017) is the clearest example: they assembled the health-unit contracting rollout dates across 75 districts.</td><td style="white-space:nowrap"><a class="link" href="https://www.opml.co.uk" rel="noopener">opml.co.uk</a></td><td class="wide small">Always check the replication package before assembling a rollout file from scratch.</td></tr><tr><td class="wide"><span class="ttl">Press archives</span></td><td class="wide">Dawn, The News, Express Tribune and Business Recorder report launch ceremonies with dates and district lists. Some programme phases are documented almost exclusively this way.</td><td style="white-space:nowrap"><a class="link" href="https://www.dawn.com/archive" rel="noopener">dawn.com/archive</a></td><td class="wide small">Useful for triangulation, unreliable alone &mdash; a launch ceremony is not an operational start.</td></tr><tr><td class="wide"><span class="ttl">Satellite and crowd-sourced verification</span></td><td class="wide">Where administrative dates are unavailable or untrustworthy, nightlights, OpenStreetMap edit history and mobile coverage polygons can date the arrival of infrastructure independently.</td><td style="white-space:nowrap"><a class="link" href="https://eogdata.mines.edu" rel="noopener">eogdata.mines.edu</a></td><td class="wide small">Best used to validate an administrative date rather than to replace it.</td></tr></tbody></table></div>
+</div></section>
+<section class="section section--mist"><div class="wrap two-col">
+  <div><h3 style="font-size:22px;font-weight:500">An RTI request that works</h3><p style="margin-top:10px">Ask for a record that already exists, not for analysis. Name the register, the custodian and the fields.</p>
+  <div class="code"><pre style="white-space:pre-wrap">To: Public Information Officer, [Department]
+Under Section 10, Punjab Transparency and
+Right to Information Act 2013
+
+I request a copy of the following existing record:
+
+1. The register or database recording the date on
+   which each [facility / centre / scheme] under
+   [programme] became operational, listing district,
+   tehsil, unit name and date of operationalisation.
+
+2. Covering the period [start] to [end].
+
+I am content to receive it in any electronic format
+in which it is already held. I do not require any
+new compilation or analysis.</pre></div></div>
+  <div><h3 style="font-size:22px;font-weight:500">How timing data is graded</h3>
+  <dl class="dl"><dt>High</dt><dd>Dates are published, or sit in a named register someone has already assembled. Verifying takes hours.</dd>
+  <dt>Medium-high</dt><dd>Dates exist in administrative records and can be obtained with a request or a document search. Weeks.</dd>
+  <dt>Medium</dt><dd>Dates exist but are scattered across sources that disagree. Expect to reconcile and document judgement calls.</dd>
+  <dt>Low</dt><dd>No reliable district dating known. Needs primary collection or a satellite proxy.</dd></dl></div>
+</div></section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="f-wordmark">Pakistan Evidence Catalogue</div>
+    <ul class="f-links">
+      <li><a href="../programmes/index.html">Programmes</a></li><li><a href="../atlas/index.html">Atlas</a></li>
+      <li><a href="../insights/index.html">Insights</a></li><li><a href="../datasets/index.html">Datasets</a></li>
+      <li><a href="../toolkit/index.html">Toolkit</a></li><li><a href="../guide/index.html">Guide</a></li>
+      <li><a href="../contribute/index.html">Contribute</a></li><li><a href="../about/index.html">About</a></li>
+      <li><a href="https://github.com/itssaqib/pakistan-evidence-catalogue">GitHub</a></li>
+    </ul>
+    <p class="f-meta">Compiled by <a href="https://itssaqib.github.io">Saqib Hussain</a>. Released under CC BY 4.0. Version 2.0.0, 4 November 2026.
+    Suggested citation: Hussain, S. (2026). <em>Pakistan Evidence Catalogue: staggered district-level programmes for causal impact evaluation</em>, version 2.0.0.<br>
+    District boundaries from geoBoundaries (2019, public domain). Boundaries shown do not imply any judgment on the legal status of any territory; the status of Jammu and Kashmir is disputed.
+    Verify every date against the primary source named on each programme page before using it.</p>
+  </div>
+</footer>
+<script src="../data/catalogue.js"></script>
+<script src="../assets/js/core.js"></script>
+<script src="../assets/js/pages.js"></script>
+</body>
+</html>

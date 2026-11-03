@@ -1,0 +1,39 @@
+<!doctype html><html><head><meta charset="utf-8">
+<link rel="stylesheet" href="../../assets/css/site.css">
+<style>
+html,body{margin:0;background:var(--slate);color:var(--on-slate)}
+.f1{width:1400px;padding:30px 40px;display:grid;grid-template-columns:1fr 1fr;gap:30px}
+.f1 h3,.f2 h3{font-weight:400;font-size:20px;margin:0 0 8px;color:var(--on-slate)}
+.f1 canvas{width:100%;aspect-ratio:1000/942}
+.lg{display:flex;gap:8px;align-items:center;font-size:14px;color:var(--on-slate-2);margin-top:6px}
+.lg i{width:26px;height:10px;display:inline-block}
+.f2{width:1400px;padding:30px 40px;display:grid;grid-template-columns:repeat(5,1fr);gap:22px 18px}
+.f2 div{font-size:14px}
+.f2 canvas{width:100%;aspect-ratio:1000/942}
+.f2 small{display:block;color:var(--on-slate-2);font-size:12px}
+</style></head>
+<body><div id="root"></div>
+<script src="../../data/catalogue.js"></script><script src="../../data/geo.js"></script><script src="../../assets/js/map.js"></script>
+<script>
+var M=PECMap, mode=new URLSearchParams(location.search).get('f'), root=document.getElementById('root'), C=M.COL;
+if(mode==='density'){
+  root.className='f1';
+  [2010,2024].forEach(function(y){
+    var d=document.createElement('div'); d.innerHTML='<h3>'+y+'</h3><canvas></canvas>'; root.appendChild(d);
+    new M.Map(d.querySelector('canvas'),{labels:true}).set({mode:'density',yearIndex:PEC.meta.years.indexOf(y)});
+  });
+  var lg=document.createElement('div'); lg.className='lg'; lg.style.gridColumn='1 / -1';
+  lg.innerHTML='Catalogued programmes in stated scope or documented rollout: '+['0','1–10','11–20','21–30','31–40','41+'].map(function(t,i){return '<i style="background:'+C.dens[i]+'"></i>'+t;}).join(' ');
+  root.appendChild(lg);
+}else{
+  root.className='f2';
+  PEC.programmes.filter(function(p){return p.footprint}).forEach(function(p){
+    var d=document.createElement('div'); d.innerHTML='<canvas></canvas>'+p.id+' '+p.short+'<small>'+p.footprint.phases.map(function(x){return x.year}).filter(function(v,i,a){return a.indexOf(v)===i}).join(', ')+'</small>'; root.appendChild(d);
+    new M.Map(d.querySelector('canvas'),{thin:true}).set({mode:'footprint',prog:p,upTo:null});
+  });
+  var lg=document.createElement('div'); lg.className='lg'; lg.style.gridColumn='1 / -1';
+  lg.innerHTML=[[C.p1,'First documented phase'],[C.p2,'Second phase'],[C.later,'Later phases or rest of scope'],[C.scope,'In scope, not listed or not dated'],[C.out,'Outside scope']].map(function(x){return '<i style="background:'+x[0]+'"></i>'+x[1]}).join(' &nbsp; ');
+  root.appendChild(lg);
+}
+document.fonts.ready.then(function(){document.body.setAttribute('data-ready','1')});
+</script></body></html>

@@ -1,0 +1,23 @@
+name: Suggest a programme
+description: A programme or natural experiment that reached places at different times.
+title: "[New] "
+labels: ["new-programme"]
+body:
+  - type: input
+    id: name
+    attributes: {label: Programme name and agency}
+    validations: {required: true}
+  - type: textarea
+    id: stagger
+    attributes: {label: How it was staggered, description: Which units, in what order, over which years.}
+    validations: {required: true}
+  - type: textarea
+    id: timing
+    attributes: {label: Where the dates can be found, description: Register, report, gazette, dataset.}
+    validations: {required: true}
+  - type: textarea
+    id: outcomes
+    attributes: {label: Outcomes it could move, description: Optional.}
+  - type: textarea
+    id: refs
+    attributes: {label: Existing evaluations, description: Optional.}

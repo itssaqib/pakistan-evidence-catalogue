@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Email the maintainer
+    url: mailto:saqibhussain@kdis.ac.kr
+    about: For anything you would rather not post publicly.
+  - name: Browse the catalogue
+    url: https://itssaqib.github.io/pakistan-evidence-catalogue/
+    about: Check whether an entry already exists before suggesting one.

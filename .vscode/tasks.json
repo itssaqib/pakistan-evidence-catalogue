@@ -10,11 +10,7 @@
       "args": ["${input:commitMessage}"],
       "windows": {
         "command": "powershell",
-        "args": [
-          "-ExecutionPolicy", "Bypass",
-          "-File", "${workspaceFolder}/publish.ps1",
-          "${input:commitMessage}"
-        ]
+        "args": ["-ExecutionPolicy", "Bypass", "-File", "${workspaceFolder}/publish.ps1", "${input:commitMessage}"]
       },
       "options": { "cwd": "${workspaceFolder}" },
       "problemMatcher": [],
@@ -23,7 +19,7 @@
     },
     {
       "label": "Preview site locally",
-      "detail": "Serve on http://localhost:8000. Required — opening index.html as a file:// URL leaves every table empty, because browsers block fetch() of local JSON.",
+      "detail": "Serve on http://localhost:8000. Opening index.html directly also works; the server matches GitHub Pages more closely.",
       "type": "shell",
       "command": "python3 -m http.server 8000",
       "windows": { "command": "python -m http.server 8000" },
@@ -34,12 +30,10 @@
     },
     {
       "label": "Rebuild site from data",
-      "detail": "Regenerate every HTML page from _build/catalogue_raw.json. Run after editing the source data.",
+      "detail": "Regenerate data files, Stata kit, every page, the data note and repo files from _build/. Needs Python 3.10+ with pandas; pdflatex for the note.",
       "type": "shell",
-      "command": "python3 gen_data.py && python3 gen_pages.py && python3 gen_programmes.py && python3 gen_sections.py && python3 gen_guides.py && python3 gen_misc.py && python3 gen_repo.py",
-      "windows": {
-        "command": "python gen_data.py; python gen_pages.py; python gen_programmes.py; python gen_sections.py; python gen_guides.py; python gen_misc.py; python gen_repo.py"
-      },
+      "command": "python3 geo.py && python3 data.py && python3 stata.py && python3 pages.py && python3 paper.py && python3 repo.py",
+      "windows": { "command": "python geo.py; python data.py; python stata.py; python pages.py; python paper.py; python repo.py" },
       "options": { "cwd": "${workspaceFolder}/_build" },
       "problemMatcher": [],
       "presentation": { "reveal": "always", "panel": "dedicated", "clear": true }
@@ -56,11 +50,6 @@
     }
   ],
   "inputs": [
-    {
-      "id": "commitMessage",
-      "type": "promptString",
-      "description": "Commit message (leave blank for an automatic dated one)",
-      "default": ""
-    }
+    { "id": "commitMessage", "type": "promptString", "description": "Commit message (leave blank for an automatic dated one)", "default": "" }
   ]
 }

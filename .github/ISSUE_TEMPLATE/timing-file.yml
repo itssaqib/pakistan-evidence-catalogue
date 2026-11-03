@@ -1,0 +1,30 @@
+name: Share a rollout file
+description: A district- or tehsil-by-date treatment file for an entry.
+title: "[Timing file] Pxx "
+labels: ["timing-file"]
+body:
+  - type: input
+    id: pid
+    attributes: {label: Programme ID}
+    validations: {required: true}
+  - type: textarea
+    id: file
+    attributes:
+      label: The file
+      description: Drag a CSV here, or link to it. Columns we can use - unit name, province, treatment date, source for each row.
+    validations: {required: true}
+  - type: textarea
+    id: method
+    attributes: {label: How it was built, description: Sources and any judgement calls.}
+    validations: {required: true}
+  - type: input
+    id: credit
+    attributes: {label: Credit as, description: Name and affiliation to show on the programme page.}
+    validations: {required: true}
+  - type: checkboxes
+    id: licence
+    attributes:
+      label: Licence
+      options:
+        - label: I agree to release this file under CC BY 4.0.
+          required: true
